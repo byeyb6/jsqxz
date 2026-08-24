@@ -41,7 +41,7 @@ onMounted(() => {
   );
   state.lessWindow = media.matches;
   state.menuVisible = !media.matches;
-  media.onchange = (e) => {
+  media.onchange = e => {
     state.lessWindow = e.matches;
     state.menuVisible = !e.matches;
   };
@@ -49,7 +49,7 @@ onMounted(() => {
 
 watch(
   () => route.name,
-  (val) => {
+  val => {
     if (state.lessWindow) {
       state.menuVisible = false;
     }
@@ -116,9 +116,7 @@ provide('state', state);
   background: #f6f5f1;
 
   .app-view {
-    height: calc(
-      100% - var(--header-height) - 10px
-    );
+    height: calc(100% - var(--header-height) - 10px);
   }
 }
 

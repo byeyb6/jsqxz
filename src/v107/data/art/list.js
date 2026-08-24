@@ -148,7 +148,7 @@ export default {
       {
         name: '强上内伤',
         condition: '使用铁掌攻击',
-        effect: ['60%概率追加12-15点内伤'],
+        effect: ['60%概率追加12~15点内伤'],
       },
     ],
     type: 1,
@@ -164,7 +164,7 @@ export default {
       {
         name: '天山折梅',
         condition: '天山折梅手修炼到极',
-        effect: ['每多一个其他武功到极，天山折梅手威力+50，气攻+100'],
+        effect: ['每多一个其他武功到极，天山折梅手气攻+100，反击时无效'],
       },
     ],
     type: 2,
@@ -5195,8 +5195,15 @@ export default {
     name: '踏云追风',
     get: [],
     sect: 31,
-    level: 1,
-    inner: 9,
+    level: 4,
+    inner: 2,
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+      'bingShang',
+      'zaiDong',
+    ],
+    type: 7,
   },
   436: {
     id: 436,

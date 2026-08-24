@@ -397,10 +397,39 @@ export function getMove(id) {
 }
 
 /**
+ * 获取主运效果
+ * @param param0
+ * @param param0.initiative
+ * @param param0.type
+ * @param param0.level
+ * @returns {*[]}
+ */
+function getInitiative({initiative, type, level}) {
+  if (type !== 6 && type !== 7) {
+    return [];
+  }
+  const rst = [];
+  if (!Array.isArray(initiative)) {
+    initiative = [];
+  }
+  // if (type === 7) {
+  //   initiative.unshift('shanBiZengQiang', 'mingZhongZengQiang');
+  // }
+  for (let key of initiative) {
+    if (typeof innerMap[key] === 'function') {
+      rst.push(innerMap[key](level));
+    }
+  }
+  return rst;
+}
+
+/**
  * 获取专属效果
- * @param id
- * @param tra
- * @param isCheat
+ * @param param0
+ * @param param0.id
+ * @param param0.tra
+ * @param param0.isCheat
+ * @returns {*[]}
  */
 export function getTra({id, tra, isCheat = false}) {
   if (!artCheatMap[id] && !itmAll[id]) {
@@ -563,14 +592,6 @@ export function formatArt(info = {}) {
   // 专属效果
   item.tra = getTra({id, tra, isCheat: false});
   // 内功主运特效
-  if (Array.isArray(initiative)) {
-    const arr = [];
-    for (let key of initiative) {
-      if (typeof innerMap[key] === 'function') {
-        arr.push(innerMap[key](level));
-      }
-    }
-    item.initiative = arr;
-  }
+  item.initiative = getInitiative({initiative, type, level});
   return item;
 }

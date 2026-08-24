@@ -78,6 +78,9 @@
       <div class="tr">
         <div class="td">招式效果</div>
         <div class="td">
+          <div class="td-block color-warn">
+            第一招威力和气攻为武功的威力，后边每一招都增加10%威力的数值，最多增加50%
+          </div>
           <template v-for="(item, index) of info.move" :key="index">
             <div class="is-block td-effect-item" v-for="(text, i) of item.effect" :key="i">
               {{ text }}
