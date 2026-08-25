@@ -1046,7 +1046,7 @@ export default {
   93: {
     id: 93,
     name: '忠仆',
-    effect: ['已方中毒抗性+20（无效）'],
+    effect: ['已方中毒抗性+20'],
     fortune: [],
     level: 1,
     score: 5,
@@ -7170,7 +7170,7 @@ export default {
     id: 9741,
     name: '机灵古怪',
     effect: [
-      '自身集气位置20%概率前进10~30，暴怒时3倍',
+      '时序20%概率集气位置向前跳跃10~30，暴怒时3倍',
     ],
     fortune: [],
     level: 3,

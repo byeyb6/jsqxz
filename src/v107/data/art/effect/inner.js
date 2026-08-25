@@ -1746,7 +1746,7 @@ export function hongXiuShanWu(lv) {
   return {
     id: 931,
     name: `红袖善舞 Lv${lv}`,
-    effect: [`对男性攻击伤害增加${lv * 8}%伤害，受到男性的攻击伤害减少${lv * 8}%`],
+    effect: [`对男性攻击伤害增加${lv * 8}%伤害，受到男性的攻击伤害减少${lv * 8}%（无效）`],
   };
 }
 
@@ -2129,7 +2129,7 @@ export function qiYueRuShi(lv) {
   return {
     id: 1038,
     name: `气跃如逝 Lv${lv}`,
-    effect: [`集气0~${lv * 15}%概率向前跳跃${lv * 5}~${lv * 10}时序`],
+    effect: [`时序0~${lv * 15}%概率集气位置向前跳跃${lv * 5}~${lv * 10}`],
   };
 }
 
