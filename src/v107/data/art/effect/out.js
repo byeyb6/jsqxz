@@ -312,7 +312,7 @@ export function jiQiWenLuan(lv) {
 export function kongJu(lv) {
   return {
     id: 36,
-    effect: `${lv * 10 + 30}%概率造成目标恐惧一回合`,
+    effect: `${lv * 10}%概率造成目标恐惧一回合`,
   };
 }
 
@@ -374,7 +374,7 @@ export function miYunBuYu(lv) {
   return {
     id: 3,
     name: '密云布雨',
-    effect: `${lv * 10}%概率使目标减少一半的集气20时序`,
+    effect: `${lv * 10}%概率使目标减少一半的集气速度20时序`,
   };
 }
 
@@ -451,6 +451,6 @@ export function tianRenWuShuai(lv) {
   return {
     id: 13,
     name: '天人五衰',
-    effect: `攻击附带禁疗状态10时序（最多20时序）：不可时序回复生命/内力/体力；攻击不造成怒气`,
+    effect: `攻击附带禁疗状态10时序（最多20时序）：不可时序回复生命/内力/体力；攻击不会给目标增加怒气`,
   };
 }

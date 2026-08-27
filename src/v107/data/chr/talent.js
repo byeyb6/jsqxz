@@ -8,6 +8,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   1: {
     id: 1,
@@ -24,6 +25,7 @@ export default {
     ],
     level: 2,
     score: 10,
+    type: 1,
   },
   2: {
     id: 2,
@@ -37,6 +39,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   3: {
     id: 3,
@@ -50,6 +53,7 @@ export default {
     ],
     level: 3,
     score: 60,
+    type: 2,
   },
   4: {
     id: 4,
@@ -63,6 +67,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   5: {
     id: 5,
@@ -78,6 +83,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   6: {
     id: 6,
@@ -88,6 +94,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   7: {
     id: 7,
@@ -99,6 +106,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   8: {
     id: 8,
@@ -109,6 +117,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   9: {
     id: 9,
@@ -123,6 +132,7 @@ export default {
     ],
     level: 2,
     score: 10,
+    type: 3,
   },
   10: {
     id: 10,
@@ -133,6 +143,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   11: {
     id: 11,
@@ -143,6 +154,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   12: {
     id: 12,
@@ -151,6 +163,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   13: {
     id: 13,
@@ -163,6 +176,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   14: {
     id: 14,
@@ -174,6 +188,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   15: {
     id: 15,
@@ -182,6 +197,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   16: {
     id: 16,
@@ -193,6 +209,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   17: {
     id: 17,
@@ -204,6 +221,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   18: {
     id: 18,
@@ -215,6 +233,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   19: {
     id: 19,
@@ -228,6 +247,7 @@ export default {
     ],
     level: 4,
     score: 45,
+    type: 2,
   },
   20: {
     id: 20,
@@ -239,6 +259,7 @@ export default {
     fortune: [],
     level: 4,
     score: 45,
+    type: 2,
   },
   21: {
     id: 21,
@@ -250,6 +271,7 @@ export default {
     fortune: [],
     level: 4,
     score: 45,
+    type: 2,
   },
   22: {
     id: 22,
@@ -261,6 +283,7 @@ export default {
     fortune: [],
     level: 4,
     score: 45,
+    type: 2,
   },
   23: {
     id: 23,
@@ -272,6 +295,7 @@ export default {
     fortune: [],
     level: 4,
     score: 45,
+    type: 2,
   },
   24: {
     id: 24,
@@ -282,6 +306,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   25: {
     id: 25,
@@ -290,6 +315,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   26: {
     id: 26,
@@ -301,6 +327,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   27: {
     id: 27,
@@ -313,6 +340,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   28: {
     id: 28,
@@ -324,6 +352,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   29: {
     id: 29,
@@ -332,6 +361,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   30: {
     id: 30,
@@ -340,6 +370,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   31: {
     id: 31,
@@ -351,6 +382,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   32: {
     id: 32,
@@ -362,6 +394,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   33: {
     id: 33,
@@ -373,6 +406,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   34: {
     id: 34,
@@ -384,6 +418,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   35: {
     id: 35,
@@ -398,6 +433,7 @@ export default {
     ],
     level: 4,
     score: 40,
+    type: 3,
   },
   36: {
     id: 36,
@@ -413,6 +449,7 @@ export default {
     ],
     level: 2,
     score: 15,
+    type: 1,
   },
   37: {
     id: 37,
@@ -428,6 +465,7 @@ export default {
     ],
     level: 2,
     score: 20,
+    type: 3,
   },
   38: {
     id: 38,
@@ -442,6 +480,7 @@ export default {
     ],
     level: 2,
     score: 10,
+    type: 1,
   },
   39: {
     id: 39,
@@ -454,6 +493,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   40: {
     id: 40,
@@ -466,6 +506,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   41: {
     id: 41,
@@ -477,6 +518,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   42: {
     id: 42,
@@ -488,6 +530,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   43: {
     id: 43,
@@ -498,6 +541,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   44: {
     id: 44,
@@ -506,6 +550,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   45: {
     id: 45,
@@ -517,6 +562,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   46: {
     id: 46,
@@ -529,6 +575,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   47: {
     id: 47,
@@ -539,6 +586,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   48: {
     id: 48,
@@ -551,6 +599,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   49: {
     id: 49,
@@ -567,6 +616,7 @@ export default {
     ],
     level: 4,
     score: 40,
+    type: 3,
   },
   50: {
     id: 50,
@@ -580,6 +630,7 @@ export default {
     ],
     level: 3,
     score: 30,
+    type: 2,
   },
   51: {
     id: 51,
@@ -594,6 +645,7 @@ export default {
     ],
     level: 2,
     score: 15,
+    type: 1,
   },
   52: {
     id: 52,
@@ -606,6 +658,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 3,
   },
   53: {
     id: 53,
@@ -617,6 +670,7 @@ export default {
     ],
     level: 1,
     score: 5,
+    type: 1,
   },
   54: {
     id: 54,
@@ -628,6 +682,7 @@ export default {
     fortune: [],
     level: 3,
     score: 35,
+    type: 2,
   },
   55: {
     id: 55,
@@ -639,6 +694,7 @@ export default {
     ],
     level: 4,
     score: 95,
+    type: 2,
   },
   56: {
     id: 56,
@@ -653,6 +709,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   57: {
     id: 57,
@@ -663,8 +720,9 @@ export default {
       '自身在场时，敌方人物25%概率随机移动，敌方移动步数-2',
     ],
     fortune: [],
-    level: 4,
-    score: 40,
+    level: 3,
+    score: 30,
+    type: 2,
   },
   58: {
     id: 58,
@@ -684,6 +742,7 @@ export default {
     ],
     level: 4,
     score: 50,
+    type: 2,
   },
   59: {
     id: 59,
@@ -697,6 +756,7 @@ export default {
     ],
     level: 4,
     score: 90,
+    type: 2,
   },
   60: {
     id: 60,
@@ -713,6 +773,7 @@ export default {
     ],
     level: 4,
     score: 40,
+    type: 2,
   },
   61: {
     id: 61,
@@ -723,6 +784,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   62: {
     id: 62,
@@ -733,6 +795,7 @@ export default {
     ],
     level: 3,
     score: 25,
+    type: 1,
   },
   63: {
     id: 63,
@@ -743,6 +806,7 @@ export default {
     ],
     level: 1,
     score: 5,
+    type: 1,
   },
   64: {
     id: 64,
@@ -754,6 +818,7 @@ export default {
     fortune: ['开局自带左右互搏'],
     level: 4,
     score: 100,
+    type: 2,
   },
   65: {
     id: 65,
@@ -766,6 +831,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   66: {
     id: 66,
@@ -778,6 +844,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   67: {
     id: 67,
@@ -789,6 +856,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   68: {
     id: 68,
@@ -800,6 +868,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   69: {
     id: 69,
@@ -813,6 +882,7 @@ export default {
     ],
     level: 2,
     score: 10,
+    type: 1,
   },
   70: {
     id: 70,
@@ -823,6 +893,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   71: {
     id: 71,
@@ -831,6 +902,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   72: {
     id: 72,
@@ -844,6 +916,7 @@ export default {
     ],
     level: 1,
     score: 5,
+    type: 1,
   },
   73: {
     id: 73,
@@ -855,6 +928,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   74: {
     id: 74,
@@ -863,6 +937,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   75: {
     id: 75,
@@ -873,6 +948,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   76: {
     id: 76,
@@ -883,6 +959,7 @@ export default {
     ],
     level: 2,
     score: 10,
+    type: 1,
   },
   77: {
     id: 77,
@@ -896,6 +973,7 @@ export default {
     ],
     level: 1,
     score: 5,
+    type: 1,
   },
   78: {
     id: 78,
@@ -904,6 +982,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   79: {
     id: 79,
@@ -914,6 +993,7 @@ export default {
     ],
     level: 1,
     score: 5,
+    type: 3,
   },
   80: {
     id: 80,
@@ -922,6 +1002,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   81: {
     id: 81,
@@ -930,6 +1011,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   82: {
     id: 82,
@@ -938,6 +1020,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   83: {
     id: 83,
@@ -952,6 +1035,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   84: {
     id: 84,
@@ -962,6 +1046,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   85: {
     id: 85,
@@ -972,6 +1057,7 @@ export default {
     fortune: [],
     level: 1,
     score: 15,
+    type: 1,
   },
   86: {
     id: 86,
@@ -980,6 +1066,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   87: {
     id: 87,
@@ -988,6 +1075,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   88: {
     id: 88,
@@ -998,6 +1086,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   89: {
     id: 89,
@@ -1006,6 +1095,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   90: {
     id: 90,
@@ -1020,6 +1110,7 @@ export default {
     ],
     level: 2,
     score: 10,
+    type: 1,
   },
   91: {
     id: 91,
@@ -1030,6 +1121,7 @@ export default {
     ],
     level: 1,
     score: 5,
+    type: 3,
   },
   92: {
     id: 92,
@@ -1042,6 +1134,7 @@ export default {
     fortune: [],
     level: 1,
     score: 10,
+    type: 3,
   },
   93: {
     id: 93,
@@ -1050,6 +1143,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   94: {
     id: 94,
@@ -1058,6 +1152,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   95: {
     id: 95,
@@ -1066,6 +1161,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   96: {
     id: 96,
@@ -1076,6 +1172,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   97: {
     id: 97,
@@ -1087,6 +1184,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   98: {
     id: 98,
@@ -1095,6 +1193,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   99: {
     id: 99,
@@ -1103,6 +1202,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   100: {
     id: 100,
@@ -1113,6 +1213,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   101: {
     id: 101,
@@ -1121,6 +1222,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   102: {
     id: 102,
@@ -1132,6 +1234,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   103: {
     id: 103,
@@ -1144,6 +1247,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   104: {
     id: 104,
@@ -1155,6 +1259,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   105: {
     id: 105,
@@ -1166,6 +1271,7 @@ export default {
     fortune: [],
     level: 1,
     score: 10,
+    type: 3,
   },
   106: {
     id: 106,
@@ -1174,6 +1280,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   107: {
     id: 107,
@@ -1182,6 +1289,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   108: {
     id: 108,
@@ -1190,6 +1298,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   109: {
     id: 109,
@@ -1198,6 +1307,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   110: {
     id: 110,
@@ -1206,6 +1316,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   111: {
     id: 111,
@@ -1214,16 +1325,18 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   112: {
     id: 112,
     name: '杀破狼',
     effect: [
-      '开场进入杀破狼状态，三回合内保持满怒，杀气提高2000',
+      '开场进入杀破狼状态，三回合内保持满怒，气攻提高2000',
     ],
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   113: {
     id: 113,
@@ -1232,6 +1345,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   114: {
     id: 114,
@@ -1245,6 +1359,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   115: {
     id: 115,
@@ -1253,6 +1368,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   116: {
     id: 116,
@@ -1264,6 +1380,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   117: {
     id: 117,
@@ -1272,6 +1389,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 3,
   },
   118: {
     id: 118,
@@ -1283,6 +1401,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 2,
   },
   119: {
     id: 119,
@@ -1291,6 +1410,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   120: {
     id: 120,
@@ -1299,6 +1419,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   121: {
     id: 121,
@@ -1307,6 +1428,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   122: {
     id: 122,
@@ -1315,6 +1437,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   123: {
     id: 123,
@@ -1323,6 +1446,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   124: {
     id: 124,
@@ -1331,6 +1455,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   125: {
     id: 125,
@@ -1339,6 +1464,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   126: {
     id: 126,
@@ -1347,6 +1473,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   127: {
     id: 127,
@@ -1355,6 +1482,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   128: {
     id: 128,
@@ -1363,6 +1491,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   129: {
     id: 129,
@@ -1374,6 +1503,7 @@ export default {
     fortune: [],
     level: 4,
     score: 60,
+    type: 2,
   },
   130: {
     id: 130,
@@ -1381,7 +1511,8 @@ export default {
     effect: ['自动主运飞天神行'],
     fortune: [],
     level: 3,
-    score: 30,
+    score: 25,
+    type: 2,
   },
   131: {
     id: 131,
@@ -1390,6 +1521,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   132: {
     id: 132,
@@ -1398,6 +1530,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   133: {
     id: 133,
@@ -1406,6 +1539,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   134: {
     id: 134,
@@ -1414,6 +1548,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   135: {
     id: 135,
@@ -1422,6 +1557,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   136: {
     id: 136,
@@ -1430,6 +1566,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   137: {
     id: 137,
@@ -1438,6 +1575,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   138: {
     id: 138,
@@ -1447,7 +1585,8 @@ export default {
     ],
     fortune: [],
     level: 2,
-    score: 15,
+    score: 10,
+    type: 1,
   },
   139: {
     id: 139,
@@ -1458,6 +1597,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   140: {
     id: 140,
@@ -1469,6 +1609,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   141: {
     id: 141,
@@ -1477,6 +1618,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   142: {
     id: 142,
@@ -1485,6 +1627,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   143: {
     id: 143,
@@ -1493,6 +1636,7 @@ export default {
     fortune: [],
     level: 3,
     score: 60,
+    type: 1,
   },
   144: {
     id: 144,
@@ -1501,6 +1645,7 @@ export default {
     fortune: [],
     level: 3,
     score: 60,
+    type: 3,
   },
   145: {
     id: 145,
@@ -1509,6 +1654,7 @@ export default {
     fortune: [],
     level: 3,
     score: 60,
+    type: 3,
   },
   146: {
     id: 146,
@@ -1517,6 +1663,7 @@ export default {
     fortune: [],
     level: 3,
     score: 60,
+    type: 3,
   },
   147: {
     id: 147,
@@ -1525,6 +1672,7 @@ export default {
     fortune: [],
     level: 3,
     score: 60,
+    type: 3,
   },
   148: {
     id: 148,
@@ -1533,6 +1681,7 @@ export default {
     fortune: [],
     level: 3,
     score: 60,
+    type: 3,
   },
   149: {
     id: 149,
@@ -1545,6 +1694,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   150: {
     id: 150,
@@ -1555,6 +1705,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   151: {
     id: 151,
@@ -1566,6 +1717,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   152: {
     id: 152,
@@ -1576,6 +1728,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   153: {
     id: 153,
@@ -1586,6 +1739,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   154: {
     id: 154,
@@ -1596,6 +1750,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   155: {
     id: 155,
@@ -1604,6 +1759,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   156: {
     id: 156,
@@ -1612,6 +1768,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   157: {
     id: 157,
@@ -1623,6 +1780,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   158: {
     id: 158,
@@ -1634,6 +1792,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   159: {
     id: 159,
@@ -1642,6 +1801,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   160: {
     id: 160,
@@ -1652,6 +1812,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   161: {
     id: 161,
@@ -1664,6 +1825,7 @@ export default {
     ],
     level: 2,
     score: 10,
+    type: 1,
   },
   162: {
     id: 162,
@@ -1674,6 +1836,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   163: {
     id: 163,
@@ -1684,6 +1847,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   164: {
     id: 164,
@@ -1694,12 +1858,13 @@ export default {
       '└令二：我负天下人，恢复所受伤害一半的血量',
       '└令三：行止由心，两次行动',
       '行动时给自身添加一枚玄铁令效果',
-      '敌方全体集气速度-10#hidden#',
-      '行动后使用“碧针清掌”攻击周身七格敌人，造成100点伤害#hidden#',
+      '敌方全体集气速度-10',
+      '行动后使用“碧针清掌”攻击周身七格敌人，造成100点伤害',
     ],
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   165: {
     id: 165,
@@ -1711,6 +1876,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   166: {
     id: 166,
@@ -1719,6 +1885,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   167: {
     id: 167,
@@ -1727,6 +1894,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   168: {
     id: 168,
@@ -1735,6 +1903,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   169: {
     id: 169,
@@ -1743,6 +1912,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   170: {
     id: 170,
@@ -1751,6 +1921,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   171: {
     id: 171,
@@ -1759,6 +1930,7 @@ export default {
     fortune: [],
     level: 4,
     score: 70,
+    type: 3,
   },
   172: {
     id: 172,
@@ -1767,6 +1939,7 @@ export default {
     fortune: [],
     level: 4,
     score: 70,
+    type: 3,
   },
   173: {
     id: 173,
@@ -1775,6 +1948,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   174: {
     id: 174,
@@ -1783,6 +1957,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 3,
   },
   175: {
     id: 175,
@@ -1791,6 +1966,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 3,
   },
   176: {
     id: 176,
@@ -1801,6 +1977,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   177: {
     id: 177,
@@ -1809,6 +1986,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   178: {
     id: 178,
@@ -1817,6 +1995,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   179: {
     id: 179,
@@ -1825,6 +2004,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   180: {
     id: 180,
@@ -1833,6 +2013,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   181: {
     id: 181,
@@ -1841,6 +2022,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   182: {
     id: 182,
@@ -1849,6 +2031,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   183: {
     id: 183,
@@ -1857,6 +2040,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   184: {
     id: 184,
@@ -1867,6 +2051,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   185: {
     id: 185,
@@ -1879,6 +2064,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   186: {
     id: 186,
@@ -1889,6 +2075,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   187: {
     id: 187,
@@ -1897,6 +2084,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   188: {
     id: 188,
@@ -1908,6 +2096,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   189: {
     id: 189,
@@ -1920,6 +2109,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   190: {
     id: 190,
@@ -1928,6 +2118,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   191: {
     id: 191,
@@ -1936,6 +2127,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   192: {
     id: 192,
@@ -1944,6 +2136,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   193: {
     id: 193,
@@ -1952,6 +2145,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   194: {
     id: 194,
@@ -1960,6 +2154,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   195: {
     id: 195,
@@ -1968,6 +2163,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   196: {
     id: 196,
@@ -1976,6 +2172,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   197: {
     id: 197,
@@ -1984,6 +2181,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   198: {
     id: 198,
@@ -1992,6 +2190,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   199: {
     id: 199,
@@ -2000,6 +2199,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   200: {
     id: 200,
@@ -2008,6 +2208,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   201: {
     id: 201,
@@ -2018,6 +2219,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   202: {
     id: 202,
@@ -2026,6 +2228,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   203: {
     id: 203,
@@ -2034,6 +2237,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   204: {
     id: 204,
@@ -2042,6 +2246,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   205: {
     id: 205,
@@ -2050,6 +2255,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   206: {
     id: 206,
@@ -2058,6 +2264,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   207: {
     id: 207,
@@ -2066,6 +2273,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   208: {
     id: 208,
@@ -2074,6 +2282,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   209: {
     id: 209,
@@ -2082,6 +2291,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   210: {
     id: 210,
@@ -2090,6 +2300,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   211: {
     id: 211,
@@ -2098,6 +2309,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   212: {
     id: 212,
@@ -2106,6 +2318,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   213: {
     id: 213,
@@ -2114,6 +2327,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   214: {
     id: 214,
@@ -2122,6 +2336,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   215: {
     id: 215,
@@ -2130,6 +2345,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   216: {
     id: 216,
@@ -2138,6 +2354,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   217: {
     id: 217,
@@ -2146,6 +2363,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   218: {
     id: 218,
@@ -2154,6 +2372,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   219: {
     id: 219,
@@ -2162,6 +2381,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   220: {
     id: 220,
@@ -2172,6 +2392,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   221: {
     id: 221,
@@ -2180,6 +2401,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   222: {
     id: 222,
@@ -2188,6 +2410,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   223: {
     id: 223,
@@ -2196,6 +2419,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   224: {
     id: 224,
@@ -2204,6 +2428,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   225: {
     id: 225,
@@ -2212,6 +2437,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   226: {
     id: 226,
@@ -2220,6 +2446,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   227: {
     id: 227,
@@ -2228,6 +2455,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   228: {
     id: 228,
@@ -2236,6 +2464,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   229: {
     id: 229,
@@ -2244,6 +2473,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   230: {
     id: 230,
@@ -2252,6 +2482,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   231: {
     id: 231,
@@ -2262,6 +2493,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   232: {
     id: 232,
@@ -2272,6 +2504,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   233: {
     id: 233,
@@ -2282,6 +2515,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   234: {
     id: 234,
@@ -2290,6 +2524,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   235: {
     id: 235,
@@ -2300,6 +2535,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   236: {
     id: 236,
@@ -2310,6 +2546,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   237: {
     id: 237,
@@ -2320,6 +2557,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   238: {
     id: 238,
@@ -2330,6 +2568,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   239: {
     id: 239,
@@ -2340,6 +2579,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   240: {
     id: 240,
@@ -2350,6 +2590,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   241: {
     id: 241,
@@ -2358,6 +2599,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   242: {
     id: 242,
@@ -2366,6 +2608,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   243: {
     id: 243,
@@ -2374,6 +2617,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   244: {
     id: 244,
@@ -2382,6 +2626,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   245: {
     id: 245,
@@ -2390,6 +2635,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   246: {
     id: 246,
@@ -2398,6 +2644,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   247: {
     id: 247,
@@ -2406,6 +2653,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   248: {
     id: 248,
@@ -2414,6 +2662,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   249: {
     id: 249,
@@ -2424,6 +2673,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   250: {
     id: 250,
@@ -2434,6 +2684,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   251: {
     id: 251,
@@ -2442,6 +2693,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   252: {
     id: 252,
@@ -2450,6 +2702,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   253: {
     id: 253,
@@ -2458,6 +2711,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   254: {
     id: 254,
@@ -2466,6 +2720,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   255: {
     id: 255,
@@ -2474,6 +2729,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   256: {
     id: 256,
@@ -2482,6 +2738,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   257: {
     id: 257,
@@ -2490,6 +2747,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   258: {
     id: 258,
@@ -2498,6 +2756,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   259: {
     id: 259,
@@ -2506,6 +2765,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   260: {
     id: 260,
@@ -2514,6 +2774,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   261: {
     id: 261,
@@ -2522,6 +2783,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   262: {
     id: 262,
@@ -2530,6 +2792,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   263: {
     id: 263,
@@ -2538,6 +2801,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   264: {
     id: 264,
@@ -2546,6 +2810,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   265: {
     id: 265,
@@ -2554,6 +2819,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   266: {
     id: 266,
@@ -2562,6 +2828,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   267: {
     id: 267,
@@ -2570,6 +2837,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   268: {
     id: 268,
@@ -2578,6 +2846,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   269: {
     id: 269,
@@ -2586,6 +2855,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   270: {
     id: 270,
@@ -2594,6 +2864,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   271: {
     id: 271,
@@ -2602,6 +2873,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   272: {
     id: 272,
@@ -2610,6 +2882,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   273: {
     id: 273,
@@ -2618,6 +2891,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   274: {
     id: 274,
@@ -2626,6 +2900,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   275: {
     id: 275,
@@ -2634,6 +2909,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   276: {
     id: 276,
@@ -2642,6 +2918,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   277: {
     id: 277,
@@ -2650,6 +2927,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   278: {
     id: 278,
@@ -2658,6 +2936,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   279: {
     id: 279,
@@ -2666,6 +2945,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   280: {
     id: 280,
@@ -2674,6 +2954,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   281: {
     id: 281,
@@ -2682,6 +2963,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   282: {
     id: 282,
@@ -2690,6 +2972,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   283: {
     id: 283,
@@ -2698,6 +2981,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   284: {
     id: 284,
@@ -2706,6 +2990,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   285: {
     id: 285,
@@ -2714,6 +2999,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   286: {
     id: 286,
@@ -2722,6 +3008,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   287: {
     id: 287,
@@ -2730,6 +3017,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   288: {
     id: 288,
@@ -2738,6 +3026,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   289: {
     id: 289,
@@ -2746,6 +3035,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   290: {
     id: 290,
@@ -2754,6 +3044,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   291: {
     id: 291,
@@ -2762,6 +3053,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   292: {
     id: 292,
@@ -2770,6 +3062,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   293: {
     id: 293,
@@ -2778,6 +3071,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   294: {
     id: 294,
@@ -2786,6 +3080,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   295: {
     id: 295,
@@ -2794,6 +3089,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   296: {
     id: 296,
@@ -2802,6 +3098,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   297: {
     id: 297,
@@ -2810,6 +3107,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   298: {
     id: 298,
@@ -2818,6 +3116,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   299: {
     id: 299,
@@ -2826,6 +3125,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   300: {
     id: 300,
@@ -2834,6 +3134,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   301: {
     id: 301,
@@ -2844,6 +3145,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   302: {
     id: 302,
@@ -2855,6 +3157,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   303: {
     id: 303,
@@ -2866,6 +3169,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   304: {
     id: 304,
@@ -2877,6 +3181,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   305: {
     id: 305,
@@ -2888,6 +3193,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   306: {
     id: 306,
@@ -2898,6 +3204,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   307: {
     id: 307,
@@ -2908,6 +3215,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   308: {
     id: 308,
@@ -2918,6 +3226,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   309: {
     id: 309,
@@ -2928,6 +3237,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   310: {
     id: 310,
@@ -2938,6 +3248,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   311: {
     id: 311,
@@ -2948,6 +3259,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   312: {
     id: 312,
@@ -2958,6 +3270,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   313: {
     id: 313,
@@ -2968,6 +3281,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   314: {
     id: 314,
@@ -2978,6 +3292,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   315: {
     id: 315,
@@ -2988,6 +3303,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   316: {
     id: 316,
@@ -2998,6 +3314,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   317: {
     id: 317,
@@ -3008,6 +3325,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   318: {
     id: 318,
@@ -3018,6 +3336,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   319: {
     id: 319,
@@ -3028,6 +3347,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   320: {
     id: 320,
@@ -3036,6 +3356,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   321: {
     id: 321,
@@ -3044,6 +3365,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   322: {
     id: 322,
@@ -3052,6 +3374,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   323: {
     id: 323,
@@ -3060,6 +3383,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   324: {
     id: 324,
@@ -3068,6 +3392,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   325: {
     id: 325,
@@ -3076,6 +3401,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   326: {
     id: 326,
@@ -3084,6 +3410,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   327: {
     id: 327,
@@ -3092,6 +3419,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   328: {
     id: 328,
@@ -3100,6 +3428,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   329: {
     id: 329,
@@ -3108,6 +3437,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   330: {
     id: 330,
@@ -3116,6 +3446,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   331: {
     id: 331,
@@ -3124,6 +3455,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   332: {
     id: 332,
@@ -3132,6 +3464,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   333: {
     id: 333,
@@ -3140,6 +3473,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   334: {
     id: 334,
@@ -3148,6 +3482,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   335: {
     id: 335,
@@ -3156,6 +3491,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   336: {
     id: 336,
@@ -3164,6 +3500,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   337: {
     id: 337,
@@ -3172,6 +3509,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   338: {
     id: 338,
@@ -3180,6 +3518,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   339: {
     id: 339,
@@ -3188,6 +3527,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   340: {
     id: 340,
@@ -3196,6 +3536,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   341: {
     id: 341,
@@ -3204,6 +3545,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   342: {
     id: 342,
@@ -3212,6 +3554,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   343: {
     id: 343,
@@ -3220,6 +3563,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   344: {
     id: 344,
@@ -3228,6 +3572,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   345: {
     id: 345,
@@ -3236,6 +3581,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   346: {
     id: 346,
@@ -3244,6 +3590,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   347: {
     id: 347,
@@ -3252,6 +3599,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   348: {
     id: 348,
@@ -3260,6 +3608,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   349: {
     id: 349,
@@ -3268,6 +3617,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   350: {
     id: 350,
@@ -3276,6 +3626,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   351: {
     id: 351,
@@ -3284,6 +3635,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   352: {
     id: 352,
@@ -3292,6 +3644,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   353: {
     id: 353,
@@ -3300,6 +3653,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   354: {
     id: 354,
@@ -3308,6 +3662,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   355: {
     id: 355,
@@ -3316,6 +3671,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   356: {
     id: 356,
@@ -3324,6 +3680,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   357: {
     id: 357,
@@ -3332,6 +3689,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   358: {
     id: 358,
@@ -3340,6 +3698,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   359: {
     id: 359,
@@ -3350,6 +3709,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   360: {
     id: 360,
@@ -3358,6 +3718,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   361: {
     id: 361,
@@ -3366,6 +3727,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   362: {
     id: 362,
@@ -3374,6 +3736,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   363: {
     id: 363,
@@ -3382,6 +3745,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   364: {
     id: 364,
@@ -3390,6 +3754,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   365: {
     id: 365,
@@ -3398,6 +3763,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   366: {
     id: 366,
@@ -3406,6 +3772,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   367: {
     id: 367,
@@ -3414,6 +3781,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   368: {
     id: 368,
@@ -3422,6 +3790,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   369: {
     id: 369,
@@ -3430,6 +3799,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   370: {
     id: 370,
@@ -3438,6 +3808,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   371: {
     id: 371,
@@ -3446,6 +3817,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   372: {
     id: 372,
@@ -3454,6 +3826,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   373: {
     id: 373,
@@ -3462,6 +3835,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   374: {
     id: 374,
@@ -3470,6 +3844,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   375: {
     id: 375,
@@ -3478,6 +3853,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   376: {
     id: 376,
@@ -3486,6 +3862,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   377: {
     id: 377,
@@ -3494,6 +3871,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   378: {
     id: 378,
@@ -3502,6 +3880,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   379: {
     id: 379,
@@ -3512,6 +3891,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   380: {
     id: 380,
@@ -3520,6 +3900,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   381: {
     id: 381,
@@ -3528,6 +3909,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   382: {
     id: 382,
@@ -3536,6 +3918,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   383: {
     id: 383,
@@ -3544,6 +3927,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   384: {
     id: 384,
@@ -3552,6 +3936,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   385: {
     id: 385,
@@ -3560,6 +3945,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   386: {
     id: 386,
@@ -3568,6 +3954,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   387: {
     id: 387,
@@ -3578,6 +3965,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   388: {
     id: 388,
@@ -3586,6 +3974,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   389: {
     id: 389,
@@ -3594,6 +3983,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   390: {
     id: 390,
@@ -3602,6 +3992,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   391: {
     id: 391,
@@ -3610,6 +4001,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   392: {
     id: 392,
@@ -3618,6 +4010,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   393: {
     id: 393,
@@ -3626,6 +4019,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   394: {
     id: 394,
@@ -3634,6 +4028,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   395: {
     id: 395,
@@ -3642,6 +4037,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   396: {
     id: 396,
@@ -3650,6 +4046,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   397: {
     id: 397,
@@ -3658,6 +4055,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   398: {
     id: 398,
@@ -3666,6 +4064,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   399: {
     id: 399,
@@ -3674,6 +4073,7 @@ export default {
     fortune: [],
     level: 1,
     score: 0,
+    type: 3,
   },
   400: {
     id: 400,
@@ -3682,6 +4082,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   401: {
     id: 401,
@@ -3690,6 +4091,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   402: {
     id: 402,
@@ -3698,6 +4100,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   403: {
     id: 403,
@@ -3706,6 +4109,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   404: {
     id: 404,
@@ -3714,6 +4118,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   405: {
     id: 405,
@@ -3722,6 +4127,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   406: {
     id: 406,
@@ -3730,6 +4136,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   407: {
     id: 407,
@@ -3738,6 +4145,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   408: {
     id: 408,
@@ -3746,6 +4154,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   409: {
     id: 409,
@@ -3754,6 +4163,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   410: {
     id: 410,
@@ -3762,6 +4172,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   411: {
     id: 411,
@@ -3770,6 +4181,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   412: {
     id: 412,
@@ -3778,6 +4190,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   413: {
     id: 413,
@@ -3786,6 +4199,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   414: {
     id: 414,
@@ -3794,6 +4208,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   415: {
     id: 415,
@@ -3802,6 +4217,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   416: {
     id: 416,
@@ -3810,6 +4226,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   417: {
     id: 417,
@@ -3818,6 +4235,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   418: {
     id: 418,
@@ -3826,6 +4244,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   419: {
     id: 419,
@@ -3834,6 +4253,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   420: {
     id: 420,
@@ -3842,6 +4262,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   421: {
     id: 421,
@@ -3850,6 +4271,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   422: {
     id: 422,
@@ -3858,6 +4280,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   423: {
     id: 423,
@@ -3866,6 +4289,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   424: {
     id: 424,
@@ -3874,6 +4298,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   425: {
     id: 425,
@@ -3882,6 +4307,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   426: {
     id: 426,
@@ -3890,6 +4316,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   427: {
     id: 427,
@@ -3898,6 +4325,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   428: {
     id: 428,
@@ -3906,6 +4334,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   429: {
     id: 429,
@@ -3914,6 +4343,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   430: {
     id: 430,
@@ -3922,6 +4352,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   431: {
     id: 431,
@@ -3930,6 +4361,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   432: {
     id: 432,
@@ -3938,6 +4370,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   433: {
     id: 433,
@@ -3946,6 +4379,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   434: {
     id: 434,
@@ -3954,6 +4388,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   435: {
     id: 435,
@@ -3962,6 +4397,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   436: {
     id: 436,
@@ -3970,6 +4406,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   437: {
     id: 437,
@@ -3978,6 +4415,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   438: {
     id: 438,
@@ -3986,6 +4424,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   439: {
     id: 439,
@@ -3994,6 +4433,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   440: {
     id: 440,
@@ -4002,6 +4442,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   441: {
     id: 441,
@@ -4010,6 +4451,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   442: {
     id: 442,
@@ -4018,6 +4460,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   443: {
     id: 443,
@@ -4026,6 +4469,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   444: {
     id: 444,
@@ -4034,6 +4478,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   445: {
     id: 445,
@@ -4042,6 +4487,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   446: {
     id: 446,
@@ -4050,6 +4496,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   447: {
     id: 447,
@@ -4060,14 +4507,18 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   448: {
     id: 448,
     name: '千手神针',
-    effect: ['攻击必命中，距离越远伤害越高，每格增加3%伤害，上限11格'],
+    effect: [
+      '攻击必命中，距离越远伤害越高，每格增加3%伤害，上限11格',
+    ],
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   449: {
     id: 449,
@@ -4075,7 +4526,8 @@ export default {
     effect: ['不可闪避，必命中'],
     fortune: [],
     level: 4,
-    score: 50,
+    score: 40,
+    type: 2,
   },
   450: {
     id: 450,
@@ -4084,6 +4536,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   451: {
     id: 451,
@@ -4092,6 +4545,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   452: {
     id: 452,
@@ -4100,6 +4554,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   453: {
     id: 453,
@@ -4108,6 +4563,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   454: {
     id: 454,
@@ -4116,6 +4572,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   455: {
     id: 455,
@@ -4124,6 +4581,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   456: {
     id: 456,
@@ -4132,6 +4590,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   457: {
     id: 457,
@@ -4140,6 +4599,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   458: {
     id: 458,
@@ -4148,6 +4608,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   459: {
     id: 459,
@@ -4156,6 +4617,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   460: {
     id: 460,
@@ -4164,6 +4626,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   461: {
     id: 461,
@@ -4172,6 +4635,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   462: {
     id: 462,
@@ -4180,6 +4644,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   463: {
     id: 463,
@@ -4188,6 +4653,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   464: {
     id: 464,
@@ -4196,6 +4662,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   465: {
     id: 465,
@@ -4204,6 +4671,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   466: {
     id: 466,
@@ -4212,6 +4680,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   467: {
     id: 467,
@@ -4220,6 +4689,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   468: {
     id: 468,
@@ -4228,6 +4698,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   469: {
     id: 469,
@@ -4236,6 +4707,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   470: {
     id: 470,
@@ -4244,6 +4716,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   471: {
     id: 471,
@@ -4252,6 +4725,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   472: {
     id: 472,
@@ -4260,6 +4734,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   473: {
     id: 473,
@@ -4268,6 +4743,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   474: {
     id: 474,
@@ -4276,6 +4752,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   475: {
     id: 475,
@@ -4284,6 +4761,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   476: {
     id: 476,
@@ -4292,6 +4770,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   477: {
     id: 477,
@@ -4300,6 +4779,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   478: {
     id: 478,
@@ -4308,6 +4788,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   479: {
     id: 479,
@@ -4316,6 +4797,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   480: {
     id: 480,
@@ -4324,6 +4806,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   481: {
     id: 481,
@@ -4332,6 +4815,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   482: {
     id: 482,
@@ -4340,6 +4824,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   483: {
     id: 483,
@@ -4348,6 +4833,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   484: {
     id: 484,
@@ -4356,6 +4842,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   485: {
     id: 485,
@@ -4364,6 +4851,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   486: {
     id: 486,
@@ -4372,6 +4860,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   487: {
     id: 487,
@@ -4380,6 +4869,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   488: {
     id: 488,
@@ -4388,6 +4878,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   489: {
     id: 489,
@@ -4396,6 +4887,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   490: {
     id: 490,
@@ -4404,6 +4896,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   491: {
     id: 491,
@@ -4412,6 +4905,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   492: {
     id: 492,
@@ -4420,6 +4914,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   493: {
     id: 493,
@@ -4428,6 +4923,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   494: {
     id: 494,
@@ -4436,6 +4932,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   495: {
     id: 495,
@@ -4444,6 +4941,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   496: {
     id: 496,
@@ -4452,6 +4950,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   497: {
     id: 497,
@@ -4462,6 +4961,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   498: {
     id: 498,
@@ -4475,6 +4975,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   499: {
     id: 499,
@@ -4486,6 +4987,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   500: {
     id: 500,
@@ -4496,6 +4998,7 @@ export default {
     fortune: [],
     level: 4,
     score: 60,
+    type: 2,
   },
   501: {
     id: 501,
@@ -4504,6 +5007,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   502: {
     id: 502,
@@ -4514,6 +5018,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   503: {
     id: 503,
@@ -4522,6 +5027,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   504: {
     id: 504,
@@ -4530,6 +5036,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   505: {
     id: 505,
@@ -4538,6 +5045,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   506: {
     id: 506,
@@ -4550,6 +5058,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   507: {
     id: 507,
@@ -4560,6 +5069,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   508: {
     id: 508,
@@ -4570,6 +5080,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   509: {
     id: 509,
@@ -4578,6 +5089,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   510: {
     id: 510,
@@ -4589,6 +5101,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   511: {
     id: 511,
@@ -4601,6 +5114,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   512: {
     id: 512,
@@ -4609,6 +5123,7 @@ export default {
     fortune: [],
     level: 4,
     score: 0,
+    type: 3,
   },
   513: {
     id: 513,
@@ -4617,8 +5132,9 @@ export default {
       '每间隔50时序触发一次，反弹双倍伤害，持续50时序',
     ],
     fortune: [],
-    level: 4,
-    score: 0,
+    level: 1,
+    score: 5,
+    type: 3,
   },
   514: {
     id: 514,
@@ -4631,6 +5147,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 3,
   },
   515: {
     id: 515,
@@ -4643,6 +5160,7 @@ export default {
     fortune: ['烹饪料理可获得双倍食物'],
     level: 2,
     score: 20,
+    type: 1,
   },
   516: {
     id: 516,
@@ -4653,6 +5171,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   517: {
     id: 517,
@@ -4663,6 +5182,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   518: {
     id: 518,
@@ -4673,6 +5193,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   519: {
     id: 519,
@@ -4683,6 +5204,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   520: {
     id: 520,
@@ -4693,6 +5215,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   521: {
     id: 521,
@@ -4703,6 +5226,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   522: {
     id: 522,
@@ -4713,6 +5237,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   523: {
     id: 523,
@@ -4723,6 +5248,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   524: {
     id: 524,
@@ -4733,6 +5259,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   525: {
     id: 525,
@@ -4743,6 +5270,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   526: {
     id: 526,
@@ -4751,6 +5279,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   527: {
     id: 527,
@@ -4759,6 +5288,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   528: {
     id: 528,
@@ -4767,6 +5297,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   529: {
     id: 529,
@@ -4775,6 +5306,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   530: {
     id: 530,
@@ -4783,6 +5315,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   531: {
     id: 531,
@@ -4791,6 +5324,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   532: {
     id: 532,
@@ -4799,6 +5333,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   533: {
     id: 533,
@@ -4807,6 +5342,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   534: {
     id: 534,
@@ -4815,6 +5351,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   535: {
     id: 535,
@@ -4823,6 +5360,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   536: {
     id: 536,
@@ -4831,6 +5369,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   537: {
     id: 537,
@@ -4839,6 +5378,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   538: {
     id: 538,
@@ -4847,6 +5387,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   539: {
     id: 539,
@@ -4855,6 +5396,7 @@ export default {
     fortune: [],
     level: 2,
     score: 0,
+    type: 3,
   },
   540: {
     id: 540,
@@ -4863,6 +5405,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   541: {
     id: 541,
@@ -4871,6 +5414,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   542: {
     id: 542,
@@ -4879,6 +5423,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   543: {
     id: 543,
@@ -4887,6 +5432,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   544: {
     id: 544,
@@ -4895,6 +5441,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   545: {
     id: 545,
@@ -4905,6 +5452,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   546: {
     id: 546,
@@ -4915,6 +5463,7 @@ export default {
     fortune: [],
     level: 2,
     score: 70,
+    type: 1,
   },
   547: {
     id: 547,
@@ -4923,6 +5472,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   548: {
     id: 548,
@@ -4931,6 +5481,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   549: {
     id: 549,
@@ -4939,6 +5490,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   550: {
     id: 550,
@@ -4947,6 +5499,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   551: {
     id: 551,
@@ -4955,6 +5508,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   552: {
     id: 552,
@@ -4963,6 +5517,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   553: {
     id: 553,
@@ -4971,6 +5526,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   554: {
     id: 554,
@@ -4979,6 +5535,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   555: {
     id: 555,
@@ -4987,6 +5544,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   556: {
     id: 556,
@@ -4995,6 +5553,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   557: {
     id: 557,
@@ -5003,6 +5562,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   558: {
     id: 558,
@@ -5011,6 +5571,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   559: {
     id: 559,
@@ -5019,6 +5580,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   560: {
     id: 560,
@@ -5027,6 +5589,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   561: {
     id: 561,
@@ -5035,6 +5598,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   562: {
     id: 562,
@@ -5043,6 +5607,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   563: {
     id: 563,
@@ -5051,6 +5616,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   564: {
     id: 564,
@@ -5059,6 +5625,7 @@ export default {
     fortune: [],
     level: 0,
     score: 0,
+    type: 3,
   },
   565: {
     id: 565,
@@ -5069,6 +5636,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   566: {
     id: 566,
@@ -5082,6 +5650,7 @@ export default {
     ],
     level: 2,
     score: 10,
+    type: 1,
   },
   567: {
     id: 567,
@@ -5090,6 +5659,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   568: {
     id: 568,
@@ -5102,6 +5672,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   569: {
     id: 569,
@@ -5116,6 +5687,7 @@ export default {
     ],
     level: 2,
     score: 20,
+    type: 1,
   },
   570: {
     id: 570,
@@ -5124,6 +5696,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   571: {
     id: 571,
@@ -5132,6 +5705,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   572: {
     id: 572,
@@ -5140,6 +5714,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   573: {
     id: 573,
@@ -5148,6 +5723,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   574: {
     id: 574,
@@ -5160,6 +5736,7 @@ export default {
     ],
     level: 1,
     score: 10,
+    type: 3,
   },
   575: {
     id: 575,
@@ -5172,6 +5749,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   576: {
     id: 576,
@@ -5180,6 +5758,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   577: {
     id: 577,
@@ -5191,6 +5770,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   578: {
     id: 578,
@@ -5202,6 +5782,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   579: {
     id: 579,
@@ -5214,6 +5795,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 2,
   },
   580: {
     id: 580,
@@ -5230,6 +5812,7 @@ export default {
     ],
     level: 2,
     score: 15,
+    type: 1,
   },
   581: {
     id: 581,
@@ -5242,6 +5825,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   582: {
     id: 582,
@@ -5253,6 +5837,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   583: {
     id: 583,
@@ -5261,6 +5846,7 @@ export default {
     fortune: ['获得万花剑法，第一格洗为万花剑法'],
     level: 2,
     score: 10,
+    type: 1,
   },
   584: {
     id: 584,
@@ -5271,6 +5857,7 @@ export default {
     fortune: [],
     level: 3,
     score: 35,
+    type: 2,
   },
   585: {
     id: 585,
@@ -5279,6 +5866,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   586: {
     id: 586,
@@ -5295,6 +5883,7 @@ export default {
     ],
     level: 3,
     score: 30,
+    type: 2,
   },
   587: {
     id: 587,
@@ -5307,6 +5896,7 @@ export default {
     ],
     level: 1,
     score: 5,
+    type: 3,
   },
   588: {
     id: 588,
@@ -5324,6 +5914,7 @@ export default {
     ],
     level: 2,
     score: 25,
+    type: 1,
   },
   589: {
     id: 589,
@@ -5332,6 +5923,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   590: {
     id: 590,
@@ -5343,6 +5935,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   591: {
     id: 591,
@@ -5351,6 +5944,7 @@ export default {
     fortune: [],
     level: 2,
     score: 0,
+    type: 3,
   },
   592: {
     id: 592,
@@ -5363,6 +5957,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 3,
   },
   593: {
     id: 593,
@@ -5373,6 +5968,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   594: {
     id: 594,
@@ -5384,6 +5980,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   595: {
     id: 595,
@@ -5392,6 +5989,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   596: {
     id: 596,
@@ -5403,6 +6001,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   597: {
     id: 597,
@@ -5411,6 +6010,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   598: {
     id: 598,
@@ -5419,6 +6019,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 3,
   },
   599: {
     id: 599,
@@ -5427,6 +6028,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 3,
   },
   600: {
     id: 600,
@@ -5435,6 +6037,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   601: {
     id: 601,
@@ -5448,6 +6051,7 @@ export default {
     ],
     level: 4,
     score: 40,
+    type: 3,
   },
   602: {
     id: 602,
@@ -5456,6 +6060,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   603: {
     id: 603,
@@ -5466,6 +6071,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   604: {
     id: 604,
@@ -5478,6 +6084,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   605: {
     id: 605,
@@ -5490,6 +6097,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   606: {
     id: 606,
@@ -5501,6 +6109,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   607: {
     id: 607,
@@ -5509,6 +6118,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   608: {
     id: 608,
@@ -5522,6 +6132,7 @@ export default {
     fortune: [],
     level: 4,
     score: 60,
+    type: 3,
   },
   609: {
     id: 609,
@@ -5532,6 +6143,7 @@ export default {
     ],
     level: 2,
     score: 10,
+    type: 1,
   },
   610: {
     id: 610,
@@ -5543,6 +6155,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   611: {
     id: 611,
@@ -5554,6 +6167,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   612: {
     id: 612,
@@ -5562,6 +6176,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   613: {
     id: 613,
@@ -5573,6 +6188,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   614: {
     id: 614,
@@ -5581,6 +6197,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   615: {
     id: 615,
@@ -5589,6 +6206,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   616: {
     id: 616,
@@ -5600,6 +6218,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   617: {
     id: 617,
@@ -5611,6 +6230,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   618: {
     id: 618,
@@ -5619,6 +6239,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   619: {
     id: 619,
@@ -5627,6 +6248,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   620: {
     id: 620,
@@ -5635,6 +6257,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   621: {
     id: 621,
@@ -5643,6 +6266,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   622: {
     id: 622,
@@ -5651,6 +6275,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   623: {
     id: 623,
@@ -5659,6 +6284,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   624: {
     id: 624,
@@ -5667,6 +6293,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   625: {
     id: 625,
@@ -5675,6 +6302,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   626: {
     id: 626,
@@ -5687,6 +6315,7 @@ export default {
     ],
     level: 4,
     score: 70,
+    type: 3,
   },
   627: {
     id: 627,
@@ -5695,6 +6324,7 @@ export default {
     fortune: [],
     level: 1,
     score: 10,
+    type: 1,
   },
   628: {
     id: 628,
@@ -5703,6 +6333,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   629: {
     id: 629,
@@ -5718,6 +6349,7 @@ export default {
     ],
     level: 3,
     score: 30,
+    type: 3,
   },
   630: {
     id: 630,
@@ -5726,6 +6358,7 @@ export default {
     fortune: [],
     level: 2,
     score: 0,
+    type: 3,
   },
   631: {
     id: 631,
@@ -5736,6 +6369,7 @@ export default {
     ],
     level: 1,
     score: 5,
+    type: 3,
   },
   632: {
     id: 632,
@@ -5746,6 +6380,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   633: {
     id: 633,
@@ -5760,6 +6395,7 @@ export default {
     ],
     level: 4,
     score: 40,
+    type: 2,
   },
   634: {
     id: 634,
@@ -5774,6 +6410,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   635: {
     id: 635,
@@ -5794,6 +6431,7 @@ export default {
     ],
     level: 4,
     score: 40,
+    type: 2,
   },
   636: {
     id: 636,
@@ -5806,6 +6444,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 3,
   },
   637: {
     id: 637,
@@ -5819,6 +6458,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 2,
   },
   638: {
     id: 638,
@@ -5831,6 +6471,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   639: {
     id: 639,
@@ -5843,6 +6484,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   640: {
     id: 640,
@@ -5855,6 +6497,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   641: {
     id: 641,
@@ -5865,6 +6508,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   642: {
     id: 642,
@@ -5875,6 +6519,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   643: {
     id: 643,
@@ -5883,6 +6528,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   644: {
     id: 644,
@@ -5891,6 +6537,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   645: {
     id: 645,
@@ -5899,6 +6546,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 3,
   },
   646: {
     id: 646,
@@ -5909,6 +6557,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   647: {
     id: 647,
@@ -5917,6 +6566,7 @@ export default {
     fortune: [],
     level: 1,
     score: 10,
+    type: 1,
   },
   648: {
     id: 648,
@@ -5925,6 +6575,7 @@ export default {
     fortune: [],
     level: 1,
     score: 10,
+    type: 3,
   },
   649: {
     id: 649,
@@ -5938,6 +6589,7 @@ export default {
     ],
     level: 2,
     score: 20,
+    type: 1,
   },
   650: {
     id: 650,
@@ -5948,6 +6600,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   651: {
     id: 651,
@@ -5960,6 +6613,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   652: {
     id: 652,
@@ -5976,6 +6630,7 @@ export default {
     ],
     level: 4,
     score: 40,
+    type: 2,
   },
   653: {
     id: 653,
@@ -5984,6 +6639,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   654: {
     id: 654,
@@ -5992,6 +6648,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   655: {
     id: 655,
@@ -6000,6 +6657,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   656: {
     id: 656,
@@ -6008,6 +6666,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   657: {
     id: 657,
@@ -6019,6 +6678,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   658: {
     id: 658,
@@ -6031,6 +6691,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   659: {
     id: 659,
@@ -6039,6 +6700,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   660: {
     id: 660,
@@ -6047,6 +6709,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   661: {
     id: 661,
@@ -6055,6 +6718,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   662: {
     id: 662,
@@ -6063,6 +6727,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   663: {
     id: 663,
@@ -6071,6 +6736,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   664: {
     id: 664,
@@ -6079,6 +6745,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   665: {
     id: 665,
@@ -6087,6 +6754,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   666: {
     id: 666,
@@ -6095,6 +6763,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   667: {
     id: 667,
@@ -6103,6 +6772,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   668: {
     id: 668,
@@ -6111,6 +6781,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   669: {
     id: 669,
@@ -6119,6 +6790,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   670: {
     id: 670,
@@ -6127,6 +6799,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   671: {
     id: 671,
@@ -6135,6 +6808,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   672: {
     id: 672,
@@ -6143,6 +6817,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   673: {
     id: 673,
@@ -6151,6 +6826,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   674: {
     id: 674,
@@ -6159,6 +6835,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   675: {
     id: 675,
@@ -6167,6 +6844,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   676: {
     id: 676,
@@ -6175,6 +6853,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   677: {
     id: 677,
@@ -6183,6 +6862,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   678: {
     id: 678,
@@ -6193,16 +6873,18 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   679: {
     id: 679,
-    name: '剑道无名',
+    name: '武林神话',
     effect: [
       '受到攻击概率减少御剑能力的1~3倍的伤害，最多减少伤害的80%',
     ],
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   680: {
     id: 680,
@@ -6211,6 +6893,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   681: {
     id: 681,
@@ -6224,14 +6907,18 @@ export default {
     ],
     level: 4,
     score: 70,
+    type: 3,
   },
   682: {
     id: 682,
     name: '天人之境',
-    effect: ['备用'],
+    effect: [
+      '天罡内力，学习秘籍双倍五系/三围数值，无视资质斗转/左右/中庸触发概率100%。攻击无消耗、无误伤、吸体力2~5点;受到攻击免疫状态/控制、反弹所有状态、死后必复活1次',
+    ],
     fortune: [],
     level: 5,
     score: 200,
+    type: 3,
   },
   683: {
     id: 683,
@@ -6240,6 +6927,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   684: {
     id: 684,
@@ -6248,6 +6936,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   685: {
     id: 685,
@@ -6256,6 +6945,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   686: {
     id: 686,
@@ -6264,6 +6954,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   687: {
     id: 687,
@@ -6272,6 +6963,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   688: {
     id: 688,
@@ -6280,6 +6972,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   689: {
     id: 689,
@@ -6288,6 +6981,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   690: {
     id: 690,
@@ -6296,6 +6990,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   691: {
     id: 691,
@@ -6304,6 +6999,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   692: {
     id: 692,
@@ -6312,6 +7008,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   693: {
     id: 693,
@@ -6320,6 +7017,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   694: {
     id: 694,
@@ -6328,6 +7026,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   695: {
     id: 695,
@@ -6336,6 +7035,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   696: {
     id: 696,
@@ -6344,6 +7044,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   697: {
     id: 697,
@@ -6352,6 +7053,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   698: {
     id: 698,
@@ -6360,6 +7062,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   699: {
     id: 699,
@@ -6368,6 +7071,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   700: {
     id: 700,
@@ -6376,6 +7080,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   701: {
     id: 701,
@@ -6384,6 +7089,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   702: {
     id: 702,
@@ -6392,6 +7098,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   703: {
     id: 703,
@@ -6400,6 +7107,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   704: {
     id: 704,
@@ -6408,6 +7116,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   705: {
     id: 705,
@@ -6416,6 +7125,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   706: {
     id: 706,
@@ -6424,6 +7134,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   707: {
     id: 707,
@@ -6432,6 +7143,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   708: {
     id: 708,
@@ -6440,6 +7152,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   709: {
     id: 709,
@@ -6448,6 +7161,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   710: {
     id: 710,
@@ -6456,6 +7170,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   711: {
     id: 711,
@@ -6464,6 +7179,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   712: {
     id: 712,
@@ -6472,6 +7188,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   713: {
     id: 713,
@@ -6480,6 +7197,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   714: {
     id: 714,
@@ -6488,6 +7206,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   715: {
     id: 715,
@@ -6496,6 +7215,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   716: {
     id: 716,
@@ -6504,6 +7224,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   717: {
     id: 717,
@@ -6512,6 +7233,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   718: {
     id: 718,
@@ -6520,6 +7242,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   719: {
     id: 719,
@@ -6528,6 +7251,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   720: {
     id: 720,
@@ -6536,6 +7260,7 @@ export default {
     fortune: [],
     level: 3,
     score: 0,
+    type: 3,
   },
   721: {
     id: 721,
@@ -6552,6 +7277,7 @@ export default {
     ],
     level: 2,
     score: 20,
+    type: 1,
   },
   722: {
     id: 722,
@@ -6563,6 +7289,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   723: {
     id: 723,
@@ -6571,6 +7298,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   724: {
     id: 724,
@@ -6579,6 +7307,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   725: {
     id: 725,
@@ -6587,6 +7316,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   726: {
     id: 726,
@@ -6595,6 +7325,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   727: {
     id: 727,
@@ -6603,6 +7334,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   728: {
     id: 728,
@@ -6611,6 +7343,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   729: {
     id: 729,
@@ -6619,6 +7352,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   730: {
     id: 730,
@@ -6627,6 +7361,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   731: {
     id: 731,
@@ -6635,6 +7370,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   732: {
     id: 732,
@@ -6643,6 +7379,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   733: {
     id: 733,
@@ -6651,6 +7388,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   734: {
     id: 734,
@@ -6659,6 +7397,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   735: {
     id: 735,
@@ -6667,6 +7406,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   736: {
     id: 736,
@@ -6675,6 +7415,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   737: {
     id: 737,
@@ -6686,6 +7427,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   738: {
     id: 738,
@@ -6696,6 +7438,7 @@ export default {
     fortune: [],
     level: 1,
     score: 10,
+    type: 1,
   },
   739: {
     id: 739,
@@ -6704,6 +7447,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   740: {
     id: 740,
@@ -6712,6 +7456,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   741: {
     id: 741,
@@ -6720,6 +7465,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   742: {
     id: 742,
@@ -6728,6 +7474,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   743: {
     id: 743,
@@ -6736,6 +7483,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   744: {
     id: 744,
@@ -6744,6 +7492,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   745: {
     id: 745,
@@ -6752,6 +7501,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   746: {
     id: 746,
@@ -6760,6 +7510,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   747: {
     id: 747,
@@ -6768,6 +7519,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   748: {
     id: 748,
@@ -6776,6 +7528,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   749: {
     id: 749,
@@ -6786,6 +7539,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   750: {
     id: 750,
@@ -6796,6 +7550,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 3,
   },
   751: {
     id: 751,
@@ -6806,6 +7561,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   752: {
     id: 752,
@@ -6818,6 +7574,7 @@ export default {
     ],
     level: 3,
     score: 30,
+    type: 2,
   },
   753: {
     id: 753,
@@ -6826,6 +7583,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   754: {
     id: 754,
@@ -6834,6 +7592,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   755: {
     id: 755,
@@ -6842,6 +7601,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   756: {
     id: 756,
@@ -6850,6 +7610,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   757: {
     id: 757,
@@ -6858,14 +7619,29 @@ export default {
     fortune: [],
     level: 4,
     score: 0,
+    type: 3,
+  },
+  9711: {
+    id: 9711,
+    name: '天下无双',
+    effect: [
+      '天罡内，自带左右互搏，武功升级三围五系翻倍成长，左右互搏必触发，有(80-资质)%概率触发二次左右互搏，攻击必定三连击，触发二次左右再追加一次连击。连击伤害不衰减，攻击不会被打断，免疫反弹反震伤害。每行动一次，增伤+5%，最高50%，暴击率+70%，攻击时高概率造成封穴，免疫吸功、特效+5%且二次判定，闪避和格挡后回复10%生命',
+    ],
+    fortune: [],
+    level: 5,
+    score: 200,
+    type: 3,
   },
   9712: {
     id: 9712,
     name: '夜鸦',
-    effect: ['备用'],
+    effect: [
+      '被攻击概率出现一个影分身，影分身会攻击敌人，影分身攻击力为自身属性的50%（一场战斗最多召唤3个影分身）',
+    ],
     fortune: [],
-    level: 4,
+    level: 5,
     score: 50,
+    type: 3,
   },
   9713: {
     id: 9713,
@@ -6874,8 +7650,9 @@ export default {
       '使用剑法攻击无视闪避，追加1200点真伤',
     ],
     fortune: [],
-    level: 4,
+    level: 5,
     score: 60,
+    type: 3,
   },
   9714: {
     id: 9714,
@@ -6886,6 +7663,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   9715: {
     id: 9715,
@@ -6896,6 +7674,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   9716: {
     id: 9716,
@@ -6904,6 +7683,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   9717: {
     id: 9717,
@@ -6914,6 +7694,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   9718: {
     id: 9718,
@@ -6924,6 +7705,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   9719: {
     id: 9719,
@@ -6934,6 +7716,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   9720: {
     id: 9720,
@@ -6944,6 +7727,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   9721: {
     id: 9721,
@@ -6954,6 +7738,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 3,
   },
   9722: {
     id: 9722,
@@ -6966,6 +7751,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9723: {
     id: 9723,
@@ -6977,6 +7763,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9724: {
     id: 9724,
@@ -6987,6 +7774,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   9725: {
     id: 9725,
@@ -6999,6 +7787,7 @@ export default {
     fortune: [],
     level: 4,
     score: 35,
+    type: 2,
   },
   9726: {
     id: 9726,
@@ -7010,6 +7799,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9727: {
     id: 9727,
@@ -7021,6 +7811,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9728: {
     id: 9728,
@@ -7032,6 +7823,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9729: {
     id: 9729,
@@ -7042,6 +7834,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9730: {
     id: 9730,
@@ -7054,6 +7847,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9731: {
     id: 9731,
@@ -7065,6 +7859,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9732: {
     id: 9732,
@@ -7075,6 +7870,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9733: {
     id: 9733,
@@ -7085,6 +7881,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9734: {
     id: 9734,
@@ -7096,6 +7893,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9735: {
     id: 9735,
@@ -7107,6 +7905,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9736: {
     id: 9736,
@@ -7120,6 +7919,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9737: {
     id: 9737,
@@ -7132,6 +7932,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9738: {
     id: 9738,
@@ -7143,6 +7944,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   9739: {
     id: 9739,
@@ -7154,6 +7956,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9740: {
     id: 9740,
@@ -7165,6 +7968,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9741: {
     id: 9741,
@@ -7175,6 +7979,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   9742: {
     id: 9742,
@@ -7186,6 +7991,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9743: {
     id: 9743,
@@ -7197,6 +8003,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9744: {
     id: 9744,
@@ -7207,6 +8014,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9745: {
     id: 9745,
@@ -7219,6 +8027,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9746: {
     id: 9746,
@@ -7226,7 +8035,8 @@ export default {
     effect: ['剑法攻击必中'],
     fortune: [],
     level: 4,
-    score: 40,
+    score: 35,
+    type: 2,
   },
   9747: {
     id: 9747,
@@ -7235,6 +8045,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9748: {
     id: 9748,
@@ -7245,6 +8056,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9749: {
     id: 9749,
@@ -7260,6 +8072,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9750: {
     id: 9750,
@@ -7268,6 +8081,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9751: {
     id: 9751,
@@ -7278,6 +8092,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   9752: {
     id: 9752,
@@ -7286,6 +8101,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9753: {
     id: 9753,
@@ -7296,6 +8112,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 3,
   },
   9754: {
     id: 9754,
@@ -7307,6 +8124,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   9755: {
     id: 9755,
@@ -7318,6 +8136,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9756: {
     id: 9756,
@@ -7328,6 +8147,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9757: {
     id: 9757,
@@ -7338,6 +8158,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9758: {
     id: 9758,
@@ -7346,6 +8167,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9759: {
     id: 9759,
@@ -7356,6 +8178,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9760: {
     id: 9760,
@@ -7364,6 +8187,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9761: {
     id: 9761,
@@ -7377,6 +8201,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9762: {
     id: 9762,
@@ -7389,6 +8214,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9763: {
     id: 9763,
@@ -7400,6 +8226,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9764: {
     id: 9764,
@@ -7416,6 +8243,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9765: {
     id: 9765,
@@ -7426,6 +8254,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9766: {
     id: 9766,
@@ -7436,6 +8265,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9767: {
     id: 9767,
@@ -7446,6 +8276,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9768: {
     id: 9768,
@@ -7456,6 +8287,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9769: {
     id: 9769,
@@ -7464,6 +8296,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9770: {
     id: 9770,
@@ -7477,6 +8310,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9771: {
     id: 9771,
@@ -7485,6 +8319,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9772: {
     id: 9772,
@@ -7495,6 +8330,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9773: {
     id: 9773,
@@ -7505,6 +8341,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9774: {
     id: 9774,
@@ -7513,6 +8350,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9775: {
     id: 9775,
@@ -7521,6 +8359,7 @@ export default {
     fortune: [],
     level: 4,
     score: 0,
+    type: 3,
   },
   9776: {
     id: 9776,
@@ -7529,6 +8368,7 @@ export default {
     fortune: [],
     level: 4,
     score: 0,
+    type: 3,
   },
   9777: {
     id: 9777,
@@ -7537,6 +8377,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   9778: {
     id: 9778,
@@ -7547,6 +8388,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9779: {
     id: 9779,
@@ -7557,6 +8399,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9780: {
     id: 9780,
@@ -7567,6 +8410,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9781: {
     id: 9781,
@@ -7577,6 +8421,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9782: {
     id: 9782,
@@ -7588,6 +8433,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9783: {
     id: 9783,
@@ -7596,6 +8442,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9784: {
     id: 9784,
@@ -7606,6 +8453,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9785: {
     id: 9785,
@@ -7614,6 +8462,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9786: {
     id: 9786,
@@ -7624,6 +8473,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9787: {
     id: 9787,
@@ -7634,6 +8484,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 1,
   },
   9788: {
     id: 9788,
@@ -7644,6 +8495,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9789: {
     id: 9789,
@@ -7652,6 +8504,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9790: {
     id: 9790,
@@ -7662,6 +8515,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9791: {
     id: 9791,
@@ -7673,6 +8527,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9792: {
     id: 9792,
@@ -7683,6 +8538,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9793: {
     id: 9793,
@@ -7693,6 +8549,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9794: {
     id: 9794,
@@ -7703,6 +8560,7 @@ export default {
     fortune: [],
     level: 3,
     score: 35,
+    type: 2,
   },
   9795: {
     id: 9795,
@@ -7711,6 +8569,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9796: {
     id: 9796,
@@ -7721,6 +8580,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9797: {
     id: 9797,
@@ -7731,6 +8591,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9798: {
     id: 9798,
@@ -7739,6 +8600,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9799: {
     id: 9799,
@@ -7749,6 +8611,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9800: {
     id: 9800,
@@ -7757,6 +8620,7 @@ export default {
     fortune: [],
     level: 4,
     score: 60,
+    type: 2,
   },
   9801: {
     id: 9801,
@@ -7767,6 +8631,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9802: {
     id: 9802,
@@ -7775,6 +8640,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9803: {
     id: 9803,
@@ -7785,6 +8651,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9804: {
     id: 9804,
@@ -7796,6 +8663,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9805: {
     id: 9805,
@@ -7806,6 +8674,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9806: {
     id: 9806,
@@ -7816,6 +8685,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9807: {
     id: 9807,
@@ -7826,6 +8696,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9808: {
     id: 9808,
@@ -7836,6 +8707,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9809: {
     id: 9809,
@@ -7844,6 +8716,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9810: {
     id: 9810,
@@ -7854,6 +8727,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9811: {
     id: 9811,
@@ -7865,6 +8739,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9812: {
     id: 9812,
@@ -7875,6 +8750,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9813: {
     id: 9813,
@@ -7885,6 +8761,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   9814: {
     id: 9814,
@@ -7893,6 +8770,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9815: {
     id: 9815,
@@ -7904,6 +8782,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9816: {
     id: 9816,
@@ -7912,6 +8791,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9817: {
     id: 9817,
@@ -7920,6 +8800,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9818: {
     id: 9818,
@@ -7930,6 +8811,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9819: {
     id: 9819,
@@ -7940,6 +8822,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9820: {
     id: 9820,
@@ -7948,6 +8831,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9821: {
     id: 9821,
@@ -7956,6 +8840,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9822: {
     id: 9822,
@@ -7966,6 +8851,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9823: {
     id: 9823,
@@ -7977,6 +8863,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   9824: {
     id: 9824,
@@ -7987,6 +8874,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9825: {
     id: 9825,
@@ -7997,6 +8885,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9826: {
     id: 9826,
@@ -8005,6 +8894,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9827: {
     id: 9827,
@@ -8015,6 +8905,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9828: {
     id: 9828,
@@ -8023,6 +8914,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9829: {
     id: 9829,
@@ -8033,6 +8925,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9830: {
     id: 9830,
@@ -8041,6 +8934,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9831: {
     id: 9831,
@@ -8051,6 +8945,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9832: {
     id: 9832,
@@ -8059,6 +8954,7 @@ export default {
     fortune: [],
     level: 4,
     score: 90,
+    type: 2,
   },
   9833: {
     id: 9833,
@@ -8069,6 +8965,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9834: {
     id: 9834,
@@ -8079,6 +8976,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9835: {
     id: 9835,
@@ -8089,6 +8987,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9836: {
     id: 9836,
@@ -8099,6 +8998,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9837: {
     id: 9837,
@@ -8107,6 +9007,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9838: {
     id: 9838,
@@ -8115,6 +9016,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9839: {
     id: 9839,
@@ -8123,6 +9025,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9840: {
     id: 9840,
@@ -8131,6 +9034,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9841: {
     id: 9841,
@@ -8141,6 +9045,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9842: {
     id: 9842,
@@ -8152,6 +9057,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9843: {
     id: 9843,
@@ -8162,6 +9068,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9844: {
     id: 9844,
@@ -8172,6 +9079,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9845: {
     id: 9845,
@@ -8182,6 +9090,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9846: {
     id: 9846,
@@ -8192,6 +9101,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9847: {
     id: 9847,
@@ -8202,6 +9112,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9848: {
     id: 9848,
@@ -8210,6 +9121,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9849: {
     id: 9849,
@@ -8218,6 +9130,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   9850: {
     id: 9850,
@@ -8228,6 +9141,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9851: {
     id: 9851,
@@ -8238,6 +9152,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9852: {
     id: 9852,
@@ -8246,6 +9161,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9853: {
     id: 9853,
@@ -8256,6 +9172,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9854: {
     id: 9854,
@@ -8266,6 +9183,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9855: {
     id: 9855,
@@ -8274,6 +9192,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9856: {
     id: 9856,
@@ -8284,6 +9203,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9857: {
     id: 9857,
@@ -8294,6 +9214,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9858: {
     id: 9858,
@@ -8306,14 +9227,16 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9859: {
     id: 9859,
     name: '大鹏展翅',
     effect: ['移动格数+3'],
     fortune: [],
-    level: 2,
-    score: 10,
+    level: 1,
+    score: 5,
+    type: 1,
   },
   9860: {
     id: 9860,
@@ -8325,6 +9248,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9861: {
     id: 9861,
@@ -8335,6 +9259,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9862: {
     id: 9862,
@@ -8343,6 +9268,7 @@ export default {
     fortune: [],
     level: 2,
     score: 80,
+    type: 1,
   },
   9863: {
     id: 9863,
@@ -8353,6 +9279,7 @@ export default {
     fortune: [],
     level: 2,
     score: 80,
+    type: 1,
   },
   9864: {
     id: 9864,
@@ -8363,6 +9290,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9865: {
     id: 9865,
@@ -8373,6 +9301,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9866: {
     id: 9866,
@@ -8383,6 +9312,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9867: {
     id: 9867,
@@ -8393,6 +9323,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9868: {
     id: 9868,
@@ -8403,6 +9334,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9869: {
     id: 9869,
@@ -8411,6 +9343,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9870: {
     id: 9870,
@@ -8421,6 +9354,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9871: {
     id: 9871,
@@ -8429,6 +9363,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9872: {
     id: 9872,
@@ -8437,6 +9372,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9873: {
     id: 9873,
@@ -8445,6 +9381,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9874: {
     id: 9874,
@@ -8455,6 +9392,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9875: {
     id: 9875,
@@ -8465,6 +9403,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9876: {
     id: 9876,
@@ -8475,6 +9414,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9877: {
     id: 9877,
@@ -8485,6 +9425,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9878: {
     id: 9878,
@@ -8495,6 +9436,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9879: {
     id: 9879,
@@ -8503,6 +9445,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9880: {
     id: 9880,
@@ -8511,6 +9454,7 @@ export default {
     fortune: [],
     level: 3,
     score: 60,
+    type: 2,
   },
   9881: {
     id: 9881,
@@ -8521,6 +9465,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9882: {
     id: 9882,
@@ -8531,6 +9476,7 @@ export default {
     fortune: [],
     level: 4,
     score: 100,
+    type: 2,
   },
   9883: {
     id: 9883,
@@ -8541,6 +9487,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9884: {
     id: 9884,
@@ -8551,6 +9498,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9885: {
     id: 9885,
@@ -8561,6 +9509,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9886: {
     id: 9886,
@@ -8571,6 +9520,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9887: {
     id: 9887,
@@ -8581,6 +9531,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9888: {
     id: 9888,
@@ -8589,6 +9540,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9889: {
     id: 9889,
@@ -8599,6 +9551,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9890: {
     id: 9890,
@@ -8610,6 +9563,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9891: {
     id: 9891,
@@ -8620,6 +9574,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9892: {
     id: 9892,
@@ -8628,6 +9583,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9893: {
     id: 9893,
@@ -8638,6 +9594,7 @@ export default {
     fortune: [],
     level: 3,
     score: 5,
+    type: 3,
   },
   9894: {
     id: 9894,
@@ -8648,6 +9605,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9895: {
     id: 9895,
@@ -8656,6 +9614,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9896: {
     id: 9896,
@@ -8666,6 +9625,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   9897: {
     id: 9897,
@@ -8674,6 +9634,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9898: {
     id: 9898,
@@ -8684,6 +9645,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9899: {
     id: 9899,
@@ -8694,6 +9656,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9900: {
     id: 9900,
@@ -8702,6 +9665,7 @@ export default {
     fortune: [],
     level: 5,
     score: 50,
+    type: 2,
   },
   9901: {
     id: 9901,
@@ -8710,6 +9674,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9902: {
     id: 9902,
@@ -8720,6 +9685,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9903: {
     id: 9903,
@@ -8730,6 +9696,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9904: {
     id: 9904,
@@ -8740,6 +9707,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9905: {
     id: 9905,
@@ -8748,6 +9716,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9906: {
     id: 9906,
@@ -8756,6 +9725,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9907: {
     id: 9907,
@@ -8766,16 +9736,16 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9908: {
     id: 9908,
     name: '意假情真',
-    effect: [
-      '暴怒后攻击怒气值只减少10~40',
-    ],
+    effect: ['暴怒后攻击怒气值只减少10~40'],
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9909: {
     id: 9909,
@@ -8786,6 +9756,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9910: {
     id: 9910,
@@ -8796,6 +9767,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9911: {
     id: 9911,
@@ -8806,6 +9778,7 @@ export default {
     fortune: [],
     level: 2,
     score: 70,
+    type: 1,
   },
   9912: {
     id: 9912,
@@ -8816,6 +9789,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9913: {
     id: 9913,
@@ -8827,6 +9801,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 3,
   },
   9914: {
     id: 9914,
@@ -8837,6 +9812,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9915: {
     id: 9915,
@@ -8847,6 +9823,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9916: {
     id: 9916,
@@ -8855,6 +9832,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9917: {
     id: 9917,
@@ -8865,6 +9843,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9918: {
     id: 9918,
@@ -8875,6 +9854,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9919: {
     id: 9919,
@@ -8883,6 +9863,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9920: {
     id: 9920,
@@ -8894,6 +9875,7 @@ export default {
     fortune: [],
     level: 1,
     score: 10,
+    type: 1,
   },
   9921: {
     id: 9921,
@@ -8905,6 +9887,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
   9922: {
     id: 9922,
@@ -8915,6 +9898,7 @@ export default {
     fortune: [],
     level: 1,
     score: 10,
+    type: 1,
   },
   9923: {
     id: 9923,
@@ -8925,6 +9909,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9924: {
     id: 9924,
@@ -8933,6 +9918,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9925: {
     id: 9925,
@@ -8944,6 +9930,7 @@ export default {
     fortune: [],
     level: 5,
     score: 70,
+    type: 2,
   },
   9926: {
     id: 9926,
@@ -8954,6 +9941,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9927: {
     id: 9927,
@@ -8964,6 +9952,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   9928: {
     id: 9928,
@@ -8976,6 +9965,7 @@ export default {
     fortune: [],
     level: 5,
     score: 30,
+    type: 2,
   },
   9929: {
     id: 9929,
@@ -8988,6 +9978,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9930: {
     id: 9930,
@@ -9000,6 +9991,7 @@ export default {
     fortune: [],
     level: 4,
     score: 60,
+    type: 2,
   },
   9931: {
     id: 9931,
@@ -9010,6 +10002,7 @@ export default {
     fortune: [],
     level: 3,
     score: 20,
+    type: 1,
   },
   9932: {
     id: 9932,
@@ -9018,6 +10011,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9933: {
     id: 9933,
@@ -9032,6 +10026,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9934: {
     id: 9934,
@@ -9043,6 +10038,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9935: {
     id: 9935,
@@ -9054,6 +10050,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9936: {
     id: 9936,
@@ -9064,6 +10061,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9937: {
     id: 9937,
@@ -9074,6 +10072,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9938: {
     id: 9938,
@@ -9084,6 +10083,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9939: {
     id: 9939,
@@ -9095,6 +10095,7 @@ export default {
     fortune: [],
     level: 4,
     score: 60,
+    type: 2,
   },
   9940: {
     id: 9940,
@@ -9106,6 +10107,7 @@ export default {
     fortune: [],
     level: 5,
     score: 100,
+    type: 3,
   },
   9941: {
     id: 9941,
@@ -9117,6 +10119,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9942: {
     id: 9942,
@@ -9125,6 +10128,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9943: {
     id: 9943,
@@ -9137,16 +10141,18 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9944: {
     id: 9944,
     name: '流云飞袖',
     effect: [
-      '被攻击必进行反击，伤害为100%，不可与斗转同时触发',
+      '被攻击30%概率进行反击，不可与斗转同时触发',
     ],
     fortune: [],
     level: 5,
     score: 100,
+    type: 3,
   },
   9945: {
     id: 9945,
@@ -9155,6 +10161,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 3,
   },
   9946: {
     id: 9946,
@@ -9168,6 +10175,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9947: {
     id: 9947,
@@ -9178,6 +10186,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 3,
   },
   9948: {
     id: 9948,
@@ -9189,6 +10198,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9949: {
     id: 9949,
@@ -9199,6 +10209,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9950: {
     id: 9950,
@@ -9209,6 +10220,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9951: {
     id: 9951,
@@ -9219,6 +10231,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9952: {
     id: 9952,
@@ -9229,6 +10242,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9953: {
     id: 9953,
@@ -9239,6 +10253,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9954: {
     id: 9954,
@@ -9249,6 +10264,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9955: {
     id: 9955,
@@ -9259,6 +10275,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9956: {
     id: 9956,
@@ -9269,6 +10286,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9957: {
     id: 9957,
@@ -9279,6 +10297,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9958: {
     id: 9958,
@@ -9289,6 +10308,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9959: {
     id: 9959,
@@ -9299,6 +10319,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9960: {
     id: 9960,
@@ -9309,6 +10330,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9961: {
     id: 9961,
@@ -9320,6 +10342,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9962: {
     id: 9962,
@@ -9331,6 +10354,7 @@ export default {
     fortune: [],
     level: 2,
     score: 15,
+    type: 1,
   },
   9963: {
     id: 9963,
@@ -9339,6 +10363,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9964: {
     id: 9964,
@@ -9350,6 +10375,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 3,
   },
   9965: {
     id: 9965,
@@ -9367,6 +10393,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 3,
   },
   9966: {
     id: 9966,
@@ -9375,6 +10402,7 @@ export default {
     fortune: [],
     level: 5,
     score: 65,
+    type: 2,
   },
   9967: {
     id: 9967,
@@ -9385,6 +10413,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 1,
   },
   9968: {
     id: 9968,
@@ -9395,6 +10424,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 1,
   },
   9969: {
     id: 9969,
@@ -9408,6 +10438,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 3,
   },
   9970: {
     id: 9970,
@@ -9418,6 +10449,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9971: {
     id: 9971,
@@ -9428,6 +10460,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9972: {
     id: 9972,
@@ -9438,6 +10471,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9973: {
     id: 9973,
@@ -9448,6 +10482,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 1,
   },
   9974: {
     id: 9974,
@@ -9463,6 +10498,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9975: {
     id: 9975,
@@ -9475,6 +10511,7 @@ export default {
     fortune: [],
     level: 4,
     score: 35,
+    type: 2,
   },
   9976: {
     id: 9976,
@@ -9486,6 +10523,7 @@ export default {
     fortune: [],
     level: 5,
     score: 60,
+    type: 2,
   },
   9977: {
     id: 9977,
@@ -9496,6 +10534,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9978: {
     id: 9978,
@@ -9507,6 +10546,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9979: {
     id: 9979,
@@ -9526,6 +10566,7 @@ export default {
     fortune: [],
     level: 4,
     score: 50,
+    type: 2,
   },
   9980: {
     id: 9980,
@@ -9536,6 +10577,7 @@ export default {
     fortune: [],
     level: 3,
     score: 25,
+    type: 1,
   },
   9981: {
     id: 9981,
@@ -9547,6 +10589,7 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 3,
   },
   9982: {
     id: 9982,
@@ -9557,6 +10600,7 @@ export default {
     fortune: [],
     level: 5,
     score: 100,
+    type: 3,
   },
   9983: {
     id: 9983,
@@ -9568,6 +10612,7 @@ export default {
     fortune: [],
     level: 2,
     score: 25,
+    type: 1,
   },
   9984: {
     id: 9984,
@@ -9578,6 +10623,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9985: {
     id: 9985,
@@ -9586,6 +10632,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9986: {
     id: 9986,
@@ -9596,6 +10643,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9987: {
     id: 9987,
@@ -9607,6 +10655,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9988: {
     id: 9988,
@@ -9618,6 +10667,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9989: {
     id: 9989,
@@ -9628,6 +10678,7 @@ export default {
     fortune: [],
     level: 4,
     score: 35,
+    type: 2,
   },
   9990: {
     id: 9990,
@@ -9644,6 +10695,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9991: {
     id: 9991,
@@ -9654,6 +10706,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9992: {
     id: 9992,
@@ -9664,6 +10717,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9993: {
     id: 9993,
@@ -9672,6 +10726,7 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+    type: 1,
   },
   9994: {
     id: 9994,
@@ -9683,6 +10738,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9995: {
     id: 9995,
@@ -9693,6 +10749,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9996: {
     id: 9996,
@@ -9703,6 +10760,7 @@ export default {
     fortune: [],
     level: 3,
     score: 30,
+    type: 2,
   },
   9997: {
     id: 9997,
@@ -9713,6 +10771,7 @@ export default {
     fortune: [],
     level: 4,
     score: 40,
+    type: 2,
   },
   9998: {
     id: 9998,
@@ -9723,6 +10782,7 @@ export default {
     fortune: [],
     level: 2,
     score: 20,
+    type: 1,
   },
   9999: {
     id: 9999,
@@ -9734,5 +10794,6 @@ export default {
     fortune: [],
     level: 1,
     score: 5,
+    type: 1,
   },
 };

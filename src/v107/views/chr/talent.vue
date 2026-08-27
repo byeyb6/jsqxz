@@ -38,6 +38,12 @@
         </div>
       </div>
     </template>
+    <template #type="{row}">
+      <div class="td-block">
+        <span v-if="row.type > 2" class="color-error">否</span>
+        <span v-else class="color-success">是</span>
+      </div>
+    </template>
   </v-table>
   <!-- <v-pages
     v-model:page="pageConfig.page"
@@ -68,8 +74,8 @@ const thead = [
     hidden: state.lessWindow,
   },
   {
-    key: 'level',
-    name: '等级',
+    key: 'type',
+    name: '可选',
   },
   {
     key: 'score',
@@ -85,13 +91,17 @@ const tbody = ref([]);
 const allData = computed(() => {
   const arr = [];
   for (let id in data) {
-    const {name, effect, fortune, level} = data[id];
+    const {name, effect, fortune, level, score, type} = data[id];
+    if (score <= 0) {
+      continue;
+    }
     arr.push({
       id,
       name,
       effect: effect.filter(i => import.meta.env.DEV || !/#hidden#$/.test(i)),
       fortune,
       level,
+      type,
     });
   }
   return arr;
