@@ -1,13 +1,13 @@
 <template>
   <v-tabs :list="data.list" :exclusive="data.exclusive">
     <template #tab="{tab}">
-      <span :class="{[`level-${tab.level}`]: tab.level}">
+      <span class="level-4">
         {{ tab.name }}
       </span>
     </template>
     <template #title="{info}">
       <span>作者:</span>
-      <span :class="{[`level-${info.level}`]: info.level}">
+      <span class="level-4">
         {{ info.name }}
       </span>
     </template>

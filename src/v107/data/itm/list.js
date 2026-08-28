@@ -2476,7 +2476,7 @@ export default {
     condition: '御剑100',
     addition: '攻击+20 防御+20 轻功+20',
     effect: ['剑法范围+1'],
-    type: 1,
+    type: 11,
   },
   336: {
     id: 336,
