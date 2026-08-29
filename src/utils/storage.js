@@ -1,4 +1,4 @@
 import createStorage from '@byeyb/storage';
 
-export const sessionStorage = createStorage('sessionStorage');
+export const storageSession = createStorage('sessionStorage');
 

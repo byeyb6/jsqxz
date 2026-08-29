@@ -12,7 +12,7 @@
       <v-button type="primary" @click="search">查询</v-button>
     </div>
   </div>
-  <v-table class="v-table-chr" :cols="thead" :data="tbody">
+  <v-table class="v-table-chr" :cols="thead" :data="tbody" :loading="globalState.loading">
     <template #talent="{row}">
       <div class="td-block" v-for="item of row.talent" :key="item.id">
         <div>
@@ -27,7 +27,7 @@
           {{ text }}
         </div>
       </div>
-      <div class="td-block" v-if="state.lessWindow && row.fortune.length > 0">
+      <div class="td-block" v-if="globalState.lessWindow && row.fortune.length > 0">
         <div class="color-error">[福缘际遇]</div>
         <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of row.fortune" :key="i">
           {{ text }}
@@ -45,11 +45,10 @@
 </template>
 
 <script setup>
-import {ref, inject, onBeforeMount} from 'vue';
+import {ref, onBeforeMount} from 'vue';
 import talentMap from '@/v107/data/chr/talent';
 import chrAll from '@/v107/data/chr';
-
-const state = inject('state');
+import {globalState} from '@/store/global';
 
 const thead = [
   {
@@ -63,7 +62,7 @@ const thead = [
   {
     key: 'fortune',
     name: '福缘际遇',
-    hidden: state.lessWindow,
+    hidden: globalState.lessWindow,
   },
 ];
 const tbody = ref([]);

@@ -1,5 +1,5 @@
 <template>
-  <v-table class="v-table-chr" :cols="thead" :data="tbody">
+  <v-table class="v-table-chr" :cols="thead" :data="tbody" :loading="globalState.loading">
     <template #talent="{row}">
       <div class="td-block" v-for="(item, index) of row.talent" :key="index">
         <div>
@@ -14,7 +14,7 @@
           {{ text }}
         </div>
       </div>
-      <div class="td-block" v-if="state.lessWindow && row.fortune.length > 0">
+      <div class="td-block" v-if="globalState.lessWindow && row.fortune.length > 0">
         <div class="color-error">[福缘际遇]</div>
         <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of row.fortune" :key="i">
           {{ text }}
@@ -32,14 +32,14 @@
 </template>
 
 <script setup>
-import {ref, watch, inject, computed} from 'vue';
+import {ref, watch, computed} from 'vue';
 import {useRoute} from 'vue-router';
 import talentMap from '@/v107/data/chr/talent';
 import chrAll from '@/v107/data/chr';
-import {sessionStorage} from '@/utils/storage';
+import {storageSession} from '@/utils/storage';
+import {globalState} from '@/store/global';
 
 const route = useRoute();
-const state = inject('state');
 
 const allData = computed(() => Object.values(chrAll));
 const thead = [
@@ -54,7 +54,7 @@ const thead = [
   {
     key: 'fortune',
     name: '福缘际遇',
-    hidden: state.lessWindow,
+    hidden: globalState.lessWindow,
   },
 ];
 const tbody = ref([]);
@@ -66,14 +66,14 @@ watch(() => route.name, () => {
   if (!/chr/i.test(name)) {
     return;
   }
-  const cacheKey = `${state.version}_chr_${type}`;
-  const cacheInfo = sessionStorage.get(cacheKey);
+  const cacheKey = `${globalState.version}_chr_${type}`;
+  const cacheInfo = storageSession.get(cacheKey);
   if (cacheInfo) {
     tbody.value = cacheInfo;
     return;
   }
   try {
-    state.loading = true;
+    globalState.loading = true;
     tbody.value = [];
     for (let chr of allData.value) {
       const item = JSON.parse(JSON.stringify(chr));
@@ -96,11 +96,11 @@ watch(() => route.name, () => {
       item.fortune = fortuneArr;
       tbody.value.push(item);
     }
-    sessionStorage.set(cacheKey, tbody.value, {day: 1});
-    state.loading = false;
+    storageSession.set(cacheKey, tbody.value, {day: 1});
+    globalState.loading = false;
   } catch (e) {
     tbody.value = [];
-    state.loading = false;
+    globalState.loading = false;
   }
 }, {immediate: true});
 </script>

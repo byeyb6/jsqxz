@@ -15,7 +15,7 @@ for (let item of artList) {
   const {id, key} = item;
   const child = {
     path: key,
-    name: 'art' + key.replace(key[0], key[0].toUpperCase()) + 107,
+    name: 'v107art' + key.replace(key[0], key[0].toUpperCase()),
     meta: {
       title: artTypeMap[id],
       type: id,
@@ -30,8 +30,8 @@ for (let item of artList) {
 export default {
   path: 'art',
   component: () => import('@/views/layout/layout.vue'),
-  name: 'art107',
-  redirect: {name: 'artInn107'},
+  name: 'v107art',
+  redirect: {name: 'v107artInn'},
   meta: {
     title: '武功',
   },
@@ -39,7 +39,7 @@ export default {
     {
       path: 'search',
       component: () => import('@/v107/views/art/search.vue'),
-      name: 'artSearch107',
+      name: 'v107artSearch',
       meta: {
         title: '武功查询',
         type: 'search',
@@ -49,7 +49,7 @@ export default {
     {
       path: 'knw',
       component: () => import('@/v107/views/art/knw.vue'),
-      name: 'artKnw107',
+      name: 'v107artKnw',
       meta: {
         title: '杂学',
         type: 8,
@@ -58,7 +58,7 @@ export default {
     {
       path: 'inherit',
       component: () => import('@/v107/views/art/inherit.vue'),
-      name: 'artInherit107',
+      name: 'v107artInherit',
       meta: {
         title: '一脉相承',
         type: 'inherit',
@@ -67,7 +67,7 @@ export default {
     {
       path: 'secret',
       component: () => import('@/v107/views/art/secret.vue'),
-      name: 'artSecret107',
+      name: 'v107artSecret',
       meta: {
         title: '秘技',
         type: 'secret',

@@ -43,7 +43,7 @@
       </div>
     </template>
   </v-table>
-  <v-dialog ref="dialogRef" :width="state.lessWindow ? '80vw' : undefined">
+  <v-dialog ref="dialogRef" :width="globalState.lessWindow ? '80vw' : undefined">
     <template #header>
       <span
         :class="[
@@ -59,14 +59,14 @@
 </template>
 
 <script setup>
-import {ref, onBeforeMount, useTemplateRef, inject} from 'vue';
+import {ref, onBeforeMount, useTemplateRef} from 'vue';
 import secretData from '@/v107/data/art/secret';
 import artAll from '@/v107/data/art/list';
 import itmAll from '@/v107/data/itm/list';
 import VDialog from '@/components/dialog';
 import ArtItem from '@/v107/views/art/item';
+import {globalState} from '@/store/global';
 
-const state = inject('state');
 const dialogRef = useTemplateRef('dialogRef');
 const activeArt = ref({});
 

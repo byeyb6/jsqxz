@@ -35,18 +35,15 @@
     </template>
     <art-item v-if="info.id" :item="info" :key="info.id"></art-item>
   </v-tabs>
-  <v-loading :loading="state.loading"></v-loading>
 </template>
 <script setup>
-import {computed, ref, inject, onBeforeMount} from 'vue';
+import {computed, ref, onBeforeMount} from 'vue';
 import artMap from '@/v107/data/art/list';
 import ArtItem from './item';
-import VLoading from '@/components/loading';
-import {sessionStorage} from '@/utils/storage';
+import {storageSession} from '@/utils/storage';
 import {formatArt} from '@/v107/data/art/effect/attr';
+import {globalState} from '@/store/global';
 
-
-const state = inject('state');
 const artAll = ref([]);
 const art = ref([]);
 const active = ref(1);
@@ -60,7 +57,7 @@ const info = computed(() => {
 
 // 初始化武功列表
 function init() {
-  state.loading = true;
+  globalState.loading = true;
   artAll.value = [];
   for (let id in artMap) {
     artAll.value.push(handleArtInfo(artMap[id]));
@@ -69,17 +66,17 @@ function init() {
     active.value = artAll.value[0].id;
   }
   art.value = [...artAll.value];
-  state.loading = false;
+  globalState.loading = false;
 }
 
 function handleArtInfo(info = {}) {
-  const cacheKey = `${state.version}_art_${info.id}`;
-  const cacheInfo = sessionStorage.get(cacheKey);
+  const cacheKey = `${globalState.version}_art_${info.id}`;
+  const cacheInfo = storageSession.get(cacheKey);
   if (cacheInfo) {
     return cacheInfo;
   }
   const item = formatArt(info);
-  sessionStorage.set(cacheKey, item, {day: 1});
+  storageSession.set(cacheKey, item, {day: 1});
   return item;
 }
 

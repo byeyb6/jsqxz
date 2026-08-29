@@ -97,7 +97,7 @@
       </div>
     </div>
   </v-tabs>
-  <v-dialog ref="dialogRef" :width="state.lessWindow ? '80vw' : undefined">
+  <v-dialog ref="dialogRef" :width="globalState.lessWindow ? '80vw' : undefined">
     <template #header>
       <span
         :class="[
@@ -113,16 +113,16 @@
 </template>
 
 <script setup>
-import {computed, inject, ref, useTemplateRef} from 'vue';
+import {computed, ref, useTemplateRef} from 'vue';
 import sectAll from '@/v107/data/art/sect';
 import artAll from '@/v107/data/art/list';
 import talAll from '@/v107/data/chr/talent';
 import {itmTypeMap, levelMap} from '@/v107/data/map';
-import {sessionStorage} from '@/utils/storage';
+import {storageSession} from '@/utils/storage';
 import ArtItem from '@/v107/views/art/item';
 import VDialog from '@/components/dialog.vue';
+import {globalState} from '@/store/global';
 
-const state = inject('state');
 const list = computed(() => Object.values(sectAll));
 const active = ref(0);
 
@@ -135,8 +135,8 @@ function showArt(item) {
 }
 
 const info = computed(() => {
-  const cacheKey = `${state.version}_sect_${active.value}`;
-  const cacheInfo = sessionStorage.get(cacheKey);
+  const cacheKey = `${globalState.version}_sect_${active.value}`;
+  const cacheInfo = storageSession.get(cacheKey);
   if (cacheInfo) {
     return cacheInfo;
   }
@@ -165,7 +165,7 @@ const info = computed(() => {
     '本门武功威力增加50，每200门派贡献额外增加50；主运本门内功，本门武功威力增加：初阶内功50，中阶内功100，高阶内功150，绝学内功200，主运非本门内功此处威力加成减半',
     '修炼本门派武功，增加伤害5%；修炼本门派武功大于3个，增加伤害10%；修炼本门派武功大于7个，增加伤害20%，减少受到的伤害20%（取最大值）',
   ]);
-  sessionStorage.set(cacheKey, current, {day: 1});
+  storageSession.set(cacheKey, current, {day: 1});
   return current;
 });
 </script>

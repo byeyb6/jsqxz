@@ -12,7 +12,7 @@
       <v-button type="primary" @click="search">查询</v-button>
     </div>
   </div>
-  <v-table class="v-table-itm" :cols="thead" :data="tbody">
+  <v-table class="v-table-itm" :cols="thead" :data="tbody" :loading="globalState.loading">
     <template #get="{row}">
       <div class="td-block">
         <div
@@ -26,7 +26,7 @@
     </template>
     <template #effect="{row}">
       <div class="td-block">
-        <div class="td-effect-item" v-if="state.lessWindow">
+        <div class="td-effect-item" v-if="globalState.lessWindow">
           {{ row.addition }}
         </div>
         <div
@@ -42,12 +42,12 @@
 </template>
 
 <script setup>
-import {ref, inject, watch} from 'vue';
+import {ref, watch} from 'vue';
 import {useRoute} from 'vue-router';
 import itmAll from '@/v107/data/itm/list';
+import {globalState} from '@/store/global';
 
 const route = useRoute();
-const state = inject('state');
 
 const theadEqp = [
   {
@@ -61,12 +61,12 @@ const theadEqp = [
   {
     key: 'condition',
     name: '装备需求',
-    hidden: state.lessWindow,
+    hidden: globalState.lessWindow,
   },
   {
     key: 'addition',
     name: '加成',
-    hidden: state.lessWindow,
+    hidden: globalState.lessWindow,
   },
   {
     key: 'effect',
@@ -118,7 +118,6 @@ watch(() => route.name, () => {
     }
   } catch (e) {
     all.value = [];
-    state.loading = false;
   }
   params.value = {
     keyword: '',

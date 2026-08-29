@@ -32,13 +32,13 @@
       </div>
     </v-scroll>
     <div class="tr no-data" v-if="data.length <= 0">
-      <div class="td">{{ state.loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
+      <div class="td">{{ loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
     </div>
   </div>
 </template>
 
 <script setup>
-import {ref, inject, computed} from 'vue';
+import {ref, computed} from 'vue';
 import {onBeforeRouteLeave} from 'vue-router';
 
 const props = defineProps({
@@ -62,14 +62,13 @@ const props = defineProps({
     default: 0,
   },
   // 是否显示加载中
-  // loading: {
-  //   type: Boolean,
-  //   default: false,
-  // },
+  loading: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const emit = defineEmits(['tr-click', 'sort']);
-const state = inject('state');
 const sortActive = ref('');
 const columns = computed(() => props.cols.filter(item => !item.hidden));
 

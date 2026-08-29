@@ -1,17 +1,22 @@
 <template>
-  <v-table class="v-table-shop" :cols="thead" :data="tbody"></v-table>
+  <v-table
+    class="v-table-shop"
+    :cols="thead"
+    :data="tbody"
+    :loading="globalState.loading"
+  ></v-table>
 </template>
 
 <script setup>
-import {inject, ref, watch} from 'vue';
+import {ref, watch} from 'vue';
 import {useRoute} from 'vue-router';
 import shopData from '@/v107/data/itm/shop';
 import itmAll from '@/v107/data/itm/list';
 import artAll from '@/v107/data/art/list';
 import {itmTypeMap} from '@/v107/data/map';
+import {globalState} from '@/store/global';
 
 const route = useRoute();
-const state = inject('state');
 
 const thead = [
   {
@@ -25,7 +30,7 @@ const thead = [
   {
     key: 'num',
     name: '数量',
-    hidden: state.lessWindow,
+    hidden: globalState.lessWindow,
   },
   {
     key: 'price',
@@ -34,7 +39,7 @@ const thead = [
   {
     key: 'remark',
     name: '备注',
-    hidden: state.lessWindow,
+    hidden: globalState.lessWindow,
   },
 ];
 const tbody = ref([]);

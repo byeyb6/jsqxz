@@ -6,9 +6,16 @@ export const routes = [
     path: '/',
     name: 'v107',
     meta: {title: 'v1.07'},
-    redirect: {name: 'index107'},
+    redirect: {name: 'v107index'},
     children: routes107,
   },
+  // {
+  //   path: '/v107',
+  //   name: 'v107',
+  //   meta: {title: 'v1.07'},
+  //   redirect: {name: 'v107index'},
+  //   children: routes107,
+  // },
   {
     path: '/:catchAll(.*)',
     redirect: '/',
@@ -23,5 +30,5 @@ export default createRouter({
 });
 
 export const headerNav = {
-  107: nav107,
+  v107: nav107,
 };

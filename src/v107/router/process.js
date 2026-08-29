@@ -5,7 +5,7 @@ for (let key in bookMap) {
   bookChildren.push({
     path: key,
     component: () => import('@/v107/views/process/table.vue'),
-    name: 'processBook' + key.replace(key[0], key[0].toUpperCase()) + 107,
+    name: 'v107processBook' + key.replace(key[0], key[0].toUpperCase()),
     meta: {
       title: bookMap[key],
       type: key,
@@ -16,8 +16,8 @@ for (let key in bookMap) {
 export default {
   path: 'process',
   component: () => import('@/views/layout/layout.vue'),
-  name: 'process107',
-  redirect: {name: 'processStart107'},
+  name: 'v107process',
+  redirect: {name: 'v107processStart'},
   meta: {
     title: '流程',
   },
@@ -25,7 +25,7 @@ export default {
     {
       path: 'record',
       component: () => import('@/v107/views/process/record.vue'),
-      name: 'processRecord107',
+      name: 'v107processRecord',
       meta: {
         title: '战报',
         type: 'record',
@@ -34,7 +34,7 @@ export default {
     {
       path: 'start',
       component: () => import('@/v107/views/process/table.vue'),
-      name: 'processStart107',
+      name: 'v107processStart',
       meta: {
         title: '开局搜刮',
         type: 'start',
@@ -43,7 +43,7 @@ export default {
     {
       path: 'luk',
       component: () => import('@/v107/views/process/table.vue'),
-      name: 'processLuk107',
+      name: 'v107processLuk',
       meta: {
         title: '江湖轶事',
         type: 'luk',
@@ -52,8 +52,8 @@ export default {
     {
       path: 'book',
       component: () => import('@/views/layout/router-view.vue'),
-      name: 'processBook107',
-      redirect: {name: 'processBookFei107'},
+      name: 'v107processBook',
+      redirect: {name: 'v107processBookFei'},
       meta: {
         title: '天书流程',
       },
@@ -62,7 +62,7 @@ export default {
     {
       path: 'huashan',
       component: () => import('@/v107/views/process/table.vue'),
-      name: 'processHuashan107',
+      name: 'v107processHuashan',
       meta: {
         title: '华山论剑',
         type: 'huashan',
@@ -71,7 +71,7 @@ export default {
     {
       path: 'wudao',
       component: () => import('@/v107/views/process/table.vue'),
-      name: 'processWudao107',
+      name: 'v107processWudao',
       meta: {
         title: '武道大会',
         type: 'wudao',

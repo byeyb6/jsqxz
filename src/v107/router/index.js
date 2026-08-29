@@ -8,7 +8,7 @@ export const routes107 = [
   {
     path: '',
     component: () => import('@/v107/views/home/index.vue'),
-    name: 'index107',
+    name: 'v107index',
   },
   processRoute,
   itmRoute,

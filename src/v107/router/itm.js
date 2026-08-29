@@ -15,7 +15,7 @@ for (let item of typeList) {
   children.push({
     path: key,
     component: () => import('@/v107/views/itm/list.vue'),
-    name: 'itm' + key.replace(key[0], key[0].toUpperCase()) + 107,
+    name: 'v107itm' + key.replace(key[0], key[0].toUpperCase()),
     meta: {
       title: itmTypeMap[id],
       type: id,
@@ -28,7 +28,7 @@ for (let key in shopMap) {
   shopChildren.push({
     path: key,
     component: () => import('@/v107/views/itm/shop.vue'),
-    name: 'itmShop' + key.replace(key[0], key[0].toUpperCase()) + 107,
+    name: 'v107itmShop' + key.replace(key[0], key[0].toUpperCase()),
     meta: {
       title: shopMap[key].name,
       type: key,
@@ -39,8 +39,8 @@ for (let key in shopMap) {
 export default {
   path: 'itm',
   component: () => import('@/views/layout/layout.vue'),
-  redirect: {name: 'itmPot107'},
-  name: 'itm107',
+  name: 'v107itm',
+  redirect: {name: 'v107itmPot'},
   meta: {
     title: '物品',
   },
@@ -49,8 +49,8 @@ export default {
     {
       path: 'shop',
       component: () => import('@/views/layout/router-view.vue'),
-      name: 'itmShop107',
-      redirect: {name: 'itmShopXiaocun107'},
+      name: 'v107itmShop',
+      redirect: {name: 'v107itmShopXiaocun'},
       meta: {
         title: '商店',
       },

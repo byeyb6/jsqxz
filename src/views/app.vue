@@ -1,70 +1,52 @@
 <template>
   <div
     class="app"
-    :class="{
-      'is-less-window':
-        state.lessWindow,
-    }"
+    :class="{'is-less-window': globalState.lessWindow}"
   >
     <header-nav></header-nav>
     <router-view
       class="app-view"
     ></router-view>
     <v-loading
-      :loading="state.loading"
+      :loading="globalState.loading"
     ></v-loading>
   </div>
 </template>
 
 <script setup>
-import {onMounted, provide, reactive, watch} from 'vue';
+import {onMounted, watch} from 'vue';
 import HeaderNav from '@/views/layout/header.vue';
 import VLoading from '@/components/loading.vue';
 import {useRoute} from 'vue-router';
+import {globalState} from '@/store/global';
 
-const versionAll = {
-  107: 'v1.07',
-};
-const versionMax = 107;
 const route = useRoute();
-const state = reactive({
-  loading: false,
-  menuVisible: true,
-  lessWindow: false,
-  version: versionMax,
-  versionAll,
-});
 
 onMounted(() => {
   const media = window.matchMedia(
     'screen and (max-width: 600px)',
   );
-  state.lessWindow = media.matches;
-  state.menuVisible = !media.matches;
+  globalState.lessWindow = media.matches;
+  globalState.menuVisible = !media.matches;
   media.onchange = e => {
-    state.lessWindow = e.matches;
-    state.menuVisible = !e.matches;
+    globalState.lessWindow = e.matches;
+    globalState.menuVisible = !e.matches;
   };
 });
 
 watch(
   () => route.name,
   val => {
-    if (state.lessWindow) {
-      state.menuVisible = false;
+    if (globalState.lessWindow) {
+      globalState.menuVisible = false;
     }
-    const version = Number(val.slice(-3));
-    if (version === state.version) {
+    const version = val.slice(0, 4);
+    if (version === globalState.version) {
       return;
     }
-    state.version =
-      Number.isNaN(version) || !versionAll[version]
-        ? versionMax
-        : version;
+    globalState.version = !globalState.versionAll[version] ? globalState.versionMax : version;
   },
 );
-
-provide('state', state);
 
 // import pinyin from 'pinyin';
 // import data from '@/data/art/secret';

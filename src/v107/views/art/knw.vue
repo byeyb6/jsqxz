@@ -46,16 +46,11 @@
 </template>
 
 <script setup>
-import {
-  ref,
-  inject,
-  onBeforeMount,
-  computed,
-} from 'vue';
+import {ref, onBeforeMount, computed} from 'vue';
 import itmAll from '@/v107/data/itm/list';
 import {getTra} from '@/v107/data/art/effect/attr';
+import {globalState} from '@/store/global';
 
-const state = inject('state');
 const thead = ref([
   {
     key: 'name',
@@ -68,12 +63,12 @@ const thead = ref([
   {
     key: 'condition',
     name: '条件',
-    hidden: state.lessWindow,
+    hidden: globalState.lessWindow,
   },
   {
     key: 'addition',
     name: '加成',
-    hidden: state.lessWindow,
+    hidden: globalState.lessWindow,
   },
   {
     key: 'effect',

@@ -126,9 +126,10 @@
   </div>
 </template>
 <script setup>
-import {computed, inject} from 'vue';
-import {sessionStorage} from '@/utils/storage';
+import {computed} from 'vue';
+import {storageSession} from '@/utils/storage';
 import {formatArt} from '@/v107/data/art/effect/attr';
+import {globalState} from '@/store/global';
 
 const props = defineProps({
   item: {
@@ -140,17 +141,16 @@ const props = defineProps({
     default: false,
   },
 });
-const state = inject('state');
 const info = computed(() => handleArtInfo(props.item));
 
 function handleArtInfo(info = {}) {
-  const cacheKey = `${state.version}_art_${info.id}`;
-  const cacheInfo = sessionStorage.get(cacheKey);
+  const cacheKey = `${globalState.version}_art_${info.id}`;
+  const cacheInfo = storageSession.get(cacheKey);
   if (cacheInfo) {
     return cacheInfo;
   }
   const item = formatArt(info);
-  sessionStorage.set(cacheKey, item, {day: 1});
+  storageSession.set(cacheKey, item, {day: 1});
   return item;
 }
 </script>

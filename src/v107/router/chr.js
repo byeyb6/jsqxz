@@ -5,7 +5,7 @@ for (let key in bookMap) {
   bookChildren.push({
     path: key,
     component: () => import('@/v107/views/chr/book.vue'),
-    name: 'chrBook' + key.replace(key[0], key[0].toUpperCase()) + 107,
+    name: 'v107chrBook' + key.replace(key[0], key[0].toUpperCase()),
     meta: {
       title: bookMap[key],
       type: key,
@@ -16,8 +16,8 @@ for (let key in bookMap) {
 export default {
   path: 'chr',
   component: () => import('@/views/layout/layout.vue'),
-  name: 'chr107',
-  redirect: {name: 'chrSect107'},
+  name: 'v107chr',
+  redirect: {name: 'v107chrSect'},
   meta: {
     title: '人物',
   },
@@ -25,7 +25,7 @@ export default {
     {
       path: 'sect',
       component: () => import('@/v107/views/chr/sect.vue'),
-      name: 'chrSect107',
+      name: 'v107chrSect',
       meta: {
         title: '门派',
       },
@@ -33,7 +33,7 @@ export default {
     {
       path: 'search',
       component: () => import('@/v107/views/chr/search.vue'),
-      name: 'chrSearch107',
+      name: 'v107chrSearch',
       meta: {
         title: '人物查询',
       },
@@ -41,8 +41,8 @@ export default {
     {
       path: 'book',
       component: () => import('@/views/layout/router-view.vue'),
-      name: 'chrBook107',
-      redirect: {name: 'chrBookFei107'},
+      name: 'v107chrBook',
+      redirect: {name: 'v107chrBookFei'},
       meta: {
         title: '畅想',
       },
@@ -51,7 +51,7 @@ export default {
     {
       path: 'special',
       component: () => import('@/v107/views/chr/book.vue'),
-      name: 'chrSpecial107',
+      name: 'v107chrSpecial',
       meta: {
         title: '特殊',
         type: 'special',
@@ -60,7 +60,7 @@ export default {
     {
       path: 'talent',
       component: () => import('@/v107/views/chr/talent.vue'),
-      name: 'chrTalent107',
+      name: 'v107chrTalent',
       meta: {
         title: '天赋',
       },

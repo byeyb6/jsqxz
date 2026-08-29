@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <a
-      v-if="!state.lessWindow"
+      v-if="!globalState.lessWindow"
       class="header-logo"
       href="javascript: void 0"
       @click="goHome"
@@ -13,7 +13,7 @@
       :class="{'icon-hidden': route.name === 'index'}"
       href="javascript: void 0;"
       @click="toggleMenu"
-      v-if="state.lessWindow"
+      v-if="globalState.lessWindow"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +33,8 @@
       </router-link>
     </nav>
     <div class="header-version">
-      <select v-model="state.version" class="version-select" @change="goHome">
-        <option v-for="(name, val) in state.versionAll" :key="val" :value="val">
+      <select v-model="globalState.version" class="version-select" @change="goHome">
+        <option v-for="(name, val) in globalState.versionAll" :key="val" :value="val">
           {{ name }}
         </option>
       </select>
@@ -43,25 +43,25 @@
 </template>
 
 <script setup>
-import {inject, ref, watch} from 'vue';
+import {ref, watch} from 'vue';
 import {headerNav} from '@/router/index.js';
 import {useRoute, useRouter} from 'vue-router';
+import {globalState} from '@/store/global';
 
 const route = useRoute();
 const router = useRouter();
-const state = inject('state');
 const navList = ref([]);
 
-watch(() => state.version, val => {
+watch(() => globalState.version, val => {
   navList.value = headerNav[val] ? headerNav[val] : [];
 }, {immediate: true});
 
 function goHome() {
-  router.push({name: `index${state.version}`});
+  router.push({name: `${globalState.version}index`});
 }
 
 function toggleMenu() {
-  state.menuVisible = !state.menuVisible;
+  globalState.menuVisible = !globalState.menuVisible;
 }
 </script>
 

@@ -1,10 +1,14 @@
 <template>
   <div class="layout">
     <transition name="fade">
-      <div class="menu-mask" @click="closeMenu" v-show="state.lessWindow && state.menuVisible"></div>
+      <div
+        class="menu-mask"
+        @click="closeMenu"
+        v-show="globalState.lessWindow && globalState.menuVisible"
+      ></div>
     </transition>
     <transition name="fade">
-      <v-menu :menu="menus" v-show="state.menuVisible"></v-menu>
+      <v-menu :menu="menus" v-show="globalState.menuVisible"></v-menu>
     </transition>
     <div class="main">
       <bread-nav :nav="breads"></bread-nav>
@@ -16,14 +20,14 @@
 </template>
 
 <script setup>
-import {watchEffect, ref, inject} from 'vue';
+import {watchEffect, ref} from 'vue';
 import {useRoute, onBeforeRouteUpdate} from 'vue-router';
 import {routes} from '@/router';
 import VMenu from './menu.vue';
 import BreadNav from './bread-nav.vue';
+import {globalState} from '@/store/global';
 
 const route = useRoute();
-const state = inject('state');
 const menus = ref([]);
 const breads = ref([]);
 watchEffect(() => {
@@ -33,7 +37,7 @@ watchEffect(() => {
   if (routeRootName === matched[1].name) {
     return;
   }
-  const parentRoute = routes.find(item => item.name === `v${state.version}`);
+  const parentRoute = routes.find(item => item.name === globalState.version);
   if (!parentRoute) {
     return;
   }
@@ -44,7 +48,7 @@ watchEffect(() => {
 });
 
 function closeMenu() {
-  state.menuVisible = false;
+  globalState.menuVisible = false;
 }
 
 const y = ref(0);
