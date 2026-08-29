@@ -1242,9 +1242,6 @@
     </pre>
   </v-scroll>
 </template>
-
-<script></script>
-
 <style lang="less">
 .home-wrap {
   background: #fff;
