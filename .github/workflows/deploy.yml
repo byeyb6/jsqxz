@@ -1,0 +1,32 @@
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install & build
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+
+      - name: Upload to server
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        run: |
+          tar czf site.tgz -C docs .
+          mkdir -p ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H 49.0.255.47 >> ~/.ssh/known_hosts 2>/dev/null
+          cat site.tgz | ssh -i ~/.ssh/id_ed25519 deployer@49.0.255.47

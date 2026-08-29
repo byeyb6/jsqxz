@@ -7,6 +7,7 @@ export const globalState = reactive({
   version: 'v107',
   versionMax: 'v107',
   versionAll: {
+    v108: 'v1.08',
     v107: 'v1.07',
   },
 });

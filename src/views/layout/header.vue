@@ -33,7 +33,7 @@
       </router-link>
     </nav>
     <div class="header-version">
-      <select v-model="globalState.version" class="version-select" @change="goHome">
+      <select v-model="globalState.version" class="version-select" @change="changeVersion">
         <option v-for="(name, val) in globalState.versionAll" :key="val" :value="val">
           {{ name }}
         </option>
@@ -43,18 +43,24 @@
 </template>
 
 <script setup>
-import {ref, watch} from 'vue';
+import {computed, ref, watch} from 'vue';
 import {headerNav} from '@/router/index.js';
 import {useRoute, useRouter} from 'vue-router';
 import {globalState} from '@/store/global';
 
 const route = useRoute();
 const router = useRouter();
-const navList = ref([]);
+const navList = computed(() => {
+  const nav = headerNav[globalState.version];
+  return nav ? nav : [];
+});
 
-watch(() => globalState.version, val => {
-  navList.value = headerNav[val] ? headerNav[val] : [];
-}, {immediate: true});
+function changeVersion() {
+  let timer = setTimeout(() => {
+    clearTimeout(timer);
+    goHome();
+  }, 0);
+}
 
 function goHome() {
   router.push({name: `${globalState.version}index`});

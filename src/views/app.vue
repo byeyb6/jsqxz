@@ -48,47 +48,6 @@ watch(
   },
 );
 
-// import pinyin from 'pinyin';
-// import data from '@/data/art/secret';
-// function toPinyin(arr) {
-//   const list = arr.map((item) => {
-//     const py = pinyin(item.name, {style: 'normal'}).flat();
-//     for (let [index, pinyinItem] of py.entries()) {
-//       if (index > 0) {
-//         const pyArr = pinyinItem.split('');
-//         pyArr[0] = pyArr[0].toUpperCase();
-//         py[index] = pyArr.join('');
-//       }
-//     }
-//     let itemStr = JSON.stringify(item);
-//     itemStr = itemStr.replace(/^\{/, `{"id":"${py.join('')}",`);
-//     return JSON.parse(itemStr);
-//   });
-//   console.log(list);
-// }
-// function toPinyin(obj) {
-//   try {
-//     const rst = {};
-//     for (let key in obj) {
-//       const item = obj[key];
-//       const py = pinyin(item.name, {style: 'normal'}).flat();
-//       for (let [index, pinyinItem] of py.entries()) {
-//         if (index > 0) {
-//           const pyArr = pinyinItem.split('');
-//           pyArr[0] = pyArr[0].toUpperCase();
-//           py[index] = pyArr.join('');
-//         }
-//       }
-//       rst[py.join('')] = item;
-//     }
-//     console.log(rst);
-//   } catch (e) {
-//     console.log(e);
-//   }
-// }
-//
-// toPinyin(data);
-
 </script>
 
 <style lang="less">
