@@ -6,6 +6,7 @@
         placeholder="名称/效果/福缘际遇查询"
         v-model="params.keyword"
         @keydown.enter="search"
+        @clear="search"
       ></v-input>
     </div>
     <div class="v-search-item">
@@ -30,7 +31,7 @@
           {{ item }}
         </div>
       </div>
-      <div class="td-block" v-if="globalState.lessWindow && row.fortune.length > 0">
+      <div class="td-block" v-if="row.fortune.length > 0">
         <div class="color-error">[福缘际遇]</div>
         <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of row.fortune" :key="i">
           {{ text }}
@@ -77,16 +78,21 @@ const thead = [
   {
     key: 'fortune',
     name: '福缘际遇',
-    hidden: globalState.lessWindow,
+    hidden: true,
   },
   {
     key: 'type',
     name: '可选',
   },
   {
+    key: 'level',
+    name: '等级',
+    hidden: globalState.lessWindow,
+  },
+  {
     key: 'score',
     name: '点数',
-    hidden: true,
+    hidden: globalState.lessWindow,
   },
 ];
 const params = ref({
@@ -98,7 +104,7 @@ const allData = computed(() => {
   const arr = [];
   for (let id in data) {
     const {name, effect, fortune, level, score, type} = data[id];
-    if (score <= 0) {
+    if (name === '备用') {
       continue;
     }
     arr.push({
@@ -107,6 +113,7 @@ const allData = computed(() => {
       effect: effect.filter(i => import.meta.env.DEV || !/#hidden#$/.test(i)),
       fortune,
       level,
+      score,
       type,
     });
   }
@@ -155,8 +162,12 @@ onBeforeMount(() => {
       flex: 2 0 0;
     }
 
-    &:last-child {
+    &:nth-child(3), &:nth-child(4) {
       flex: 0 0 50px;
+    }
+
+    &:nth-child(5) {
+      flex: 0 0 80px;
     }
   }
 }

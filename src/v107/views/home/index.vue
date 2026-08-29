@@ -1242,14 +1242,3 @@
     </pre>
   </v-scroll>
 </template>
-<style lang="less">
-.home-wrap {
-  background: #fff;
-
-  .home-title {
-    padding: 30px 0 10px;
-    text-align: center;
-    font-size: 20px;
-  }
-}
-</style>

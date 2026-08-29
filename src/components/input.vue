@@ -13,11 +13,12 @@
       :type="type"
       :disabled="disabled"
       :placeholder="placeholder"
-      @click="emitEvevt('click', $event)"
-      @input="emitEvevt('input', $event)"
-      @focus="emitEvevt('focus', $event)"
-      @blur="emitEvevt('blur', $event)"
+      @click="emitEvent('click', $event)"
+      @input="emitEvent('input', $event)"
+      @focus="emitEvent('focus', $event)"
+      @blur="emitEvent('blur', $event)"
     />
+    <i class="icon-clear" v-show="value" @click="clear"></i>
   </div>
 </template>
 
@@ -44,7 +45,7 @@ const props = defineProps({
     default: '',
   },
 });
-const emit = defineEmits(['update:modelValue', 'input', 'focus', 'blur', 'click']);
+const emit = defineEmits(['update:modelValue', 'input', 'focus', 'blur', 'click', 'clear']);
 const value = computed({
   get() {
     return props.modelValue;
@@ -61,8 +62,13 @@ const sizeMap = {
   mini: true,
 };
 
-function emitEvevt(name, e) {
+function emitEvent(name, e) {
   emit(name, e);
+}
+
+function clear() {
+  value.value = '';
+  emit('clear');
 }
 </script>
 
@@ -70,10 +76,12 @@ function emitEvevt(name, e) {
 .v-input {
   --ipt-height: var(--height-default);
 
+  position: relative;
+
   .v-input-inner {
     width: 100%;
     height: var(--ipt-height);
-    padding: 0 10px;
+    padding: 0 30px 0 10px;
     border: 1px solid var(--color-border);
     border-radius: 4px;
     font-size: 14px;
@@ -90,6 +98,7 @@ function emitEvevt(name, e) {
       color: var(--color-disabled);
       cursor: not-allowed;
     }
+
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
       -webkit-appearance: none;
@@ -106,6 +115,53 @@ function emitEvevt(name, e) {
 
   &.is-mini {
     --ipt-height: var(--height-mini);
+  }
+
+  &:hover {
+    .icon-clear {
+      opacity: 1;
+    }
+  }
+
+  .icon-clear {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #aaa;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity .2s;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 7px;
+      display: block;
+      width: 2px;
+      height: 12px;
+      border-radius: 1px;
+      background: #fff;
+      transform: rotateZ(45deg);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 7px;
+      display: block;
+      height: 2px;
+      width: 12px;
+      border-radius: 1px;
+      background: #fff;
+      transform: rotateZ(45deg);
+    }
   }
 }
 

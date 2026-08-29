@@ -6,6 +6,7 @@
         v-model="params.keyword"
         placeholder="名称/条件/效果查询"
         @keydown.enter="search"
+        @clear="search"
       ></v-input>
     </div>
     <div class="v-search-item">

@@ -5,6 +5,12 @@ import {routes108, nav108} from '@/v108/router';
 export const routes = [
   {
     path: '/',
+    name: 'home',
+    meta: {title: '首页'},
+    redirect: {name: 'v107index'},
+  },
+  {
+    path: '/v108',
     name: 'v108',
     meta: {title: 'v1.08'},
     children: routes108,
