@@ -14,11 +14,13 @@
     </div>
   </div>
   <v-table
+    ref="tableRef"
     class="v-table-art-talent"
     :cols="thead"
     :data="tbody"
     :y="scrollY"
     :loading="globalState.loading"
+    @sort="sort"
   >
     <template #name="{row}">
       <span :class="`level-${row.level}`">
@@ -61,11 +63,12 @@
 </template>
 
 <script setup>
-import {ref, onBeforeMount, computed} from 'vue';
+import {ref, computed, useTemplateRef, onMounted} from 'vue';
 import data from '@/v107/data/chr/talent';
 import {globalState} from '@/store/global';
 // import VPages from '@/components/pages.vue';
 
+const tableRef = useTemplateRef('tableRef');
 const thead = [
   {
     key: 'name',
@@ -88,11 +91,13 @@ const thead = [
     key: 'level',
     name: '等级',
     hidden: globalState.lessWindow,
+    sort: true,
   },
   {
     key: 'score',
     name: '点数',
     hidden: globalState.lessWindow,
+    sort: true,
   },
 ];
 const params = ref({
@@ -104,7 +109,7 @@ const allData = computed(() => {
   const arr = [];
   for (let id in data) {
     const {name, effect, fortune, level, score, type} = data[id];
-    if (name === '备用') {
+    if (name === '备用' || name === '标主占用') {
       continue;
     }
     arr.push({
@@ -121,6 +126,7 @@ const allData = computed(() => {
 });
 
 function search() {
+  tableRef.value.clearSort();
   params.value.keyword = (params.value.keyword + '').replace(/[\[\]{}"', ]/g, '');
   if (!params.value.keyword) {
     tbody.value = [...allData.value];
@@ -141,11 +147,24 @@ function search() {
   });
 }
 
+function sort(key, direction) {
+  scrollY.value = scrollY.value === 0 ? 1 : 0;
+  if (direction === -1) {
+    tbody.value.sort((a, b) => a[key] - b[key]);
+    return;
+  }
+  if (direction === 1) {
+    tbody.value.sort((a, b) => b[key] - a[key]);
+    return;
+  }
+  tbody.value.sort((a, b) => a.id - b.id);
+}
+
 function changePage() {
   scrollY.value = scrollY.value === 0 ? 1 : 0;
 }
 
-onBeforeMount(() => {
+onMounted(() => {
   search();
 });
 </script>
@@ -162,11 +181,11 @@ onBeforeMount(() => {
       flex: 2 0 0;
     }
 
-    &:nth-child(3), &:nth-child(4) {
+    &:nth-child(3) {
       flex: 0 0 50px;
     }
 
-    &:nth-child(5) {
+    &:nth-child(4), &:nth-child(5) {
       flex: 0 0 80px;
     }
   }

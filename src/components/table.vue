@@ -73,18 +73,31 @@ const sortActive = ref('');
 const columns = computed(() => props.cols.filter(item => !item.hidden));
 
 onBeforeRouteLeave(() => {
-  sortActive.value = '';
+  clearSort();
 });
 
 function sort(key, direction) {
   const dirKey = key + direction;
-  sortActive.value = sortActive.value === dirKey ? '' : dirKey;
+  if (sortActive.value === dirKey) {
+    sortActive.value = '';
+    direction = 0;
+  } else {
+    sortActive.value = dirKey;
+  }
   emit('sort', key, direction);
+}
+
+function clearSort() {
+  sortActive.value = '';
 }
 
 function clickTr(row, index) {
   emit('tr-click', row, index);
 }
+
+defineExpose({
+  clearSort,
+});
 </script>
 
 <style lang="less"></style>
