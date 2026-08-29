@@ -4,13 +4,13 @@ import {routes108, nav108} from '@/v108/router';
 
 export const routes = [
   {
-    path: '/v108',
+    path: '/',
     name: 'v108',
     meta: {title: 'v1.08'},
     children: routes108,
   },
   {
-    path: '/',
+    path: '/v107',
     name: 'v107',
     meta: {title: 'v1.07'},
     children: routes107,
