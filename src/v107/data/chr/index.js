@@ -1373,13 +1373,13 @@ export default {
     id: 679,
     name: '无名',
     talent: [679, 9710, 9713, 9738, 9806],
-    type: 'special',
+    type: '',
   },
   680: {
     id: 680,
     name: '石昊',
     talent: [680, 592, 9708, 9982],
-    type: 'special',
+    type: '',
   },
   681: {
     id: 681,
@@ -1391,7 +1391,7 @@ export default {
     id: 682,
     name: '夜渡川',
     talent: [682, 9712],
-    type: 'special',
+    type: '',
   },
   721: {
     id: 721,
