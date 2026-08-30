@@ -3,7 +3,7 @@ import talentStr from './talent';
 import stateStr from './state';
 
 /**
- * 根据lua天赋列表字符串修改天赋列表
+ * 根据lua天赋列表字符串修改天赋列表, 已有的天赋效果和福缘不会被修改, 需单独修改
  * @returns
  */
 export function formatTalent() {
@@ -77,18 +77,3 @@ export function formatState() {
   }
   console.log(Object.values(rst));
 }
-
-// function toArr() {
-//   const arr = [];
-//   for (let id in artAll) {
-//     const {name, move} = artAll[id];
-//     let moveStr = '';
-//     for (let item of move) {
-//       moveStr += `  {"${item}"},\n`;
-//     }
-//     const str = `-- ${name}
-// CC.KFMove[${id}] = {\n${moveStr}}`;
-//     arr.push(str);
-//   }
-//   console.log(arr.join('\n'));
-// }

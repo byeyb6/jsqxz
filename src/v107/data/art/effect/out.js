@@ -39,7 +39,7 @@ export function base5(lv) {
 }
 
 // 概率冰封
-export function bingFengBase(lv) {
+export function baseBingFeng(lv) {
   return {
     id: 'bingFeng',
     effect: '概率冰封',
@@ -47,7 +47,7 @@ export function bingFengBase(lv) {
 }
 
 // 概率灼烧
-export function zhuoShaoBase(lv) {
+export function baseZhuoShao(lv) {
   return {
     id: 'zhuoShao',
     effect: '概率灼烧',
@@ -55,8 +55,7 @@ export function zhuoShaoBase(lv) {
 }
 
 // 中毒
-export function zhongDuBase(lv) {
-  // 4: 30
+export function baseZhongDu(lv) {
   return {
     id: 'zhongDu',
     effect: '使目标中毒',

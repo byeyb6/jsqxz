@@ -34,7 +34,7 @@ export default {
     level: 2,
     inner: 9,
     addition: '带毒+1',
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
   4: {
@@ -54,7 +54,7 @@ export default {
     level: 2,
     inner: 9,
     addition: '带毒+2',
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 1,
   },
   6: {
@@ -82,7 +82,7 @@ export default {
     sect: 3,
     level: 4,
     inner: 1,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 1,
   },
   9: {
@@ -93,7 +93,7 @@ export default {
     level: 2,
     inner: 9,
     addition: '带毒+1',
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
   10: {
@@ -115,7 +115,7 @@ export default {
     sect: 0,
     level: 4,
     inner: 1,
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     ultimate: [
       '',
       '',
@@ -143,7 +143,7 @@ export default {
     sect: 0,
     level: 2,
     inner: 9,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     tra: [
       {
         name: '强上内伤',
@@ -194,7 +194,7 @@ export default {
     sect: 27,
     level: 3,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     tra: [
       {
         name: ' ',
@@ -238,7 +238,7 @@ export default {
     sect: 26,
     level: 3,
     inner: 1,
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 2,
   },
   20: {
@@ -264,7 +264,7 @@ export default {
     sect: 28,
     level: 4,
     inner: 1,
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
   22: {
@@ -274,7 +274,7 @@ export default {
     sect: 1,
     level: 3,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 1,
   },
   23: {
@@ -306,7 +306,7 @@ export default {
     level: 4,
     inner: 2,
     addition: '暗器+3',
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 1,
   },
   25: {
@@ -399,7 +399,7 @@ export default {
     sect: 10,
     level: 2,
     inner: 9,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 3,
   },
   34: {
@@ -418,7 +418,7 @@ export default {
     sect: 18,
     level: 1,
     inner: 9,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 3,
   },
   36: {
@@ -464,7 +464,7 @@ export default {
     sect: 15,
     level: 3,
     inner: 1,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 3,
   },
   41: {
@@ -474,7 +474,7 @@ export default {
     sect: 19,
     level: 3,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 3,
   },
   42: {
@@ -684,7 +684,7 @@ export default {
     sect: 5,
     level: 2,
     inner: 9,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 4,
   },
   59: {
@@ -715,7 +715,7 @@ export default {
     sect: 18,
     level: 2,
     inner: 9,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 4,
   },
   62: {
@@ -749,11 +749,11 @@ export default {
   65: {
     id: 65,
     name: '燃木刀法',
-    get: ['道德≥80，对玄慈使用介绍信，然后拒绝加入少林寺（女主会自动被拒绝），再次对话玄慈'],
+    get: ['道德≥80，对玄慈使用介绍信，然后拒绝加入少林寺（女主会自动被拒绝），再次对话玄慈或方证'],
     sect: 29,
     level: 3,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 4,
   },
   66: {
@@ -763,7 +763,7 @@ export default {
     sect: 29,
     level: 4,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 4,
   },
   67: {
@@ -791,7 +791,7 @@ export default {
     sect: 23,
     level: 1,
     inner: 9,
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 5,
   },
   70: {
@@ -801,7 +801,7 @@ export default {
     sect: 8,
     level: 2,
     inner: 9,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 5,
   },
   71: {
@@ -811,7 +811,7 @@ export default {
     sect: 4,
     level: 2,
     inner: 9,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 5,
   },
   72: {
@@ -821,7 +821,7 @@ export default {
     sect: 4,
     level: 2,
     inner: 9,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 5,
   },
   73: {
@@ -842,7 +842,7 @@ export default {
     sect: 23,
     level: 2,
     inner: 9,
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 5,
   },
   75: {
@@ -880,7 +880,7 @@ export default {
     sect: 29,
     level: 2,
     inner: 9,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 5,
   },
   79: {
@@ -918,7 +918,7 @@ export default {
     sect: 1,
     level: 4,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 5,
   },
   83: {
@@ -1484,7 +1484,7 @@ export default {
     sect: 0,
     level: 1,
     inner: 9,
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 1,
   },
   114: {
@@ -1535,7 +1535,7 @@ export default {
     level: 3,
     inner: 1,
     addition: '带毒+2',
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
   119: {
@@ -1555,7 +1555,7 @@ export default {
     level: 4,
     inner: 1,
     addition: '带毒+1',
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 1,
   },
   121: {
@@ -1647,7 +1647,7 @@ export default {
     sect: 27,
     level: 2,
     inner: 9,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 2,
   },
   131: {
@@ -1918,7 +1918,7 @@ export default {
     sect: 5,
     level: 4,
     inner: 1,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     tra: [
       {
         name: '颠动沧溟',
@@ -2017,7 +2017,7 @@ export default {
     sect: 6,
     level: 2,
     inner: 9,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 3,
   },
   162: {
@@ -2128,7 +2128,7 @@ export default {
     inner: 1,
     condition: '用毒40',
     addition: '带毒+1',
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
   171: {
@@ -2187,7 +2187,7 @@ export default {
     sect: 5,
     level: 3,
     inner: 1,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 4,
   },
   175: {
@@ -2216,7 +2216,7 @@ export default {
     sect: 6,
     level: 4,
     inner: 1,
-    move: [['bingFengBase', 'zhuoShaoBase']],
+    move: [['baseBingFeng', 'baseZhuoShao']],
     moveNum: 8,
     type: 3,
   },
@@ -2246,7 +2246,7 @@ export default {
     sect: 11,
     level: 3,
     inner: 2,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 3,
   },
   179: {
@@ -2256,7 +2256,7 @@ export default {
     sect: 6,
     level: 4,
     inner: 1,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     tra: [
       {
         name: '周流六虚',
@@ -2299,7 +2299,7 @@ export default {
     sect: 0,
     level: 3,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 4,
   },
   182: {
@@ -2359,7 +2359,7 @@ export default {
     level: 4,
     inner: 1,
     addition: '带毒+2',
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 5,
   },
   186: {
@@ -2384,7 +2384,7 @@ export default {
     sect: 8,
     level: 3,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 2,
   },
   188: {
@@ -2406,7 +2406,7 @@ export default {
     sect: 1,
     level: 4,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 1,
   },
   190: {
@@ -2476,7 +2476,7 @@ export default {
     sect: 1,
     level: 3,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 5,
   },
   195: {
@@ -2554,7 +2554,7 @@ export default {
     sect: 30,
     level: 4,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 5,
   },
   201: {
@@ -2833,7 +2833,7 @@ export default {
     sect: 30,
     level: 4,
     inner: 2,
-    move: [['bingFengBase', 'zhuoShaoBase']],
+    move: [['baseBingFeng', 'baseZhuoShao']],
     type: 3,
   },
   223: {
@@ -2993,7 +2993,7 @@ export default {
     sect: 6,
     level: 3,
     inner: 1,
-    move: [['bingFengBase', 'zhuoShaoBase']],
+    move: [['baseBingFeng', 'baseZhuoShao']],
     type: 1,
   },
   235: {
@@ -3517,7 +3517,7 @@ export default {
     inner: 1,
     condition: '暗器50',
     addition: '暗器+2',
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 5,
   },
   282: {
@@ -3529,7 +3529,7 @@ export default {
     inner: 9,
     condition: '暗器90',
     addition: '暗器+3',
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 5,
   },
   283: {
@@ -3646,7 +3646,7 @@ export default {
     inner: 9,
     condition: '用毒50',
     addition: '解毒+1',
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 1,
   },
   295: {
@@ -3658,7 +3658,7 @@ export default {
     inner: 1,
     condition: '指法70',
     addition: '带毒+1',
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
   296: {
@@ -3678,7 +3678,7 @@ export default {
     inner: 1,
     condition: '暗器110',
     addition: '暗器+4',
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 5,
   },
   298: {
@@ -3708,7 +3708,7 @@ export default {
     inner: 9,
     condition: '暗器60',
     addition: '暗器+3',
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 5,
   },
   301: {
@@ -3720,7 +3720,7 @@ export default {
     inner: 1,
     condition: '暗器90',
     addition: '暗器+4',
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 5,
   },
   302: {
@@ -3776,7 +3776,7 @@ export default {
     sect: 9,
     level: 3,
     inner: 1,
-    move: [['bingFengBase', 'zhuoShaoBase']],
+    move: [['baseBingFeng', 'baseZhuoShao']],
     type: 1,
   },
   307: {
@@ -3833,7 +3833,7 @@ export default {
     inner: 1,
     condition: '暗器100',
     addition: '暗器+4',
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 5,
   },
   313: {
@@ -3992,7 +3992,7 @@ export default {
     level: 3,
     inner: 9,
     addition: '带毒+4',
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 1,
   },
   329: {
@@ -4013,7 +4013,7 @@ export default {
     inner: 9,
     condition: '暗器40',
     addition: '暗器+2',
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 5,
   },
   331: {
@@ -4023,7 +4023,7 @@ export default {
     sect: 6,
     level: 1,
     inner: 9,
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 1,
   },
   332: {
@@ -4034,7 +4034,7 @@ export default {
     level: 1,
     inner: 9,
     addition: '暗器+3 带毒+5',
-    move: [['bingFengBase', 'zhongDuBase']],
+    move: [['baseBingFeng', 'baseZhongDu']],
     type: 5,
   },
   333: {
@@ -4054,7 +4054,7 @@ export default {
     level: 3,
     inner: 1,
     addition: '用毒+1',
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 1,
   },
   335: {
@@ -4064,7 +4064,7 @@ export default {
     sect: 24,
     level: 4,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     tra: [{effect: ['根据天书数量提升威力和杀气']}],
     type: 4,
   },
@@ -4132,7 +4132,7 @@ export default {
     sect: 19,
     level: 4,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     tra: [
       {
         name: '天之道',
@@ -4294,7 +4294,7 @@ export default {
     name: '剑华皈一',
     get: ['灵鹫宫战卓不凡后获得'],
     sect: 21,
-    level: 2,
+    level: 3,
     inner: 2,
     initiative: [
       'huiNei',
@@ -4328,7 +4328,7 @@ export default {
     sect: 24,
     level: 3,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 4,
   },
   359: {
@@ -4338,7 +4338,7 @@ export default {
     sect: 0,
     level: 1,
     inner: 9,
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 2,
   },
   360: {
@@ -4416,7 +4416,7 @@ export default {
     sect: 5,
     level: 4,
     inner: 2,
-    move: [['zhuoShaoBase']],
+    move: [['baseZhuoShao']],
     type: 4,
   },
   366: {
@@ -4472,7 +4472,7 @@ export default {
     sect: 14,
     level: 4,
     inner: 1,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 3,
   },
   372: {
@@ -4537,7 +4537,7 @@ export default {
     sect: 9,
     level: 3,
     inner: 1,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 1,
   },
   379: {
@@ -4581,7 +4581,7 @@ export default {
     sect: 5,
     level: 3,
     inner: 2,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 4,
   },
   383: {
@@ -4761,7 +4761,7 @@ export default {
     sect: 0,
     level: 4,
     inner: 2,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 4,
   },
   399: {
@@ -5031,7 +5031,7 @@ export default {
     sect: 17,
     level: 3,
     inner: 2,
-    move: [['bingFengBase']],
+    move: [['baseBingFeng']],
     type: 4,
   },
   421: {
@@ -5292,7 +5292,7 @@ export default {
     sect: 6,
     level: 1,
     inner: 9,
-    move: [['zhongDuBase']],
+    move: [['baseZhongDu']],
     type: 2,
   },
   444: {
