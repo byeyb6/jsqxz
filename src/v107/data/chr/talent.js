@@ -8465,9 +8465,9 @@ export default {
       '使用初阶和中阶武功攻击有20%概率锁足一回合',
     ],
     fortune: [],
-    level: 4,
-    score: 0,
-    type: 3,
+    level: 1,
+    score: 10,
+    type: 1,
   },
   9777: {
     id: 9777,
