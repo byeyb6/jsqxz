@@ -1,6 +1,7 @@
 import itmAll from '@/v107/data/itm/list';
 // import artAll from '@/v107/data/art/list';
 
+// 武功对应的秘籍
 const artCheatMap = {};
 
 for (let id in itmAll) {

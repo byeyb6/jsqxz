@@ -1,6 +1,7 @@
 import itmAll from '@/v107/data/itm/list';
 import artAll from '@/v107/data/art/list';
 
+// 根据秘籍id获取武功名称
 function getArtName(id) {
   if (!itmAll[id] || !artAll[itmAll[id].art]) {
     return '';
@@ -497,6 +498,25 @@ const secret = {
     effect: [
       '暴怒攻击或被攻击时，30%概率消耗自身最大内力10%，获得【金刚法相】50时序：免疫破绽和恐惧；攻击时对敌人随机破防10%~50%且忽视绝对气防，气攻+800；攻击不增加怒气',
       '触发【大轮密宗奥义】概率+20%',
+    ],
+    type: 1,
+  },
+  49: {
+    id: 49,
+    name: '两仪守护',
+    cheat: {124: true, 142: true},
+    effect: [
+      '减少气攻320，32%概率减少气攻640',
+    ],
+    type: 1,
+  },
+  50: {
+    id: 50,
+    name: '五岳同辉',
+    cheat: {535: true, 536: true, 537: true, 538: true, 539: true},
+    effect: [
+      '每修炼一门，御剑系数+20，五神剑法武功威力+100，连击率+5%（集齐五神剑法时，该效果以7门剑法计算）',
+      '使用五神剑法攻击必中，30%概率发动气贯五神提升1000气攻，16%机率再动一次，40%概率目标恐惧一回合（上述效果暴怒必定触发）',
     ],
     type: 1,
   },
