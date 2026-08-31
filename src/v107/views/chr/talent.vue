@@ -24,7 +24,7 @@
   >
     <template #name="{row}">
       <span :class="`level-${row.level}`">
-        {{ row.name }}
+        {{ row.name }}<template v-if="row.type === 5">（定制）</template>
       </span>
     </template>
     <template #effect="{row}">

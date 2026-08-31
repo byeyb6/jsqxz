@@ -2016,7 +2016,7 @@ export function yiNianChengMo(lv) {
   return {
     id: 1028,
     name: `一念成魔 Lv${lv}`,
-    effect: [`攻击时${lv * 8}%概率进入【魔神】状态：免疫杀气封穴，额外吸血20%`],
+    effect: [`攻击时${lv * 3}%概率进入【魔神降临】状态10时序（最高50时序）：怒气不会减少`],
   };
 }
 
