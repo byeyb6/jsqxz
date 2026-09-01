@@ -23,7 +23,7 @@
     @sort="sort"
   >
     <template #name="{row}">
-      <span :class="`level-${row.level}`">
+      <span :class="{[`level-${row.level}`]: row.level < 5, 'level-5': row.level >= 5}">
         {{ row.name }}<template v-if="row.type === 5">（定制）</template>
       </span>
     </template>
