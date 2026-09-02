@@ -9,8 +9,7 @@ import stateStr from './state';
 export function formatTalent() {
   let str = talentStr.replace(/--.*/g, '');
   // 表1天赋名称，表2天赋说明，表3 1非专属 2为专属，表4为1是非门天赋为2是门派天赋，表5为天赋等级(1蓝2紫3金4红)
-  str = str.replace(/\{([^,]+),([^,]+),([^,]+),[^,]*,([^,]+),([^,]+)}/g, '$1,$2,$3,$4,$5');
-  str = str.replace(/CC\.PTFSM\[(\d+?)] ?=/gi, '$1,');
+  str = str.replace(/CC\.PTFSM\[(\d+?)] ?= ?\{([^,]+), ?([^,]+), ?([^,]+), ?[^,]*, ?([^,]+), ?([^,]+)}/gi, '$1,$2,$3,$4,$5,$6');
 
   const list = str.split('\n');
   const rst = {};

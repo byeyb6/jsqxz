@@ -10,6 +10,18 @@ const timeSequence = {
   4: 3,
 };
 
+function qiangHuaRangeNum(lv, coe = 2) {
+  let max = lv + 4;
+  let min = lv * coe;
+  if (max === min) {
+    return max;
+  }
+  if (max < min) {
+    return `${max}~${min}`;
+  }
+  return `${min}~${max}`;
+}
+
 export function huiMing(lv) {
   return {
     id: 100,
@@ -611,16 +623,6 @@ export function poQiJue1(lv) {
 /**
  * debuff类
  */
-
-function qiangHuaRangeNum(lv, coe = 2) {
-  let max = lv + 4;
-  let min = lv * coe;
-  let range = `${min}~${max}`;
-  if (max === min) {
-    range = max;
-  }
-  return range;
-}
 
 export function liuXue1(lv) {
   return {
@@ -1976,7 +1978,7 @@ export function baoYuanShouYi(lv) {
   return {
     id: 1023,
     name: `抱元守一 Lv${lv}`,
-    effect: [`每${5 - lv}回合${lv * 25}%概率清除大部分异常状态`],
+    effect: [`每${5 - lv}回合${lv * 25}%概率清除基础异常状态：冰封、灼烧、流血、内伤、中毒`],
   };
 }
 
