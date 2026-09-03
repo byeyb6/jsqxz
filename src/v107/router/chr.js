@@ -65,5 +65,13 @@ export default {
         title: '天赋',
       },
     },
+    {
+      path: 'bond',
+      component: () => import('@/v107/views/chr/bond.vue'),
+      name: 'v107chrBond',
+      meta: {
+        title: '羁绊',
+      },
+    },
   ],
 };

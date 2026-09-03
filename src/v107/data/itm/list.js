@@ -1480,7 +1480,7 @@ export default {
     id: 200,
     name: '七宝指环',
     get: ['天龙收李清露后，在灵鹫宫战胜卓不凡后获得'],
-    condition: '',
+    condition: '拳掌200/指腿200',
     addition: '攻击+60 防御+20 轻功+20',
     effect: [
       '遥派武学威力+100',
@@ -1757,7 +1757,7 @@ export default {
     id: 239,
     name: '金丝手套',
     get: ['神雕古墓收小龙女获得'],
-    condition: '',
+    condition: '拳掌70/指腿70',
     addition: '攻击+20 防御+20 轻功+20',
     effect: [
       'LV.1：提高自身拳/指系数10点',

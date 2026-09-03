@@ -845,6 +845,12 @@ export default {
     talent: [311, 9811],
     type: 'shu',
   },
+  312: {
+    id: 312,
+    name: '关明梅',
+    talent: [312],
+    // type: 'shu',
+  },
   313: {
     id: 313,
     name: '天镜',
@@ -904,6 +910,12 @@ export default {
     name: '徐子陵',
     talent: [505, 9978, 9979],
     type: 'special',
+  },
+  506: {
+    id: 506,
+    name: '北丑',
+    talent: [506, 9971, 9972, 9973, 9976],
+    // type: 'special',
   },
   507: {
     id: 507,
@@ -1332,6 +1344,12 @@ export default {
     name: '杨康',
     talent: [650],
     type: 'she',
+  },
+  651: {
+    id: 651,
+    name: '南贤',
+    talent: [651, 9746, 9803, 9813, 9820],
+    // type: 'special',
   },
   652: {
     id: 652,

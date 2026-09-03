@@ -1,5 +1,7 @@
 <template>
-  <div class="plan-wrap"></div>
+  <div class="plan-wrap">
+    
+  </div>
 </template>
 <script setup>
 
