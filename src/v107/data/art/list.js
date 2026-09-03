@@ -2206,6 +2206,7 @@ export default {
       'shenJian',
       'sanJi',
       'qiGuanWuYue',
+      'jianQiNiQianKun',
     ],
     type: 6,
   },
