@@ -143,7 +143,8 @@ onUnmounted(() => {
   }
 
   .select-input__inner {
-    flex: 1;
+    flex: 1 0 0;
+    width: 0;
     border: none;
     outline: none;
     font-size: inherit;

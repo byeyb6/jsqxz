@@ -22,6 +22,15 @@ export default {
     title: '流程',
   },
   children: [
+    // {
+    //   path: 'plan',
+    //   component: () => import('@/v107/views/process/plan.vue'),
+    //   name: 'v107processPlan',
+    //   meta: {
+    //     title: '规划',
+    //     type: 'plan',
+    //   },
+    // },
     {
       path: 'record',
       component: () => import('@/v107/views/process/record.vue'),

@@ -1930,7 +1930,7 @@ export function tianXingJianGong(lv) {
   return {
     id: 1017,
     name: `天行健·攻 Lv${lv}`,
-    effect: [`每次行动后增加${lv}%伤害`],
+    effect: [`每次行动后增加${lv}%伤害，最多10次`],
   };
 }
 
@@ -1938,7 +1938,7 @@ export function tianXingJianShou(lv) {
   return {
     id: 1018,
     name: `天行健·守 Lv${lv}`,
-    effect: [`每次行动后减少${lv}%受到的伤害`],
+    effect: [`每次行动后减少${lv}%受到的伤害，最多10次`],
   };
 }
 

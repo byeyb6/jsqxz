@@ -1,6 +1,6 @@
 <template>
   <teleport to="body">
-    <dialog class="v-dialog" closedby="any" ref="dialogRef">
+    <dialog class="v-dialog" :class="dialogClass" closedby="any" ref="dialogRef">
       <header class="v-dialog-header" v-show="header">
         <a href="javascript: void 0;" class="v-dialog-close" @click="close"></a>
         <slot name="header"></slot>
@@ -28,6 +28,9 @@ const props = defineProps({
   },
   width: {
     type: [Number, String],
+  },
+  dialogClass: {
+    type: String,
   },
 });
 const dialogRef = useTemplateRef('dialogRef');
@@ -105,6 +108,13 @@ defineExpose({
     z-index: 2;
     padding: 5px 10px 10px;
     background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .v-button {
+      margin: 0 5px;
+    }
   }
 
   .v-dialog-close {
