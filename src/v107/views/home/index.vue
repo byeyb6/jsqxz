@@ -3,9 +3,9 @@
     <h4 class="home-title">
       金书群侠传1.07简易攻略
     </h4>
-    <v-network></v-network>
+    <v-online></v-online>
   </v-scroll>
 </template>
 <script setup>
-import VNetwork from '@/v107/views/other/network';
+import VOnline from '@/v107/views/other/online';
 </script>

@@ -25,7 +25,7 @@ export default {
     {
       path: 'plan',
       component: () => import('@/v107/views/process/plan.vue'),
-      name: 'v107processPlan',
+      name: 'v107processStart',
       meta: {
         title: '规划',
         type: 'plan',
