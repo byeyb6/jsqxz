@@ -1,7 +1,7 @@
 <template>
   <v-table class="v-table-vertical" :cols="thead" :data="tbody">
     <template #art="{row}">
-      {{ artTypeMap[row.art] }}
+      {{ itmTypeMap[row.art] }}
     </template>
     <template #list="{row}">
       <div class="td-block">
@@ -17,7 +17,7 @@
 import {computed} from 'vue';
 import {inheritAscMap} from '@/v107/data/art/inherit';
 import artAll from '@/v107/data/art/list';
-import {artTypeMap} from '@/v107/data/map';
+import {itmTypeMap} from '@/v107/data/map';
 
 const thead = [
   {

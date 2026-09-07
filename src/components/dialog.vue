@@ -2,7 +2,7 @@
   <teleport to="body">
     <dialog class="v-dialog" :class="dialogClass" closedby="any" ref="dialogRef">
       <header class="v-dialog-header" v-show="header">
-        <a href="javascript: void 0;" class="v-dialog-close" @click="close"></a>
+        <a href="javascript: void 0;" class="v-dialog-close icon-add" @click="close"></a>
         <slot name="header"></slot>
       </header>
       <div class="v-dialog-main">
@@ -72,23 +72,6 @@ defineExpose({
   overflow-x: hidden;
   overflow-y: auto;
 
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: rgba(136, 136, 136, 0.5);
-    border-radius: 3px;
-  }
-
-  &::-webkit-scrollbar-button {
-    display: none;
-  }
-
   .v-dialog-header {
     position: sticky;
     top: 0;
@@ -119,39 +102,13 @@ defineExpose({
 
   .v-dialog-close {
     --icon-width: 16px;
-    --icon-border: 2px;
+    --icon-rotate: 45deg;
+    --icon-color: var(--color-error);
 
     position: absolute;
     top: 15px;
     right: 10px;
     z-index: 3;
-    width: var(--icon-width);
-    height: var(--icon-width);
-    transform: rotate(45deg);
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: calc((var(--icon-width) - var(--icon-border)) / 2);
-      display: block;
-      width: var(--icon-border);
-      height: 100%;
-      background: var(--color-error);
-      border-radius: 1px;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: calc((var(--icon-width) - var(--icon-border)) / 2);
-      display: block;
-      height: var(--icon-border);
-      width: 100%;
-      background: var(--color-error);
-      border-radius: 1px;
-    }
   }
 }
 </style>

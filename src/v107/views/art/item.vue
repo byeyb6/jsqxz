@@ -44,7 +44,9 @@
     <div class="tr">
       <div class="td">每级加成</div>
       <div class="td">
-        <span>{{ info.addition }}</span>
+        <span v-for="(val, key) in info.addition" :key="key">
+          {{ attrMap[key] }}+{{ val }}&nbsp;
+        </span>
       </div>
     </div>
     <div class="tr">
@@ -130,6 +132,7 @@ import {computed} from 'vue';
 import {storageSession} from '@/utils/storage';
 import {formatArt} from '@/v107/data/art/effect/attr';
 import {globalState} from '@/store/global';
+import {attrMap} from '@/v107/data/map';
 
 const props = defineProps({
   item: {

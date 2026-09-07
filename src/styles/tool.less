@@ -218,7 +218,7 @@
     flex: 0 0 33%;
     display: flex;
     align-items: center;
-    min-width: 120px;
+    min-width: 100px;
     padding: 0 8px 8px 0;
 
     .item-label {
@@ -296,6 +296,45 @@
   }
 }
 
+.icon-add {
+  --icon-width: 14px;
+  --icon-border: 2px;
+  --icon-color: var(--color-primary);
+  --icon-rotate: 0;
+
+  width: var(--icon-width);
+  height: var(--icon-width);
+  transform: rotate(var(--icon-rotate));
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc((var(--icon-width) - var(--icon-border)) / 2);
+    display: block;
+    width: var(--icon-border);
+    height: 100%;
+    background: var(--icon-color);
+    border-radius: 1px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc((var(--icon-width) - var(--icon-border)) / 2);
+    display: block;
+    height: var(--icon-border);
+    width: 100%;
+    background: var(--icon-color);
+    border-radius: 1px;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* 1. 声明过渡效果 */
 .sort-move,
 .sort-enter-active,
@@ -325,4 +364,10 @@
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.el-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

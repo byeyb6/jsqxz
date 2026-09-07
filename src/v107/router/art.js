@@ -1,4 +1,4 @@
-import {artTypeMap} from '@/v107/data/map';
+import {itmTypeMap} from '@/v107/data/map';
 
 const artList = [
   {id: 6, key: 'inn'},
@@ -17,7 +17,7 @@ for (let item of artList) {
     path: key,
     name: 'v107art' + key.replace(key[0], key[0].toUpperCase()),
     meta: {
-      title: artTypeMap[id],
+      title: itmTypeMap[id],
       type: id,
     },
   };

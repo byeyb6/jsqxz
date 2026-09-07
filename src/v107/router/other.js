@@ -2,11 +2,19 @@ export default {
   path: 'other',
   component: () => import('@/views/layout/layout.vue'),
   name: 'v107other',
-  redirect: {name: 'v107otherSystem'},
+  redirect: {name: 'v107otherNetwork'},
   meta: {
     title: '说明',
   },
   children: [
+    {
+      path: 'network',
+      component: () => import('@/v107/views/other/network.vue'),
+      name: 'v107otherNetwork',
+      meta: {
+        title: '联网说明',
+      },
+    },
     {
       path: 'system',
       component: () => import('@/v107/views/other/system.vue'),

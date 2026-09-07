@@ -1,4 +1,4 @@
-import {artTypeMap} from '@/v107/data/map';
+import {artKeyMap, itmTypeMap} from '@/v107/data/map';
 import {
   inheritAscMap,
   inheritDescMap,
@@ -71,13 +71,13 @@ export function getAttr({
   type,
   level,
   inner = '',
-  other = '',
+  other = {},
 }) {
   // 直接设置属性
-  if (/^#/.test(other)) {
+  if (typeof other === 'string' && /^#/.test(other)) {
     return other.replace(/^#/, '');
   }
-  let attr = '';
+  const rst = {};
   // 获取各类型武功基础属性
   if (attrTypeMap[type]?.[level]) {
     let {atk, def, spd} = attrTypeMap[type][level];
@@ -93,25 +93,28 @@ export function getAttr({
       spd += spdCorrect;
     }
     if (atk > 0) {
-      attr += `攻击+${atk} `;
+      rst.atk = atk;
     }
     if (def > 0) {
-      attr += `防御+${def} `;
+      rst.def = def;
     }
     if (spd > 0) {
-      attr += `轻功+${spd} `;
+      rst.spd = spd;
     }
   }
   // 系数加成
   if (type < 6) {
-    const num = Math.max(2 * level - 1, 2);
-    attr += `${artTypeMap[type]}+${num} `;
+    rst[artKeyMap[type]] = Math.max(2 * level - 1, 2);
   }
   // 其他属性
-  if (other) {
-    attr += other;
+  for (let key in other) {
+    if (rst[key]) {
+      rst[key] += other[key];
+    } else {
+      rst[key] = other[key];
+    }
   }
-  return attr;
+  return rst;
 }
 
 // 阴阳内力限制
@@ -152,7 +155,7 @@ export function getCondition({
     if (level > 1) {
       outCondition = `(${outConditionMap[level]}+${outConditionGap[level]}×周目数÷100)`;
     }
-    condition += `${artTypeMap[type]}≥${outCondition} `;
+    condition += `${itmTypeMap[type]}≥${outCondition} `;
   } else if (type === 6) {
     // 内功学习条件
     condition += `内力最大值≥${innerConditionMap[level]} `;

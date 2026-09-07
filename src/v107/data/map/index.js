@@ -15,16 +15,15 @@ export const bookMap = {
   bi: '碧血剑',
   yuan: '鸳鸯刀',
 };
-// 武功类型
-export const artTypeMap = {
-  1: '拳掌',
-  2: '指腿',
-  3: '剑法',
-  4: '刀法',
-  5: '奇门',
-  6: '内功',
-  7: '轻功',
-  8: '杂学',
+// 武功类型对应key
+export const artKeyMap = {
+  1: 'una',
+  2: 'fin',
+  3: 'swd',
+  4: 'bld',
+  5: 'spc',
+  6: 'inn',
+  7: 'dod',
 };
 // 物品类型
 export const itmTypeMap = {
@@ -43,6 +42,28 @@ export const itmTypeMap = {
   21: '剧情',
   22: '丹药',
   23: '暗器',
+};
+// 属性名称
+export const attrMap = {
+  dfl: '难度',
+  week: '周目',
+  apt: '资质',
+  atk: '攻击',
+  def: '防御',
+  spd: '轻功',
+  una: '拳掌',
+  fin: '指腿',
+  swd: '剑法',
+  bld: '刀法',
+  spc: '奇门',
+  inn: '内功',
+  dod: '轻功',
+  msl: '暗器',
+  med: '医疗',
+  ant: '解毒',
+  tox: '用毒',
+  psn: '带毒',
+  prs: '毒抗',
 };
 // 等级
 export const levelMap = {

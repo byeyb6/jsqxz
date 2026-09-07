@@ -1,6 +1,6 @@
 <template>
   <div class="v-search">
-    <div v-show="false" class="v-search-item" style="flex: 0 0 100px;">
+    <div class="v-search-item" style="flex: 0 0 100px;">
       <v-select
         placeholder="分类"
         :options="typeOptions"
@@ -18,18 +18,19 @@
     </div>
     <div class="v-search-item">
       <v-button type="primary" @click="search">查询</v-button>
+      <!--      <v-button @click="clear" style="margin-left: 5px;">重置</v-button>-->
     </div>
   </div>
   <v-tabs :list="art" key-name="id" v-model="active">
     <template #tab="{tab}">
       <span
         :class="{
-            [`level-${tab.level}`]: tab.level,
-            [`inner-${tab.inner}`]: tab.inner === 1 || tab.inner === 2,
-          }"
+          [`level-${tab.level}`]: tab.level,
+          [`inner-${tab.inner}`]: tab.inner === 1 || tab.inner === 2,
+        }"
       >
-          {{ tab.name }}
-        </span>
+        {{ tab.name }}
+      </span>
     </template>
     <template #title="{info}">
       <span
@@ -61,7 +62,7 @@ const props = defineProps({
 });
 const artAll = ref([]);
 const art = ref([]);
-const active = ref(1);
+const active = ref(-1);
 
 watch(() => props.id, id => {
   if (typeof id === 'number' && id > 0) {
@@ -81,8 +82,22 @@ function init() {
   globalState.loading = true;
   artAll.value = [];
   for (let id in artMap) {
+    if (artMap[id].type < 1) {
+      continue;
+    }
     artAll.value.push(handleArtInfo(artMap[id]));
   }
+  artAll.value.sort((a, b) => {
+    let aIn = a.inner ? a.inner : 9;
+    let bIn = b.inner ? b.inner : 9;
+    if (a.level === b.level) {
+      if (aIn === bIn) {
+        return a.sect - b.sect;
+      }
+      return aIn - bIn;
+    }
+    return b.level - a.level;
+  });
   if (artAll.value.length > 0 && active.value < 1) {
     active.value = artAll.value[0].id;
   }
@@ -151,6 +166,17 @@ function search() {
   active.value = art.value.length > 0 ? art.value[0].id : -1;
 }
 
+function clear() {
+  params.value = {
+    keyword: '',
+    type: -1,
+  };
+  art.value = [...artAll.value];
+  if (!props.id || props.id < 1) {
+    active.value = art.value[0].id;
+  }
+}
+
 onBeforeMount(() => {
   init();
 });
@@ -161,6 +187,7 @@ function getArt() {
 
 defineExpose({
   getArt,
+  clear,
 });
 </script>
 <style lang="less">
