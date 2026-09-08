@@ -4,7 +4,7 @@
 <script setup>
 import {onBeforeMount, ref} from 'vue';
 import {marked} from 'marked';
-import text from '@/v107/data/other/network';
+import text from '@/v107/data/other/online';
 
 const html = ref('');
 

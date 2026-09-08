@@ -11,6 +11,7 @@
     </div>
     <div class="v-search-item">
       <v-button type="primary" @click="search">查询</v-button>
+      <!--      <v-button type="success" @click="exportExcel" style="margin-left: 10px;">导出Excel</v-button>-->
     </div>
   </div>
   <v-table
@@ -24,12 +25,13 @@
   >
     <template #name="{row}">
       <span :class="{[`level-${row.level}`]: row.level < 5, 'level-5': row.level >= 5}">
-        {{ row.name }}<template v-if="row.type === 5">（定制）</template>
+        {{ row.name }}
+        <template v-if="row.type === 5">（定制）</template>
       </span>
     </template>
     <template #effect="{row}">
       <div class="td-block">
-        <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">
+        <div class="td-effect-item effect-icon-star" v-for="item of row.effect" :key="item.id">
           {{ item?.desc || '-' }}
         </div>
       </div>
@@ -43,7 +45,7 @@
     <template #fortune="{row}">
       <div class="td-block">
         <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of row.fortune" :key="i">
-          {{ text.desc }}
+          {{ text }}
         </div>
       </div>
     </template>
@@ -66,6 +68,7 @@
 import {ref, computed, useTemplateRef, onMounted} from 'vue';
 import data from '@/v107/data/chr/talent/talent';
 import {globalState} from '@/store/global';
+import {exportJsonToExcel} from '@/utils/excel';
 // import VPages from '@/components/pages.vue';
 
 const tableRef = useTemplateRef('tableRef');
@@ -115,7 +118,7 @@ const allData = computed(() => {
     arr.push({
       id,
       name,
-      effect: effect.filter(i => import.meta.env.DEV || !/#hidden#$/.test(i)),
+      effect,
       fortune,
       level,
       score,
@@ -162,6 +165,45 @@ function sort(key, direction) {
 
 function changePage() {
   scrollY.value = scrollY.value === 0 ? 1 : 0;
+}
+
+function exportExcel() {
+  const header = [
+    {title: '序号', key: 'index'},
+    // {title: '编号', key: 'id'},
+    {title: '名称', key: 'name'},
+    {title: '效果', key: 'effect'},
+    {title: '福缘际遇', key: 'fortune'},
+    {title: '可用', key: 'type'},
+    {title: '等级', key: 'level'},
+    {title: '点数', key: 'score'},
+  ];
+  const data = tbody.value.map((item, index) => {
+    const {
+      id,
+      name,
+      effect,
+      fortune,
+      level,
+      score,
+      type,
+    } = item;
+    return {
+      index: index + 1,
+      id: Number(id),
+      name,
+      effect: effect.map(item => item.desc).join('\n'),
+      fortune: fortune.join('\n'),
+      level,
+      score,
+      type: type < 3 ? '是' : '否',
+    };
+  });
+  exportJsonToExcel({
+    header,
+    data,
+    filename: '天赋列表',
+  });
 }
 
 onMounted(() => {

@@ -4,9 +4,69 @@ import secretData from '@/v107/data/art/secret';
 import itmAll from '@/v107/data/itm/list';
 import {getAttr} from '@/v107/data/art/effect/attr';
 import {acupointMap, meridianMap} from '@/v107/data/other/meridian';
+import {attrMap} from '@/v107/data/map';
+
+export function useTal() {
+  const dialogTalRef = useTemplateRef('dialogTalRef');
+  const talRef = useTemplateRef('talRef');
+  const talList = ref([]);
+
+  // 打开选择天赋
+  function openTal() {
+    dialogTalRef.value.show();
+    if (talRef.value) {
+      talRef.value.init();
+    }
+  }
+
+  // 关闭选择天赋
+  function closeTal() {
+    dialogTalRef.value.close();
+  }
+
+  // 选择天赋
+  function chooseTal() {
+    const ids = talRef.value.getTalent();
+    talList.value = [...ids];
+    closeTal();
+  }
+
+  // 删除天赋
+  function delTal(index) {
+    talList.value.splice(index, 1);
+  }
+
+  // 初始化天赋
+  function initTal() {
+    talList.value = [];
+  }
+
+  // 获取tag标签颜色
+  function getTalTagStyle(level) {
+    let color = 'var(--el-color-primary)';
+    if (level > 0 && level < 5) {
+      color = `var(--color-level-${level})`;
+    } else {
+      color = `var(--color-level-5)`;
+    }
+    return {'--el-tag-text-color': color};
+  }
+
+  return {
+    dialogTalRef,
+    talRef,
+    talList,
+    openTal,
+    closeTal,
+    chooseTal,
+    delTal,
+    initTal,
+    getTalTagStyle,
+  };
+}
 
 export function useArt() {
-  const dialogRef = useTemplateRef('dialogRef');
+  const dialogArtRef = useTemplateRef('dialogArtRef');
   const artRef = useTemplateRef('artRef');
   const artId = ref(-1);
   const artList = ref([]);
@@ -35,7 +95,7 @@ export function useArt() {
   function openArt(row, col) {
     artIndex.value = {row, col};
     artId.value = artList.value[row][col]?.id ?? -1;
-    dialogRef.value.show();
+    dialogArtRef.value.show();
     if (artRef.value) {
       artRef.value.clear();
     }
@@ -43,7 +103,7 @@ export function useArt() {
 
   // 关闭选择武功
   function closeArt() {
-    dialogRef.value.close();
+    dialogArtRef.value.close();
     artId.value = -1;
   }
 
@@ -202,7 +262,7 @@ export function useArt() {
   }
 
   return {
-    dialogRef,
+    dialogArtRef,
     artRef,
     artId,
     artList,

@@ -6,8 +6,8 @@ import text from './effect-text';
  */
 export function formatEffect() {
   let str = text.replace(/--.*/g, '');
-  // 表1天赋名称，表2天赋说明，表3 1非专属 2为专属，表4为1是非门天赋为2是门派天赋，表5为天赋等级(1蓝2紫3金4红)
-  str = str.replace(/\[(\d+?)] ?= ?\{([^,]+), ?[^,]*, ?([^,]+), ?([^,]+)}/gi, '$1,$2,$3,$4');
+  // 表1为等级 表2为类型 表3为战力 表4为说明
+  str = str.replace(/\[(\d+?)] ?= ?\{([^,]+), ?([^,]+), ?([^,]+), ?([^,]+)}/gi, '$1,$2,$3,$4,$5');
 
   const list = str.split('\n');
   const rst = {};
@@ -19,7 +19,7 @@ export function formatEffect() {
     if (info.length < 4) {
       continue;
     }
-    let [id, level, score, effect] = info;
+    let [id, level, type, score, effect] = info;
     rst[id] = {
       id: Number(id),
       desc: effect.replace(/["' ]/g, ''),

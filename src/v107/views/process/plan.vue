@@ -1,7 +1,7 @@
 <template>
   <div class="plan-wrap">
     <div class="plan-tool">
-      <v-button type="primary" @click="exportExcel">导出Excel</v-button>
+      <v-button type="success" @click="exportExcel">导出Excel</v-button>
       <v-button @click="clearAll">重置</v-button>
     </div>
     <div class="plan-attr">
@@ -63,6 +63,26 @@
             {{ attr[key] + attr.week + artAttr[key] }}
           </span>
         </div>
+      </div>
+    </div>
+    <div class="plan-tal">
+      <div class="plan-item-title is-sticky" style="--z-index: 2;">
+        <span>天赋规划</span>
+        <div class="title-sub">
+          <v-button size="small" type="primary" @click="openTal">选择天赋</v-button>
+        </div>
+      </div>
+      <div class="tal-list">
+        <el-tag
+          v-for="(id, index) of talList"
+          :key="id"
+          closable
+          type="primary"
+          :style="getTalTagStyle(talentMap[id].level)"
+          @close="delTal(index)"
+        >
+          {{ talentMap[id].name }}({{ talentMap[id].score }}点)
+        </el-tag>
       </div>
     </div>
     <div class="plan-art">
@@ -166,11 +186,7 @@
       </div>
     </div>
   </div>
-  <v-dialog
-    ref="dialogRef"
-    dialog-class="dialog-art"
-    :width="globalState.lessWindow ? '80vw' : undefined"
-  >
+  <v-dialog ref="dialogArtRef" dialog-class="dialog-art">
     <v-art ref="artRef" :id="artId"></v-art>
     <template #header>
       <div>选择武功</div>
@@ -182,17 +198,30 @@
       </div>
     </template>
   </v-dialog>
+  <v-dialog ref="dialogTalRef" dialog-class="dialog-art">
+    <talent-check ref="talRef" :checked="talList"></talent-check>
+    <template #header>
+      <div>选择天赋</div>
+    </template>
+    <template #footer>
+      <div>
+        <v-button type="primary" @click="chooseTal">确定</v-button>
+        <v-button @click="closeTal">取消</v-button>
+      </div>
+    </template>
+  </v-dialog>
 </template>
 <script setup>
-import {computed, onBeforeMount, ref, watch} from 'vue';
+import {computed, onBeforeMount, ref} from 'vue';
 import VDialog from '@/components/dialog';
 import VCheckbox from '@/components/checkbox';
 import VArt from '@/v107/views/art/search';
+import TalentCheck from '@/v107/views/process/talent-check';
 import {Delete} from '@element-plus/icons-vue';
-import {globalState} from '@/store/global';
 import {attrMap} from '@/v107/data/map';
-import {useArt, useMeridian} from '@/v107/views/process/hook/plan';
+import {useArt, useMeridian, useTal} from '@/v107/views/process/hook/plan';
 import {exportJsonToExcel} from '@/utils/excel';
+import talentMap from '@/v107/data/chr/talent/talent';
 
 const attr = ref({
   dfl: 1,
@@ -227,7 +256,7 @@ const attr3Base = computed(() => {
 });
 
 const {
-  dialogRef,
+  dialogArtRef,
   artRef,
   artId,
   artList,
@@ -249,12 +278,26 @@ const {
   chooseMeridian,
 } = useMeridian();
 
+const {
+  dialogTalRef,
+  talRef,
+  talList,
+  openTal,
+  closeTal,
+  chooseTal,
+  delTal,
+  initTal,
+  getTalTagStyle,
+} = useTal();
+
 // 重置
 function clearAll() {
   initArt();
   initMeridian();
+  initTal();
 }
 
+// 导出
 function exportExcel() {
   const header = [
     {title: '名称', key: 'title'},
@@ -312,10 +355,17 @@ function exportExcel() {
     }
     meridianArr.push(item);
   }
+  const talObj = {title: '天赋'};
+  for (let [index, id] of talList.value.entries()) {
+    const {name, level, score} = talentMap[id];
+    talObj[`col${index}`] = `${name}(${level}级${score}点)`;
+  }
 
   const tbody = [
     ...artArr,
     secretObj,
+    {},
+    talObj,
     {},
     {
       title: '经脉',
@@ -350,7 +400,7 @@ onBeforeMount(() => {
 
     &.is-sticky {
       position: sticky;
-      top: 32px;
+      top: 40px;
       z-index: var(--z-index);
     }
 
@@ -367,7 +417,7 @@ onBeforeMount(() => {
     top: 0;
     z-index: 4;
     display: flex;
-    padding: 0 10px;
+    padding: 0 10px 8px;
     background: #fff;
 
     .v-button {
@@ -401,6 +451,15 @@ onBeforeMount(() => {
 
     .el-input-number {
       width: 100px;
+    }
+  }
+
+  .plan-tal {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-border);
+
+    .el-tag {
+      margin: 0 10px 5px 0;
     }
   }
 

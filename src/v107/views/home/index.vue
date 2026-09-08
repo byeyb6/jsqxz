@@ -1,10 +1,17 @@
 <script setup>
+import {globalState} from '@/store/global';
 </script>
 <template>
   <v-scroll class="home-wrap">
     <h4 class="home-title">
       <span>金书群侠传1.07简易攻略</span>
-      <router-link class="home-online" :to="{name: 'v107otherOnline'}">联网说明</router-link>
+      <router-link
+        class="home-online"
+        :to="{name: 'v107otherOnline'}"
+        :style="{left: globalState.lessWindow ? '10px' : '100px'}"
+      >
+        联网说明
+      </router-link>
     </h4>
     <pre class="pre-log">
       fix133 2026-09-08

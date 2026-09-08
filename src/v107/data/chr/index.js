@@ -1258,7 +1258,7 @@ export default {
   631: {
     id: 631,
     name: '周芷若',
-    talent: [631],
+    talent: [631, 9798],
     type: 'yi',
   },
   633: {

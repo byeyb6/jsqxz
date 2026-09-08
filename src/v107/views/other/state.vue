@@ -28,8 +28,8 @@
 </template>
 
 <script setup>
-import {onBeforeMount, ref} from 'vue';
-import data from '@/v107/data/other/state-all';
+import {computed, onBeforeMount, ref} from 'vue';
+import data from '@/v107/data/other/state';
 
 const thead = ref([
   {
@@ -49,15 +49,17 @@ const thead = ref([
 const params = ref({
   keyword: '',
 });
+const allData = computed(() => Object.values(data));
 const tbody = ref([]);
+
 
 function search() {
   if (!params.value.keyword) {
-    tbody.value = data.list;
+    tbody.value = [...allData.value];
     return;
   }
   const reg = new RegExp(params.value.keyword, 'i');
-  tbody.value = data.list.filter(item => {
+  tbody.value = allData.value.filter(item => {
     if (reg.test(item.name)) {
       return true;
     }

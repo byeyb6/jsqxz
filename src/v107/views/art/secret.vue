@@ -44,7 +44,7 @@
       </div>
     </template>
   </v-table>
-  <v-dialog ref="dialogRef" :width="globalState.lessWindow ? '80vw' : undefined">
+  <v-dialog ref="dialogRef">
     <template #header>
       <span
         :class="[

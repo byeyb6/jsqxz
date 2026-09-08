@@ -16,6 +16,7 @@
 </template>
 <script setup>
 import {onMounted, useTemplateRef} from 'vue';
+import {globalState} from '@/store/global';
 
 const props = defineProps({
   header: {
@@ -51,6 +52,10 @@ onMounted(() => {
       width += 'px';
     }
     dialogRef.value.style.setProperty('--dialog-width', width);
+    return;
+  }
+  if (globalState.lessWindow) {
+    dialogRef.value.style.setProperty('--dialog-width', '90vw');
   }
 });
 defineExpose({
@@ -64,7 +69,7 @@ defineExpose({
 
   top: 50%;
   left: 50%;
-  max-width: 80vw;
+  max-width: 90vw;
   width: var(--dialog-width);
   border: 0;
   border-radius: 4px;

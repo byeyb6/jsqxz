@@ -21,18 +21,45 @@
       <!--      <v-button @click="clear" style="margin-left: 5px;">重置</v-button>-->
     </div>
   </div>
-  <v-tabs :list="art" key-name="id" v-model="active">
-    <template #tab="{tab}">
-      <span
-        :class="{
-          [`level-${tab.level}`]: tab.level,
-          [`inner-${tab.inner}`]: tab.inner === 1 || tab.inner === 2,
-        }"
+  <div class="v-tabs v-tabs-dialog-talent" style="--tab-width: 120px;">
+    <div class="checked-list">
+      <el-tag
+        v-for="id of checkedIds"
+        :key="id"
+        closable
+        type="primary"
+        size="small"
+        @close="delChecked(id)"
       >
-        {{ tab.name }}
-      </span>
-    </template>
-    <template #title="{info}">
+        {{ data[id].name }}
+      </el-tag>
+    </div>
+    <div class="tabs">
+      <div
+        class="tab is-flex"
+        v-for="(item, index) of art"
+        :key="item.id"
+        :class="{'is-active': active === index}"
+        @click="handleClick(index)"
+      >
+        <v-checkbox
+          :value="true"
+          :disabled="!checkedArt[item.id] && checkedIds.length > 10"
+          v-model="checkedArt[item.id]"
+        >
+          &nbsp;
+        </v-checkbox>
+        <p
+          :class="{
+            [`level-${item.level}`]: item.level,
+            [`inner-${item.inner}`]: item.inner === 1 || item.inner === 2,
+          }"
+        >
+          {{ item.name }}
+        </p>
+      </div>
+    </div>
+    <h5 class="tabs-content-title" v-if="info.name">
       <span
         :class="[
           `level-${info.level}`,
@@ -41,42 +68,60 @@
       >
         {{ info.name }}
       </span>
-    </template>
+    </h5>
     <art-item v-if="info.id" :item="info" :key="info.id"></art-item>
-  </v-tabs>
+  </div>
 </template>
 <script setup>
 import {computed, ref, onBeforeMount, watch} from 'vue';
 import artMap from '@/v107/data/art/list';
-import ArtItem from './item';
+import ArtItem from '@/v107/views/art/item';
 import VSelect from '@/components/select';
 import {storageSession} from '@/utils/storage';
 import {formatArt} from '@/v107/data/art/effect/attr';
 import {globalState} from '@/store/global';
 import {itmTypeMap} from '@/v107/data/map';
+import data from '@/v107/data/chr/talent/talent';
+import VCheckbox from '@/components/checkbox';
 
 const props = defineProps({
-  id: {
-    type: Number,
-    default: -1,
+  checked: {
+    type: Array,
+    default: () => [],
   },
 });
 const artAll = ref([]);
 const art = ref([]);
-const active = ref(-1);
-
-watch(() => props.id, id => {
-  if (typeof id === 'number' && id > 0) {
-    active.value = id;
+const active = ref(0);
+const checkedArt = ref({});
+const checkedIds = computed(() => {
+  const arr = [];
+  for (let id in checkedArt.value) {
+    if (checkedArt.value[id]) {
+      arr.push(id);
+    }
   }
+  return arr;
+});
+
+function delChecked(id) {
+  checkedArt.value[id] = false;
+}
+
+watch(props.checked, val => {
+  const obj = {};
+  for (let id of val) {
+    obj[id] = true;
+  }
+  checkedArt.value = obj;
 }, {immediate: true});
 
-const info = computed(() => {
-  if (artMap[active.value]) {
-    return artMap[active.value];
-  }
-  return {};
-});
+const info = computed(() => art.value[active.value]);
+
+// 点击显示详情
+function handleClick(index) {
+  active.value = index;
+}
 
 // 初始化武功列表
 function init() {
@@ -99,9 +144,7 @@ function init() {
     }
     return b.level - a.level;
   });
-  if (artAll.value.length > 0 && active.value < 1) {
-    active.value = artAll.value[0].id;
-  }
+  active.value = 0;
   art.value = [...artAll.value];
   globalState.loading = false;
 }
@@ -164,7 +207,7 @@ function search() {
     }
     return true;
   });
-  active.value = art.value.length > 0 ? art.value[0].id : -1;
+  active.value = 0;
 }
 
 function clear() {
@@ -173,9 +216,7 @@ function clear() {
     type: -1,
   };
   art.value = [...artAll.value];
-  if (!props.id || props.id < 1) {
-    active.value = art.value[0].id;
-  }
+  active.value = 0;
 }
 
 onBeforeMount(() => {
@@ -183,7 +224,7 @@ onBeforeMount(() => {
 });
 
 function getArt() {
-  return info.value;
+  return checkedIds;
 }
 
 defineExpose({
