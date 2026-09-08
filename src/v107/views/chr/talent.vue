@@ -30,7 +30,7 @@
     <template #effect="{row}">
       <div class="td-block">
         <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">
-          {{ item }}
+          {{ item?.desc || '-' }}
         </div>
       </div>
       <div class="td-block" v-if="row.fortune.length > 0">
@@ -43,7 +43,7 @@
     <template #fortune="{row}">
       <div class="td-block">
         <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of row.fortune" :key="i">
-          {{ text }}
+          {{ text.desc }}
         </div>
       </div>
     </template>
@@ -64,7 +64,7 @@
 
 <script setup>
 import {ref, computed, useTemplateRef, onMounted} from 'vue';
-import data from '@/v107/data/chr/talent';
+import data from '@/v107/data/chr/talent/talent';
 import {globalState} from '@/store/global';
 // import VPages from '@/components/pages.vue';
 

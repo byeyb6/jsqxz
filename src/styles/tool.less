@@ -232,6 +232,7 @@
 }
 
 .v-tabs {
+  --tab-width: 100px;
   position: relative;
 
   .tabs-exclusive {
@@ -253,7 +254,7 @@
   }
 
   .tab {
-    width: 100px;
+    flex: 0 0 var(--tab-width);
     height: 25px;
     cursor: pointer;
 

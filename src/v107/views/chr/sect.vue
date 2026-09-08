@@ -39,16 +39,16 @@
           <div class="td-block" v-for="(condition, id) in info.tal" :key="id">
             <div>
               [
-              <span class="color-error">{{ talAll[id].name }}</span>
+              <span class="color-error">{{ talMap[id].name }}</span>
               ]:
               <span v-show="condition" class="color-success">{{ condition }}</span>
             </div>
             <div
               class="td-effect-item effect-icon-rhombus"
-              v-for="(text, i) of talAll[id].effect"
+              v-for="(text, i) of talMap[id].effect"
               :key="i"
             >
-              {{ text }}
+              {{ text.desc }}
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@
 import {computed, ref, useTemplateRef} from 'vue';
 import sectAll from '@/v107/data/art/sect';
 import artAll from '@/v107/data/art/list';
-import talAll from '@/v107/data/chr/talent';
+import talMap from '@/v107/data/chr/talent/talent';
 import {itmTypeMap, levelMap} from '@/v107/data/map';
 import {storageSession} from '@/utils/storage';
 import ArtItem from '@/v107/views/art/item';

@@ -15,7 +15,7 @@
       :false-value="falseValue"
       :disabled="disabled"
       v-model="model"
-      @click="handleClick"
+      @click.stop="handleClick"
       v-if="!isGroup"
     />
     <i class="v-checkbox-icon" :style="iconStyle"></i>

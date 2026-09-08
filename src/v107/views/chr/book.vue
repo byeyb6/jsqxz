@@ -11,7 +11,7 @@
           <span class="color-error" v-if="row.id === item.id">（血脉）</span>
         </div>
         <div class="td-effect-item effect-icon-star" v-for="(text, i) of item.effect" :key="i">
-          {{ text }}
+          {{ text.desc }}
         </div>
       </div>
       <div class="td-block" v-if="globalState.lessWindow && row.fortune.length > 0">
@@ -34,7 +34,7 @@
 <script setup>
 import {ref, watch, computed} from 'vue';
 import {useRoute} from 'vue-router';
-import talentMap from '@/v107/data/chr/talent';
+import talentMap from '@/v107/data/chr/talent/talent';
 import chrAll from '@/v107/data/chr';
 import {storageSession} from '@/utils/storage';
 import {globalState} from '@/store/global';
@@ -87,7 +87,7 @@ watch(() => route.name, () => {
         talentArr.push({
           id,
           name,
-          effect: effect.filter(i => import.meta.env.DEV || !/#hidden#$/.test(i)),
+          effect,
           level,
         });
         fortuneArr.push(...fortune);

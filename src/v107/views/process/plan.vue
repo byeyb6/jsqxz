@@ -66,9 +66,9 @@
       </div>
     </div>
     <div class="plan-art">
-      <div class="plan-item-title">
+      <div class="plan-item-title is-sticky" style="--z-index: 3;">
         <span>武功规划</span>
-        <span class="title-sub">规划无极丹洗掉的武功不要删除</span>
+        <span class="title-sub">规划无极丹洗掉的武功需要用于秘技计算，不要删除</span>
       </div>
       <div class="art-list">
         <div class="art-item" v-for="(row, rowIndex) of artList" :key="rowIndex">
@@ -103,15 +103,21 @@
           </div>
         </div>
       </div>
-      <div class="plan-item-title" v-show="secretList.length > 0">激活秘技</div>
+      <div class="plan-item-title">
+        <span>激活秘技</span>
+        <span class="title-sub">自动计算，杂学秘技不算在内</span>
+      </div>
       <div class="art-list" v-show="secretList.length > 0">
         <div class="art-item" v-for="item of secretList" :key="item.id">
           <span class="color-error">{{ item.name }}</span>
         </div>
       </div>
+      <div class="art-list" v-show="secretList.length < 1">
+        暂无激活的秘技
+      </div>
     </div>
     <div class="plan-meridian">
-      <div class="plan-item-title">
+      <div class="plan-item-title is-sticky" style="--z-index: 4;">
         <span>经脉规划</span>
         <span class="title-sub">
           已使用{{ meridianAttr.point }}武学点
@@ -140,6 +146,9 @@
                 @click="val => chooseMeridian(val, id, colIndex)"
               >
                 {{ col.name }}
+                <template v-if="col.acupoint">
+                  ({{ col.acupoint.name }})
+                </template>
               </v-checkbox>
             </div>
             <div class="row-td-attr color-success">
@@ -261,7 +270,13 @@ function exportExcel() {
   };
   let attrIndex = 0;
   for (let key in attr.value) {
-    attrObj[`col${attrIndex}`] = `${attrMap[key]}: ${attr.value[key]}`;
+    let num = attr.value[key];
+    if (attr3[key]) {
+      num += attr3Base.value + artAttr.value[key] + meridianAttr.value[key];
+    } else if (attr5[key]) {
+      num += attr.value.week + artAttr.value[key];
+    }
+    attrObj[`col${attrIndex}`] = `${attrMap[key]}: ${num}`;
     attrIndex++;
   }
   const artArr = [];
@@ -326,9 +341,18 @@ onBeforeMount(() => {
 .plan-wrap {
 
   .plan-item-title {
+    --z-index: 1;
+
     display: flex;
     font-size: 16px;
-    padding: 10px 0;
+    padding: 10px;
+    background: #fff;
+
+    &.is-sticky {
+      position: sticky;
+      top: 32px;
+      z-index: var(--z-index);
+    }
 
     .title-sub {
       flex: 1 0 0;
@@ -352,8 +376,7 @@ onBeforeMount(() => {
   }
 
   .plan-attr {
-    padding: 5px 10px 10px;
-    background: #fff;
+    border-bottom: 1px solid var(--color-border);
 
     .attr-list {
       --flex-basic: 100px;
@@ -361,6 +384,7 @@ onBeforeMount(() => {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      padding: 5px 10px 10px;
     }
 
     .attr-item {
@@ -381,22 +405,23 @@ onBeforeMount(() => {
   }
 
   .plan-art {
-    flex: 2 0 400px;
-    padding: 5px 0 5px 10px;
-    background: var(--color-bg);
-  }
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-border);
 
-  .art-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    .art-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5px 0 5px 10px;
+      background: var(--color-bg);
+    }
 
-  .art-item {
-    flex: 0 0 180px;
-    padding: 5px;
-    margin: 5px 10px 5px 0;
-    border: 1px solid var(--color-border);
-    border-radius: 2px;
+    .art-item {
+      flex: 0 0 165px;
+      padding: 5px;
+      margin: 5px 10px 5px 0;
+      border: 1px solid var(--color-border);
+      border-radius: 2px;
+    }
 
     .item-index {
       display: flex;
@@ -430,12 +455,6 @@ onBeforeMount(() => {
   }
 
   .plan-meridian {
-    .plan-item-title {
-      position: sticky;
-      top: 32px;
-      z-index: 3;
-      background: #fff;
-    }
 
     .meridian-row {
       display: flex;
@@ -460,14 +479,14 @@ onBeforeMount(() => {
       }
 
       .row-td {
-        flex: 0 0 150px;
+        flex: 0 0 130px;
         margin: 0 5px 5px 0;
         padding: 5px;
         border: 1px solid var(--color-border);
         border-radius: 2px;
 
         &.is-acupoint {
-          flex: 0 0 305px;
+          flex: 0 0 265px;
         }
       }
 
