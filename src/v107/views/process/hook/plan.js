@@ -1,10 +1,9 @@
 import {computed, ref, useTemplateRef} from 'vue';
-import {artCheatMap} from '@/v107/data/art/map';
+import {artCheatMap, knwSecret} from '@/v107/data/art/map';
 import secretData from '@/v107/data/art/secret';
 import itmAll from '@/v107/data/itm/list';
 import {getAttr} from '@/v107/data/art/effect/attr';
 import {acupointMap, meridianMap} from '@/v107/data/other/meridian';
-import {attrMap} from '@/v107/data/map';
 
 export function useTal() {
   const dialogTalRef = useTemplateRef('dialogTalRef');
@@ -178,6 +177,42 @@ export function useArt() {
     }
   }
 
+  // 杂学
+  const knwAll = computed(() => {
+    const obj = {};
+    for (let id in knwSecret) {
+      const item = itmAll[id];
+      obj[id] = {
+        id,
+        name: item.name,
+        checked: false,
+      };
+    }
+    return obj;
+  });
+
+  // 杂学秘技
+  const knwSecretList = ref([]);
+
+  // 选择杂学
+  function chooseKnw(id) {
+    const secret = knwSecret[id];
+    if (!secret) {
+      return;
+    }
+    if (knwAll.value[id].checked) {
+      const artLength = secretList.value.length;
+      if (artLength + knwSecretList.value.length < 10) {
+        knwSecretList.value.push(secret);
+      }
+    } else {
+      const index = knwSecretList.value.findIndex(i => i.id === knwSecret[id].id);
+      if (index > -1) {
+        knwSecretList.value.splice(index, 1);
+      }
+    }
+  }
+
   // 秘技列表
   const secretList = ref([]);
 
@@ -190,9 +225,10 @@ export function useArt() {
         }
       }
     }
+    const knwLength = knwSecretList.value.length;
     secretList.value = [];
     for (let key in secretData) {
-      if (secretList.value.length > 9) {
+      if (secretList.value.length + knwLength > 9) {
         break;
       }
       let {id, name, type, condition, effect, cheat} = secretData[key];
@@ -204,6 +240,7 @@ export function useArt() {
         if (k === 'other') {
           continue;
         }
+        // 武功
         if (!artIds[k]) {
           const isArrCheat = Array.isArray(cheat[k]);
           if (isArrCheat) {
@@ -274,6 +311,9 @@ export function useArt() {
     addArt,
     delArt,
     secretList,
+    knwAll,
+    knwSecretList,
+    chooseKnw,
   };
 }
 

@@ -11,7 +11,7 @@
     </div>
     <div class="v-search-item">
       <v-button type="primary" @click="search">查询</v-button>
-      <!--      <v-button type="success" @click="exportExcel" style="margin-left: 10px;">导出Excel</v-button>-->
+      <v-button type="success" @click="exportExcel" style="margin-left: 10px;">导出Excel</v-button>
     </div>
   </div>
   <v-table

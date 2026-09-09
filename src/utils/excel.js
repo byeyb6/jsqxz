@@ -120,8 +120,9 @@ export function exportJsonToExcel({
     sheet1.mergeCells(item);
   }
   sheet1.eachRow({includeEmpty: true}, (row, rowNumber) => {
+    row.height = 18;
     row.eachCell({includeEmpty: true}, cell => {
-      cell.border = style.border;
+      // cell.border = style.border;
       cell.alignment = {horizontal: 'left', vertical: 'middle', wrapText: true};
       // 表头样式
       if (rowNumber <= multiHeader.length) {

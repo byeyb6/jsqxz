@@ -51,6 +51,12 @@
             {{ attr[key] + attr3Base + artAttr[key] + meridianAttr[key] }}
           </span>
         </div>
+        <div class="attr-item">
+          <span class="item-label">三维上限</span>
+          <span>
+            {{ 999 + attr.week }}
+          </span>
+        </div>
       </div>
       <div class="attr-list">
         <div
@@ -61,6 +67,12 @@
           <span class="item-label">{{ attrMap[key] }}</span>
           <span>
             {{ attr[key] + attr.week + artAttr[key] }}
+          </span>
+        </div>
+        <div class="attr-item">
+          <span class="item-label">五系上限</span>
+          <span>
+            {{ 500 + attr.week }}
           </span>
         </div>
       </div>
@@ -88,7 +100,7 @@
     <div class="plan-art">
       <div class="plan-item-title is-sticky" style="--z-index: 3;">
         <span>武功规划</span>
-        <span class="title-sub">规划无极丹洗掉的武功需要用于秘技计算，不要删除</span>
+        <span class="title-sub">规划无极丹洗掉的武功不要删除，需要用于秘技计算</span>
       </div>
       <div class="art-list">
         <div class="art-item" v-for="(row, rowIndex) of artList" :key="rowIndex">
@@ -124,15 +136,33 @@
         </div>
       </div>
       <div class="plan-item-title">
-        <span>激活秘技</span>
-        <span class="title-sub">自动计算，杂学秘技不算在内</span>
+        <span>杂学</span>
       </div>
-      <div class="art-list" v-show="secretList.length > 0">
+      <div class="art-list">
+        <div class="art-item" v-for="(item, id) of knwAll" :key="id">
+          <v-checkbox
+            :value="true"
+            :false-value="false"
+            v-model="item.checked"
+            @click="() => chooseKnw(id)"
+          >
+            {{ item.name }}
+          </v-checkbox>
+        </div>
+      </div>
+      <div class="plan-item-title">
+        <span>激活秘技</span>
+        <span class="title-sub">自动计算</span>
+      </div>
+      <div class="art-list" v-show="secretList.length + knwSecretList.length > 0">
         <div class="art-item" v-for="item of secretList" :key="item.id">
           <span class="color-error">{{ item.name }}</span>
         </div>
+        <div class="art-item" v-for="item of knwSecretList" :key="item.id">
+          <span class="color-error">{{ item.name }}</span>
+        </div>
       </div>
-      <div class="art-list" v-show="secretList.length < 1">
+      <div class="art-list" v-show="secretList.length + knwSecretList.length < 1">
         暂无激活的秘技
       </div>
     </div>
@@ -177,9 +207,7 @@
               </span>
             </div>
             <div class="row-td-effect color-error" v-if="col.acupoint">
-              <div v-for="(text, i) of col.acupoint.effect" :key="i">
-                {{ text }}
-              </div>
+              {{ col.acupoint.effect.join('；') }}
             </div>
           </div>
         </div>
@@ -268,6 +296,9 @@ const {
   addArt,
   delArt,
   secretList,
+  knwAll,
+  knwSecretList,
+  chooseKnw,
 } = useArt();
 
 const {
@@ -295,6 +326,7 @@ function clearAll() {
   initArt();
   initMeridian();
   initTal();
+  knwSecretList.value = [];
 }
 
 // 导出
@@ -322,10 +354,11 @@ function exportExcel() {
     attrObj[`col${attrIndex}`] = `${attrMap[key]}: ${num}`;
     attrIndex++;
   }
+  // 武功
   const artArr = [];
   let artRowIndex = 0;
   for (let row of artList.value) {
-    const item = {title: `武功${artRowIndex + 1}`};
+    const item = {title: `第${artRowIndex + 1}格武功`};
     artRowIndex++;
     let artColIndex = 0;
     for (let col of row) {
@@ -336,9 +369,26 @@ function exportExcel() {
     }
     artArr.push(item);
   }
+  // 杂学
+  const knwObj = {title: '杂学'};
+  let knwRowIndex = 0;
+  for (let id in knwAll.value) {
+    const {checked, name} = knwAll.value[id];
+    if (checked) {
+      knwObj[`col${knwRowIndex}`] = name;
+      knwRowIndex++;
+    }
+  }
+  // 秘技
   const secretObj = {title: '激活秘技'};
-  for (let [index, item] of secretList.value.entries()) {
-    secretObj[`col${index}`] = item.name;
+  let secretIndex = 0;
+  for (let item of secretList.value) {
+    secretObj[`col${secretIndex}`] = item.name;
+    secretIndex++;
+  }
+  for (let item of knwSecretList.value) {
+    secretObj[`col${secretIndex}`] = item.name;
+    secretIndex++;
   }
   const meridianArr = [];
   let meridianRowIndex = 0;
@@ -363,6 +413,7 @@ function exportExcel() {
 
   const tbody = [
     ...artArr,
+    knwObj,
     secretObj,
     {},
     talObj,
@@ -383,8 +434,7 @@ function exportExcel() {
 }
 
 onBeforeMount(() => {
-  initArt();
-  initMeridian();
+  clearAll();
 });
 </script>
 <style lang="less">

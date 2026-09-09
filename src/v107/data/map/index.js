@@ -58,6 +58,7 @@ export const attrMap = {
   spc: '奇门',
   inn: '内功',
   dod: '轻功',
+  knw: '杂学',
   msl: '暗器',
   med: '医疗',
   ant: '解毒',
