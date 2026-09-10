@@ -1588,7 +1588,7 @@ export function yaoJiaoKongBi(lv) {
   return {
     id: 911,
     name: `夭矫空碧 Lv${lv}`,
-    effect: [`攻击时${lv * 25}%概率触发连击伤害、气攻、命中不减`],
+    effect: [`攻击时${lv * 25}%概率触发气攻、命中不减，连击伤害保底30%`],
   };
 }
 

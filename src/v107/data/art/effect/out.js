@@ -195,7 +195,7 @@ export function wuShiQiFang(lv) {
   };
 }
 
-export function daFanWei(lv) {
+export function hengSao(lv) {
   return {
     id: 20,
     effect: `${lv * 10}%概率造成大范围伤害`,

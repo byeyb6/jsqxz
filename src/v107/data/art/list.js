@@ -589,6 +589,7 @@ export default {
     ultimate: [
       '',
       '',
+      '',
       'jianNiTianGuang',
       'jianHuangJingYing',
       'huangXiJianYin',
@@ -2429,7 +2430,7 @@ export default {
   191: {
     id: 191,
     name: '奔雷手',
-    get: ['书剑霍青桐线收文泰来获得'],
+    get: ['书剑霍青桐线收文泰来获得，李沅芷线获得天书时获得'],
     sect: 0,
     level: 3,
     inner: 2,
@@ -2445,7 +2446,7 @@ export default {
   192: {
     id: 192,
     name: '追魂夺命剑',
-    get: ['书剑双线南少林最终战获得'],
+    get: ['书剑霍青桐线获得天书时获得'],
     sect: 26,
     level: 4,
     inner: 1,
@@ -2811,7 +2812,7 @@ export default {
   221: {
     id: 221,
     name: '阴阳无极功',
-    get: ['书剑双线南少林最终战获得'],
+    get: ['书剑霍青桐线获得天书时获得'],
     sect: 0,
     level: 4,
     inner: 1,

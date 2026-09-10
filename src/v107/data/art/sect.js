@@ -1,4 +1,6 @@
 // 门派
+import {hengSao} from '@/v107/data/art/effect/out';
+
 export default {
   0: {
     id: 0,
@@ -259,7 +261,7 @@ export default {
       'zhiMingYiJi',
       'maBi',
       'suoZu',
-      'daFangWei',
+      'hengSao',
     ],
     art: [],
   },

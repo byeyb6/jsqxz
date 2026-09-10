@@ -26,10 +26,10 @@
 </template>
 
 <script setup>
-import {ref, watchEffect} from 'vue';
+import {ref, watch} from 'vue';
 import {useRoute} from 'vue-router';
 import VTbodyProcess from './tbody.vue';
-import allData from '@/v107/data/process';
+import allData, {evilMap, goodMap} from '@/v107/data/process';
 import {globalState} from '@/store/global';
 
 const route = useRoute();
@@ -40,17 +40,10 @@ const branchMap = ref({
   evil: '邪线',
   branch: '支线',
 });
-const goodMap = {
-  shu: '霍青桐线',
-  fei: '袁紫衣线',
-};
-const evilMap = {
-  shu: '李沅芷线',
-  fei: '程灵素线',
-};
+
 const hasBranch = ref(false);
 const tbody = ref({});
-watchEffect(async () => {
+watch(() => route.name, () => {
   const {
     name,
     meta: {type},
@@ -76,7 +69,7 @@ watchEffect(async () => {
     hasBranch.value = true;
   }
   branch.value = 'good';
-});
+}, {immediate: true});
 </script>
 
 <style lang="less">

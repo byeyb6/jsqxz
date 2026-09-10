@@ -1,12 +1,11 @@
 export default {
-  name: '武道大会',
   normal: [
     {
       map: '武道大会（中原）',
       event: [
         {
           list: ['与楼梯前的谢无悠对话，选择『是』则开始挑战', '*不需要集齐14本天书，实力够就可以来挑战'],
-          reward: [],
+          reward: {},
         },
         {
           list: [

@@ -137,6 +137,7 @@
       </div>
       <div class="plan-item-title">
         <span>杂学</span>
+        <span class="title-sub">由于中庸之道对应两个秘技，贰会覆盖壹，需根据资质自己选择</span>
       </div>
       <div class="art-list">
         <div class="art-item" v-for="(item, id) of knwAll" :key="id">
@@ -213,6 +214,52 @@
         </div>
       </div>
     </div>
+    <div class="plan-book">
+      <div class="plan-item-title is-sticky" style="--z-index: 5;">
+        <span>路线规划</span>
+        <span class="title-sub">
+          只统计天书流程获取，流程增加的属性因含有自选的，此处都不计入统计
+        </span>
+      </div>
+      <div class="v-table v-table-vertical">
+        <div class="tr" v-for="(item, book) in rewardTextMap" :key="book">
+          <div class="td">
+            <div class="td-block">{{ bookMap[book] }}</div>
+            <el-radio-group
+              v-if="bookBranch[book]!=='normal'"
+              v-model="bookBranch[book]"
+            >
+              <el-radio value="good">
+                {{ goodMap[book] ? goodMap[book] : '正线' }}
+              </el-radio>
+              <el-radio value="evil">
+                {{ evilMap[book] ? evilMap[book] : '邪线' }}
+              </el-radio>
+            </el-radio-group>
+          </div>
+          <div class="td">
+            <div class="td-block">
+              <div class="td-effect-item effect-icon-rhombus">
+                {{ item[bookBranch[book]].itm.join('，') }}
+              </div>
+              <div
+                v-show="item[bookBranch[book]].team?.length > 0"
+                class="td-effect-item effect-icon-star"
+              >
+                {{ item[bookBranch[book]].team.join('，') }}
+              </div>
+              <div
+                v-for="(text, i) of item[bookBranch[book]].branch"
+                :key="i"
+                class="td-effect-item effect-icon-rhombus"
+              >
+                {{ text }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <v-dialog ref="dialogArtRef" dialog-class="dialog-art">
     <v-art ref="artRef" :id="artId"></v-art>
@@ -246,10 +293,23 @@ import VCheckbox from '@/components/checkbox';
 import VArt from '@/v107/views/art/search';
 import TalentCheck from '@/v107/views/process/talent-check';
 import {Delete} from '@element-plus/icons-vue';
-import {attrMap} from '@/v107/data/map';
+import {attrMap, bookMap} from '@/v107/data/map';
 import {useArt, useMeridian, useTal} from '@/v107/views/process/hook/plan';
 import {exportJsonToExcel} from '@/utils/excel';
 import talentMap from '@/v107/data/chr/talent/talent';
+import {rewardTextMap, goodMap, evilMap} from '@/v107/data/process';
+
+const bookBranch = ref({});
+
+function initBook() {
+  for (let key in rewardTextMap) {
+    if (rewardTextMap[key].normal) {
+      bookBranch.value[key] = 'normal';
+      continue;
+    }
+    bookBranch.value[key] = 'good';
+  }
+}
 
 const attr = ref({
   dfl: 1,
@@ -326,6 +386,7 @@ function clearAll() {
   initArt();
   initMeridian();
   initTal();
+  initBook();
   knwSecretList.value = [];
 }
 
@@ -411,6 +472,31 @@ function exportExcel() {
     talObj[`col${index}`] = `${name}(${level}级${score}点)`;
   }
 
+  // 流程规划
+  const processObj = {title: '天书流程'};
+  const processObj1 = {title: '上'};
+  const processObj2 = {title: '下'};
+
+  function handleName(book, key) {
+    let name = '无分线';
+    if (key === 'good') {
+      name = goodMap[key] ? goodMap[key] : '正线';
+    } else if (key === 'evil') {
+      name = evilMap[key] ? evilMap[key] : '邪线';
+    }
+    return `${bookMap[book]}-${name}`;
+  }
+
+  let processIndex = 0;
+  for (let book in bookBranch.value) {
+    if (processIndex < 7) {
+      processObj1[`col${processIndex}`] = handleName(book, bookBranch.value[book]);
+    } else {
+      processObj2[`col${processIndex - 7}`] = handleName(book, bookBranch.value[book]);
+    }
+    processIndex++;
+  }
+
   const tbody = [
     ...artArr,
     knwObj,
@@ -424,12 +510,16 @@ function exportExcel() {
     },
     ...meridianArr,
     {},
+    processObj,
+    processObj1,
+    processObj2,
+    {},
     attrObj,
   ];
   exportJsonToExcel({
     data: tbody,
     header,
-    filename: '金书武功经脉规划',
+    filename: '金书规划',
   });
 }
 
@@ -445,8 +535,9 @@ onBeforeMount(() => {
 
     display: flex;
     font-size: 16px;
-    padding: 10px;
+    padding: 15px 10px;
     background: #fff;
+    color: var(--color-warn);
 
     &.is-sticky {
       position: sticky;
@@ -465,7 +556,7 @@ onBeforeMount(() => {
   .plan-tool {
     position: sticky;
     top: 0;
-    z-index: 4;
+    z-index: 9;
     display: flex;
     padding: 0 10px 8px;
     background: #fff;
@@ -564,6 +655,7 @@ onBeforeMount(() => {
   }
 
   .plan-meridian {
+    border-bottom: 1px solid var(--color-border);
 
     .meridian-row {
       display: flex;
@@ -603,6 +695,14 @@ onBeforeMount(() => {
         span {
           margin-right: 10px;
         }
+      }
+    }
+  }
+
+  .plan-book {
+    .v-table-vertical {
+      .td:first-child {
+        flex: 0 0 130px;
       }
     }
   }

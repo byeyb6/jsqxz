@@ -65,6 +65,7 @@ export const attrMap = {
   tox: '用毒',
   psn: '带毒',
   prs: '毒抗',
+  mor: '道德',
 };
 // 等级
 export const levelMap = {

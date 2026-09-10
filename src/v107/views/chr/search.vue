@@ -76,6 +76,10 @@ function init() {
     const talentArr = [];
     const fortuneArr = [];
     for (let key of item.talent) {
+      if (!talentMap[key]) {
+        console.log(item);
+        continue;
+      }
       const {id, name, effect, level, fortune} = talentMap[key];
       talentArr.push({
         id,

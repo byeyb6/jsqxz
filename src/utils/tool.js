@@ -46,3 +46,12 @@ export function formatDate(date, fmt = 'yyyy-MM-dd hh:mm:ss') {
   }
   return fmt;
 }
+
+/**
+ * 类型判断
+ * @param val
+ * @returns {string}
+ */
+export function typeOf(val) {
+  return Object.prototype.toString.call(val).replace(/.* (.*)]/, '$1').toLowerCase();
+}

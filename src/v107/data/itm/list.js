@@ -2417,7 +2417,7 @@ export default {
     effect: [
       '越女剑法/猿公剑法威力+200',
     ],
-    type: 11,
+    type: 13,
   },
   327: {
     id: 327,
