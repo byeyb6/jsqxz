@@ -105,6 +105,7 @@
         <template #title="{isActive }">
           <div class="plan-item-title" :class="{'is-active': isActive}">
             <span>天赋规划</span>
+            <span class="title-sub">畅想155点/门派205点</span>
           </div>
         </template>
         <div class="tal-button">
@@ -320,74 +321,28 @@
   </v-dialog>
 </template>
 <script setup>
-import {computed, onBeforeMount, ref} from 'vue';
+import {onBeforeMount, ref} from 'vue';
 import VDialog from '@/components/dialog';
 import VCheckbox from '@/components/checkbox';
 import VArt from '@/v107/views/art/search';
 import TalentCheck from '@/v107/views/process/talent-check';
 import {Delete} from '@element-plus/icons-vue';
-import {attrMap, bookMap, dflMap, rlmMap} from '@/v107/data/map';
-import {useArt, useMeridian, useProcess, useTal} from '@/v107/views/process/hook/plan';
+import {attrMap, bookMap, dflMap} from '@/v107/data/map';
+import {useArt, useAttr, useMeridian, useProcess, useTal} from '@/v107/views/process/hook/plan';
 import {exportJsonToExcel} from '@/utils/excel';
 import talentMap from '@/v107/data/chr/talent/talent';
 import {goodMap, evilMap} from '@/v107/data/process';
 
 const active = ref(['attr']);
 
-const attr = ref({
-  dfl: 1,
-  week: 1,
-  apt: 1,
-  rlm: 6,
-  atk: 40,
-  def: 40,
-  spd: 40,
-  una: 50,
-  fin: 50,
-  swd: 50,
-  bld: 50,
-  spc: 50,
-});
-const attr3 = {atk: true, def: true, spd: true};
-const attr5 = {una: true, fin: true, swd: true, bld: true, spc: true};
-const attr3Base = computed(() => {
-  const base = 29;
-  let per = 3;
-  if (attr.value.apt > 79) {
-    per = 6;
-  } else if (attr.value.apt > 50) {
-    per = 5;
-  } else if (attr.value.apt > 30) {
-    per = 4;
-  }
-  let rst = per * base;
-  if (attr.value.dfl > 1) {
-    rst += attr.value.week + Math.round(attr.value.dfl * 5 / 3);
-  }
-  return rst;
-});
-
-const rlmAttr = computed(() => {
-  const obj = {
-    atk: 0,
-    def: 0,
-    spd: 0,
-    una: 0,
-    fin: 0,
-    swd: 0,
-    bld: 0,
-    spc: 0,
-  };
-  for (let id in rlmMap) {
-    if (id >= attr.value.rlm) {
-      const item = rlmMap[id].base;
-      for (let k in item) {
-        obj[k] += item[k];
-      }
-    }
-  }
-  return obj;
-});
+const {
+  attr,
+  attr3,
+  attr5,
+  attr3Base,
+  rlmAttr,
+  rlmMap,
+} = useAttr();
 
 const {
   dialogArtRef,

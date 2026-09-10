@@ -5,8 +5,74 @@ import itmAll from '@/v107/data/itm/list';
 import {getAttr} from '@/v107/data/art/effect/attr';
 import {acupointMap, meridianMap} from '@/v107/data/other/meridian';
 import {rewardMap} from '@/v107/data/process';
-import {itmTypeMap} from '@/v107/data/map';
+import {itmTypeMap, rlmMap} from '@/v107/data/map';
 import chrAll from '@/v107/data/chr';
+
+export function useAttr() {
+  const attr = ref({
+    dfl: 1,
+    week: 1,
+    apt: 1,
+    rlm: 6,
+    atk: 40,
+    def: 40,
+    spd: 40,
+    una: 50,
+    fin: 50,
+    swd: 50,
+    bld: 50,
+    spc: 50,
+  });
+  const attr3 = {atk: true, def: true, spd: true};
+  const attr5 = {una: true, fin: true, swd: true, bld: true, spc: true};
+  const attr3Base = computed(() => {
+    const base = 29;
+    let per = 3;
+    if (attr.value.apt > 79) {
+      per = 6;
+    } else if (attr.value.apt > 50) {
+      per = 5;
+    } else if (attr.value.apt > 30) {
+      per = 4;
+    }
+    let rst = per * base;
+    if (attr.value.dfl > 1) {
+      rst += attr.value.week + Math.round(attr.value.dfl * 5 / 3);
+    }
+    return rst;
+  });
+
+  const rlmAttr = computed(() => {
+    const obj = {
+      atk: 0,
+      def: 0,
+      spd: 0,
+      una: 0,
+      fin: 0,
+      swd: 0,
+      bld: 0,
+      spc: 0,
+    };
+    for (let id in rlmMap) {
+      if (id >= attr.value.rlm) {
+        const item = rlmMap[id].base;
+        for (let k in item) {
+          obj[k] += item[k];
+        }
+      }
+    }
+    return obj;
+  });
+
+  return {
+    attr,
+    attr3,
+    attr5,
+    attr3Base,
+    rlmAttr,
+    rlmMap,
+  };
+}
 
 export function useTal() {
   const dialogTalRef = useTemplateRef('dialogTalRef');

@@ -36,7 +36,7 @@
       >
         <v-checkbox
           :value="true"
-          :disabled="!checkedTal[item.id] && checkedIds.length > 10"
+          :disabled="!checkedTal[item.id] && checkedIds.length > 13"
           v-model="checkedTal[item.id]"
         >
           &nbsp;
