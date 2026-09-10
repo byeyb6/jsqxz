@@ -4,6 +4,9 @@ import secretData from '@/v107/data/art/secret';
 import itmAll from '@/v107/data/itm/list';
 import {getAttr} from '@/v107/data/art/effect/attr';
 import {acupointMap, meridianMap} from '@/v107/data/other/meridian';
+import {rewardMap} from '@/v107/data/process';
+import {itmTypeMap} from '@/v107/data/map';
+import chrAll from '@/v107/data/chr';
 
 export function useTal() {
   const dialogTalRef = useTemplateRef('dialogTalRef');
@@ -317,6 +320,7 @@ export function useArt() {
   };
 }
 
+// 经脉
 export function useMeridian() {
   // 总经脉
   const meridianData = ref({});
@@ -392,5 +396,95 @@ export function useMeridian() {
     meridianAttr,
     initMeridian,
     chooseMeridian,
+  };
+}
+
+// 流程
+export function useProcess() {
+  // 流程收益转文本
+  const rewardTextMap = {};
+  for (let id in rewardMap) {
+    rewardTextMap[id] = {};
+    for (let k in rewardMap[id]) {
+      rewardTextMap[id][k] = formatReward(rewardMap[id][k]);
+    }
+  }
+
+  // 天龙邪线虚竹离队
+  const tianEvilTeamIndex = rewardTextMap.tian.evil.team.findIndex(i => /虚竹/.test(i));
+  if (tianEvilTeamIndex > -1) {
+    rewardTextMap.tian.evil.team.splice(tianEvilTeamIndex, 1);
+  }
+
+  // 单条流程收益
+  function formatReward(data) {
+    const itmArr = [];
+    const teamArr = [];
+    const branchArr = [];
+    const {mor, itm, team, branch} = data;
+    if (mor) {
+      itmArr.push(`道德${mor > 0 ? '+' : ''}${mor}`);
+    }
+    if (itm) {
+      for (let k in itm) {
+        const {name, type} = itmAll[k];
+        itmArr.push(`${name}[${itmTypeMap[type]}]${itm[k] > 0 ? '+' : ''}${itm[k]}`);
+      }
+    }
+    if (team) {
+      for (let k in team) {
+        if (team[k]) {
+          teamArr.push(`${chrAll[k].name}加入队伍`);
+        }
+      }
+    }
+    if (branch) {
+      for (let k in branch) {
+        let bArr = [];
+        for (name in branch[k]) {
+          const cArr = [];
+          const {mor, itm, team} = branch[k][name];
+          if (mor) {
+            cArr.push(`道德${mor > 0 ? '+' : ''}${mor}`);
+          }
+          if (itm) {
+            for (let k in itm) {
+              const {name, type} = itmAll[k];
+              cArr.push(`${name}[${itmTypeMap[type]}]${itm[k] > 0 ? '+' : ''}${itm[k]}`);
+            }
+          }
+          if (team) {
+            for (let k in team) {
+              cArr.push(`${chrAll[k].name}${team[k] ? '加入' : '离开'}队伍`);
+            }
+          }
+          bArr.push(`${name}：${cArr.join('，')}`);
+        }
+        branchArr.push(`【分支${k}】：${bArr.join('；')}`);
+      }
+    }
+    return {
+      itm: itmArr,
+      team: teamArr,
+      branch: branchArr,
+    };
+  }
+
+  const processBranch = ref({});
+
+  function initProcess() {
+    for (let key in rewardTextMap) {
+      if (rewardTextMap[key].normal) {
+        processBranch.value[key] = 'normal';
+        continue;
+      }
+      processBranch.value[key] = 'good';
+    }
+  }
+
+  return {
+    processBranch,
+    rewardTextMap,
+    initProcess,
   };
 }

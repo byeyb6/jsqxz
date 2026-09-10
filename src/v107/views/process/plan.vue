@@ -17,12 +17,18 @@
         <div class="attr-list" style="--flex-basic: 150px;">
           <div class="attr-item">
             <span class="item-label">难度</span>
-            <el-input-number
+            <el-select
               v-model="attr.dfl"
-              :min="1"
-              :max="4"
+              placeholder="清选择"
               size="small"
-            ></el-input-number>
+            >
+              <el-option
+                v-for="(name, id) in dflMap"
+                :key="id"
+                :label="name"
+                :value="Number(id)"
+              />
+            </el-select>
           </div>
           <div class="attr-item">
             <span class="item-label">周目</span>
@@ -42,16 +48,31 @@
               size="small"
             ></el-input-number>
           </div>
+          <div class="attr-item">
+            <span class="item-label">境界</span>
+            <el-select
+              v-model="attr.rlm"
+              placeholder="清选择"
+              size="small"
+            >
+              <el-option
+                v-for="(item, id) in rlmMap"
+                :key="id"
+                :label="item.name"
+                :value="Number(id)"
+              />
+            </el-select>
+          </div>
         </div>
         <div class="attr-list">
           <div
             class="attr-item"
-            v-for="key of attr3"
+            v-for="(val, key) in attr3"
             :key="key"
           >
             <span class="item-label">{{ attrMap[key] }}</span>
             <span>
-              {{ attr[key] + attr3Base + artAttr[key] + meridianAttr[key] }}
+              {{ attr[key] + attr3Base + artAttr[key] + meridianAttr[key] + rlmAttr[key] }}
             </span>
           </div>
           <div class="attr-item">
@@ -64,12 +85,12 @@
         <div class="attr-list">
           <div
             class="attr-item"
-            v-for="key of attr5"
+            v-for="(val, key) in attr5"
             :key="key"
           >
             <span class="item-label">{{ attrMap[key] }}</span>
             <span>
-              {{ attr[key] + attr.week + artAttr[key] }}
+              {{ attr[key] + attr.week + rlmAttr[key] }}
             </span>
           </div>
           <div class="attr-item">
@@ -237,8 +258,8 @@
             <div class="td">
               <div class="td-block">{{ bookMap[book] }}</div>
               <el-radio-group
-                v-if="bookBranch[book]!=='normal'"
-                v-model="bookBranch[book]"
+                v-if="processBranch[book]!=='normal'"
+                v-model="processBranch[book]"
               >
                 <el-radio value="good">
                   {{ goodMap[book] ? goodMap[book] : '正线' }}
@@ -251,16 +272,16 @@
             <div class="td">
               <div class="td-block">
                 <div class="td-effect-item effect-icon-rhombus">
-                  {{ item[bookBranch[book]].itm.join('，') }}
+                  {{ item[processBranch[book]].itm.join('，') }}
                 </div>
                 <div
-                  v-show="item[bookBranch[book]].team?.length > 0"
+                  v-show="item[processBranch[book]].team?.length > 0"
                   class="td-effect-item effect-icon-star"
                 >
-                  {{ item[bookBranch[book]].team.join('，') }}
+                  {{ item[processBranch[book]].team.join('，') }}
                 </div>
                 <div
-                  v-for="(text, i) of item[bookBranch[book]].branch"
+                  v-for="(text, i) of item[processBranch[book]].branch"
                   :key="i"
                   class="td-effect-item effect-icon-rhombus"
                 >
@@ -305,11 +326,11 @@ import VCheckbox from '@/components/checkbox';
 import VArt from '@/v107/views/art/search';
 import TalentCheck from '@/v107/views/process/talent-check';
 import {Delete} from '@element-plus/icons-vue';
-import {attrMap, bookMap} from '@/v107/data/map';
-import {useArt, useMeridian, useTal} from '@/v107/views/process/hook/plan';
+import {attrMap, bookMap, dflMap, rlmMap} from '@/v107/data/map';
+import {useArt, useMeridian, useProcess, useTal} from '@/v107/views/process/hook/plan';
 import {exportJsonToExcel} from '@/utils/excel';
 import talentMap from '@/v107/data/chr/talent/talent';
-import {rewardTextMap, goodMap, evilMap} from '@/v107/data/process';
+import {goodMap, evilMap} from '@/v107/data/process';
 
 const active = ref(['attr']);
 
@@ -317,6 +338,7 @@ const attr = ref({
   dfl: 1,
   week: 1,
   apt: 1,
+  rlm: 6,
   atk: 40,
   def: 40,
   spd: 40,
@@ -326,8 +348,8 @@ const attr = ref({
   bld: 50,
   spc: 50,
 });
-const attr3 = ['atk', 'def', 'spd'];
-const attr5 = ['una', 'fin', 'swd', 'bld', 'spc'];
+const attr3 = {atk: true, def: true, spd: true};
+const attr5 = {una: true, fin: true, swd: true, bld: true, spc: true};
 const attr3Base = computed(() => {
   const base = 29;
   let per = 3;
@@ -343,6 +365,28 @@ const attr3Base = computed(() => {
     rst += attr.value.week + Math.round(attr.value.dfl * 5 / 3);
   }
   return rst;
+});
+
+const rlmAttr = computed(() => {
+  const obj = {
+    atk: 0,
+    def: 0,
+    spd: 0,
+    una: 0,
+    fin: 0,
+    swd: 0,
+    bld: 0,
+    spc: 0,
+  };
+  for (let id in rlmMap) {
+    if (id >= attr.value.rlm) {
+      const item = rlmMap[id].base;
+      for (let k in item) {
+        obj[k] += item[k];
+      }
+    }
+  }
+  return obj;
 });
 
 const {
@@ -383,24 +427,18 @@ const {
   getTalTagStyle,
 } = useTal();
 
-const bookBranch = ref({});
-
-function initBook() {
-  for (let key in rewardTextMap) {
-    if (rewardTextMap[key].normal) {
-      bookBranch.value[key] = 'normal';
-      continue;
-    }
-    bookBranch.value[key] = 'good';
-  }
-}
+const {
+  processBranch,
+  rewardTextMap,
+  initProcess,
+} = useProcess();
 
 // 重置
 function clearAll() {
   initArt();
   initMeridian();
   initTal();
-  initBook();
+  initProcess();
   knwSecretList.value = [];
 }
 
@@ -415,18 +453,29 @@ function exportExcel() {
       key: `col${i}`,
     });
   }
-  const attrObj = {
-    title: '预估属性',
-  };
+  const attrObj = {title: '预估属性'};
+  const attrObj1 = {title: '', col3: `三维上限: ${999 + attr.value.week}`};
+  const attrObj2 = {title: '', col5: `五系上限: ${500 + attr.value.week}`};
   let attrIndex = 0;
   for (let key in attr.value) {
     let num = attr.value[key];
-    if (attr3[key]) {
-      num += attr3Base.value + artAttr.value[key] + meridianAttr.value[key];
-    } else if (attr5[key]) {
-      num += attr.value.week + artAttr.value[key];
+    if (key === 'rlm') {
+      num = rlmMap[attr.value[key]].name;
+    } else if (key === 'dfl') {
+      num = dflMap[attr.value[key]];
     }
-    attrObj[`col${attrIndex}`] = `${attrMap[key]}: ${num}`;
+    if (attr3[key]) {
+      num += artAttr.value[key] + attr3Base.value + meridianAttr.value[key] + rlmAttr.value[key];
+    } else if (attr5[key]) {
+      num += attr.value.week + rlmAttr.value[key];
+    }
+    if (attrIndex < 4) {
+      attrObj[`col${attrIndex}`] = `${attrMap[key]}: ${num}`;
+    } else if (attrIndex < 7) {
+      attrObj1[`col${attrIndex - 4}`] = `${attrMap[key]}: ${num}`;
+    } else {
+      attrObj2[`col${attrIndex - 7}`] = `${attrMap[key]}: ${num}`;
+    }
     attrIndex++;
   }
   // 武功
@@ -502,11 +551,11 @@ function exportExcel() {
   }
 
   let processIndex = 0;
-  for (let book in bookBranch.value) {
+  for (let book in processBranch.value) {
     if (processIndex < 7) {
-      processObj1[`col${processIndex}`] = handleName(book, bookBranch.value[book]);
+      processObj1[`col${processIndex}`] = handleName(book, processBranch.value[book]);
     } else {
-      processObj2[`col${processIndex - 7}`] = handleName(book, bookBranch.value[book]);
+      processObj2[`col${processIndex - 7}`] = handleName(book, processBranch.value[book]);
     }
     processIndex++;
   }
@@ -529,6 +578,8 @@ function exportExcel() {
     processObj2,
     {},
     attrObj,
+    attrObj1,
+    attrObj2,
   ];
   exportJsonToExcel({
     data: tbody,
@@ -610,7 +661,7 @@ onBeforeMount(() => {
       color: var(--color-gray);
     }
 
-    .el-input-number {
+    .el-input-number, .el-select {
       width: 100px;
     }
   }

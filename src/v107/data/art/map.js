@@ -41,8 +41,6 @@ for (let key in secretAll) {
   }
 }
 
-console.log(knwSecret);
-
 export {
   artCheatMap,
   // artNameId,

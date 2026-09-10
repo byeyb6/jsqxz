@@ -48,6 +48,7 @@ export const attrMap = {
   dfl: '难度',
   week: '周目',
   apt: '资质',
+  rlm: '境界',
   atk: '攻击',
   def: '防御',
   spd: '轻功',
@@ -83,6 +84,70 @@ export const innerTypeMap = {
   9: '无',
   '-': '无',
   '': '无',
+};
+// 难度
+export const dflMap = {
+  1: '简单',
+  2: '普通',
+  3: '困难',
+  4: '地狱',
+};
+// 境界
+export const rlmMap = {
+  1: {
+    name: '神话',
+    base: {
+      atk: 50,
+      def: 50,
+      spd: 50,
+      una: 30,
+      fin: 30,
+      swd: 30,
+      bld: 30,
+      spc: 30,
+    },
+  },
+  2: {
+    name: '宗师',
+    base: {
+      atk: 40,
+      def: 40,
+      spd: 40,
+    },
+  },
+  3: {
+    name: '豪侠',
+    base: {
+      atk: 30,
+      def: 30,
+      spd: 30,
+    },
+  },
+  4: {
+    name: '一流',
+    base: {
+      atk: 20,
+      def: 20,
+      spd: 20,
+      una: 15,
+      fin: 15,
+      swd: 15,
+      bld: 15,
+      spc: 15,
+    },
+  },
+  5: {
+    name: '二流',
+    base: {
+      atk: 15,
+      def: 15,
+      spd: 15,
+    },
+  },
+  6: {
+    name: '三流',
+    base: {},
+  },
 };
 
 // 门派编码
