@@ -252,7 +252,6 @@ export function getRange({type, level, other = ''}) {
 }
 
 const sectClosedMap = {
-  7: '全真教',
   10: '嵩山派',
   11: '青城派',
   12: '衡山派',

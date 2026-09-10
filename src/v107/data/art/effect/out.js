@@ -350,6 +350,20 @@ export function maBi(lv) {
   };
 }
 
+export function fengYunPoJia(lv) {
+  return {
+    id: 44,
+    effect: `命中后使目标防御降低${lv * 10}%`,
+  };
+}
+
+export function mianGong(lv) {
+  return {
+    id: 45,
+    effect: `40%概率面攻：对目标周围两格内敌人各造成一次同等伤害`,
+  };
+}
+
 /**
  * 奥义
  */
@@ -424,6 +438,7 @@ export function quanBengRuShan(lv) {
     effect: `攻击${lv * 5}%概率造成15~20点内伤，伤害增加(内伤点数/2)%`,
   };
 }
+
 export function caiYunJianShui(lv) {
   return {
     id: 10,
@@ -431,6 +446,7 @@ export function caiYunJianShui(lv) {
     effect: `攻击必流血，目标流血值25以上时把流血值转为封穴值`,
   };
 }
+
 export function xingLuoYunBu(lv) {
   return {
     id: 11,
@@ -438,6 +454,7 @@ export function xingLuoYunBu(lv) {
     effect: `攻击${lv * 10}%概率造成锁足一回合`,
   };
 }
+
 export function yingFengHuiLang(lv) {
   return {
     id: 12,

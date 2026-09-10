@@ -246,6 +246,8 @@ export function useArt() {
     }
   }
 
+  // 秘技列表
+  const secretList = ref([]);
   // 杂学
   const knwAll = ref({});
 
@@ -261,7 +263,10 @@ export function useArt() {
     if (knwAll.value[id].checked) {
       const artLength = secretList.value.length;
       if (artLength + knwSecretList.value.length < 10) {
-        knwSecretList.value.push(secret);
+        knwSecretList.value.push({
+          id: secret.id,
+          name: secret.name,
+        });
       }
     } else {
       const index = knwSecretList.value.findIndex(i => i.id === knwSecret[id].id);
@@ -270,9 +275,6 @@ export function useArt() {
       }
     }
   }
-
-  // 秘技列表
-  const secretList = ref([]);
 
   function getSecret() {
     const artIds = {};
@@ -289,7 +291,7 @@ export function useArt() {
       if (secretList.value.length + knwLength > 9) {
         break;
       }
-      let {id, name, type, condition, effect, cheat} = secretData[key];
+      let {id, name, type, condition, cheat} = secretData[key];
       if (type !== 1 || typeof condition === 'string') {
         continue;
       }
@@ -319,39 +321,9 @@ export function useArt() {
       if (flag) {
         continue;
       }
-      const arr = [];
-      let other = '';
-      for (let k in cheat) {
-        if (k === 'other') {
-          other = cheat[k];
-          continue;
-        }
-        const isArrCheat = Array.isArray(cheat[k]);
-        arr.push({
-          ...itmAll[k],
-          isCheat: true,
-          symbol: '+',
-        });
-        if (isArrCheat) {
-          for (let j of cheat[k]) {
-            arr.push({
-              ...itmAll[j],
-              isCheat: true,
-              symbol: '/',
-            });
-          }
-        }
-      }
-      if (other && arr.length > 0) {
-        other = `，${other}`;
-      }
       secretList.value.push({
         id,
         name,
-        condition: other,
-        cheatList: arr,
-        effect,
-        type,
       });
     }
   }

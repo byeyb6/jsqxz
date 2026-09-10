@@ -130,6 +130,132 @@ export function neiRuQuanYong(lv) {
   };
 }
 
+export function changChun(lv) {
+  return {
+    id: 113,
+    name: `长春 Lv${lv}`,
+    effect: [`受到伤害时40%概率进入恢复状态${lv * 5}时序，此状态回生命值翻倍，清除封穴翻倍`],
+  };
+}
+
+export function muLingTi(lv) {
+  return {
+    id: 114,
+    name: `木灵体 Lv${lv}`,
+    effect: [`无视中毒，回合结束，根据自身中毒值恢复生命${lv * 5}%`],
+  };
+}
+
+export function qingYuanJianMang(lv) {
+  return {
+    id: 115,
+    name: `青元剑芒 Lv${lv}`,
+    effect: [`剑法攻击时无视目标防御40%，剑法杀伤范围+1格`],
+  };
+}
+
+export function huTiJianDun(lv) {
+  return {
+    id: 116,
+    name: `护体剑盾 Lv${lv}`,
+    effect: [`受到攻击时70%概率剑盾反噬：无视护盾防御，对攻击者造成御剑能力1.5倍伤害`],
+  };
+}
+
+export function jianYingFenGuangShu(lv) {
+  return {
+    id: 117,
+    name: `剑影分光术 Lv${lv}`,
+    effect: [
+      `剑法攻击时30%（青竹蜂云剑法50%）概率分化剑影，剑诀每3级多1道（2~5道，极5道），每道威力为原伤害的1/3，每道额外结算一次伤害`,
+    ],
+  };
+}
+
+export function daGengJianZhen(lv) {
+  return {
+    id: 118,
+    name: `大庚剑阵 Lv${lv}`,
+    effect: [
+      `剑法攻击时30%（青竹蜂云剑法50%）概率布下大庚剑阵：目标锁足并流血40点，青竹蜂云剑法触发时剑阵笼罩全屏敌人`,
+    ],
+  };
+}
+
+export function biXieShenLei(lv) {
+  return {
+    id: 119,
+    name: `辟邪神雷 Lv${lv}`,
+    effect: [
+      '万法不侵，免疫负面状态，每20时序清除自身所有负面状态',
+      '攻击时40%概率辟邪神雷（麻痹、迟缓），神雷叠满3层时对目标周围三格内敌人造成200点伤害',
+    ],
+  };
+}
+
+export function fanShengJinShen(lv) {
+  return {
+    id: 120,
+    name: `梵圣金身 Lv${lv}`,
+    effect: [
+      `受到的所有伤害减少40%，免疫暴击伤害`,
+    ],
+  };
+}
+
+export function fanShengJia(lv) {
+  return {
+    id: 121,
+    name: `梵圣甲 Lv${lv}`,
+    effect: [
+      `受到攻击时60%概率生成梵圣甲护盾，护盾值为所受伤害的一半`,
+    ],
+  };
+}
+
+export function dongXuanMoGuang(lv) {
+  return {
+    id: 122,
+    name: `洞漩魔光 Lv${lv}`,
+    effect: [
+      `拳掌、指法、奇门攻击时40%概率触发洞漩魔光击晕目标10时序`,
+    ],
+  };
+}
+
+export function sanTouLiuBi(lv) {
+  return {
+    id: 123,
+    name: `三头六臂 Lv${lv}`,
+    effect: [
+      `攻击必定三连击，30%概率（暴怒必定）六连击；六连击后下回合脱力（虚弱且无法多段攻击）`,
+    ],
+  };
+}
+
+export function zhenLingRongMoTi(lv) {
+  return {
+    id: 123,
+    name: `真灵融魔体 Lv${lv}`,
+    effect: [
+      `攻击时40%概率进入【魔神】状态10时序：免疫杀气和封穴，攻击吸血10%`,
+    ],
+  };
+}
+
+export function niePanShengTi(lv) {
+  return {
+    id: 123,
+    name: `涅槃圣体 Lv${lv}`,
+    effect: [
+      '被击败时涅槃重生、全恢复：',
+      '首次必定重生，全属性提升20%',
+      '第二次40%概率重生，全属性提升50%',
+      '第三次10%概率重生，全属性提升100%',
+    ],
+  };
+}
+
 export function shiXuHuiNu(lv) {
   return {
     id: 200,
@@ -2391,6 +2517,16 @@ export function jianQiNiQianKun(lv) {
     name: `剑气逆乾坤 Lv${lv}`,
     effect: [
       '自身血量低于30%，受到攻击时消耗复活次数（已复活无法触发），使敌方全体集气位置归0，并发动【剑气逆乾坤】：使用剑法攻击免疫反击和反伤，附加伤害20%吸血（上限100×外功层级），追加1000气攻；五岳神剑攻击必破气防；受到攻击时减少(御剑系数÷2)的真伤（上限300）；持续整场战斗，切换不带该词条的内功会暂时失效',
+    ],
+  };
+}
+
+export function changShengYin(lv) {
+  return {
+    id: 1062,
+    name: `长生印 Lv${lv}`,
+    effect: [
+      '受到封印（封内功、封经脉、封天赋、封秘技）50%概率免疫封印；被杀气到-100以下15%概率立即行动；30%概率集气向前+500；攻击无视目标护盾，直接造成100%生命伤害',
     ],
   };
 }

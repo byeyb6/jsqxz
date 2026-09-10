@@ -1411,6 +1411,12 @@ export default {
     talent: [682, 9712],
     type: '',
   },
+  683: {
+    id: 683,
+    name: '韩立',
+    talent: [683],
+    type: '',
+  },
   721: {
     id: 721,
     name: '酒神',

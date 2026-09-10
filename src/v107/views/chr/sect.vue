@@ -144,7 +144,7 @@ const info = computed(() => {
   const sectArt = {};
   for (let id in artAll) {
     const item = artAll[id];
-    if (item.sect !== active.value) {
+    if (item.type < 1 || item.sect !== active.value) {
       continue;
     }
     const {type, level} = item;

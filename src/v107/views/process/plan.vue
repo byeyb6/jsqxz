@@ -182,7 +182,7 @@
         </div>
         <div class="plan-item-title">
           <span>激活秘技</span>
-          <span class="title-sub">自动计算</span>
+          <span class="title-sub">自动计算，最多10个</span>
         </div>
         <div class="art-list" v-show="secretList.length + knwSecretList.length > 0">
           <div class="art-item" v-for="item of secretList" :key="item.id">
@@ -470,6 +470,7 @@ function exportExcel() {
     secretObj[`col${secretIndex}`] = item.name;
     secretIndex++;
   }
+  // 经脉
   const meridianArr = [];
   let meridianRowIndex = 0;
   for (let id in meridianData.value) {
@@ -485,12 +486,12 @@ function exportExcel() {
     }
     meridianArr.push(item);
   }
+  // 天赋
   const talObj = {title: '天赋'};
   for (let [index, id] of talList.value.entries()) {
     const {name, level, score} = talentMap[id];
     talObj[`col${index}`] = `${name}(${level}级${score}点)`;
   }
-
   // 流程规划
   const processObj = {title: '天书流程'};
   const processObj1 = {title: '上'};
@@ -602,7 +603,7 @@ onBeforeMount(() => {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      padding: 5px 10px 10px;
+      padding: 5px 10px;
     }
 
     .attr-item {
