@@ -137,7 +137,7 @@
       </div>
       <div class="plan-item-title">
         <span>杂学</span>
-        <span class="title-sub">由于中庸之道对应两个秘技，贰会覆盖壹，需根据资质自己选择</span>
+        <span class="title-sub">由于中庸之道对应两个秘技，实际需根据资质自己选择</span>
       </div>
       <div class="art-list">
         <div class="art-item" v-for="(item, id) of knwAll" :key="id">

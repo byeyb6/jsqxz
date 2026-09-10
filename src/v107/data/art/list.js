@@ -33,7 +33,9 @@ export default {
     sect: 15,
     level: 2,
     inner: 9,
-    addition: {psn: 1},
+    addition: {
+      psn: 1,
+    },
     move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
@@ -53,7 +55,9 @@ export default {
     sect: 28,
     level: 2,
     inner: 9,
-    addition: {psn: 2},
+    addition: {
+      psn: 2,
+    },
     move: [['baseBingFeng']],
     type: 1,
   },
@@ -92,7 +96,9 @@ export default {
     sect: 23,
     level: 2,
     inner: 9,
-    addition: {psn: 1},
+    addition: {
+      psn: 1,
+    },
     move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
@@ -164,7 +170,9 @@ export default {
       {
         name: '天山折梅',
         condition: '天山折梅手修炼到极',
-        effect: ['每多一个其他武功到极，天山折梅手气攻+100，反击时无效'],
+        effect: [
+          '每多一个其他武功到极，天山折梅手气攻+100，反击时无效',
+        ],
       },
     ],
     type: 2,
@@ -218,7 +226,9 @@ export default {
     sect: 22,
     level: 4,
     inner: 1,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     tra: [
       {
         name: '无影神石',
@@ -280,14 +290,18 @@ export default {
   23: {
     id: 23,
     name: '七伤拳',
-    get: ['倚天正万安寺解救崆峒派后获得', '倚天邪昆仑之战'],
+    get: [
+      '倚天正万安寺解救崆峒派后获得',
+      '倚天邪昆仑之战',
+    ],
     sect: 20,
     level: 4,
     inner: 2,
     tra: [
       {
         name: '一震七伤',
-        condition: '使用七伤拳攻击，概率触发（暴怒必触发）',
+        condition:
+          '使用七伤拳攻击，概率触发（暴怒必触发）',
         effect: [
           '无视敌方气防追加17点内伤',
           '内力<5000时每个目标都会反伤自己内伤+7',
@@ -305,7 +319,9 @@ export default {
     sect: 1,
     level: 4,
     inner: 2,
-    addition: {msl: 3},
+    addition: {
+      msl: 3,
+    },
     move: [['baseZhuoShao']],
     type: 1,
   },
@@ -359,7 +375,10 @@ export default {
   29: {
     id: 29,
     name: '三分剑术',
-    get: ['书剑六合塔战后获得', '书剑收霍青桐获得'],
+    get: [
+      '书剑六合塔战后获得',
+      '书剑收霍青桐获得',
+    ],
     sect: 6,
     level: 2,
     inner: 9,
@@ -494,7 +513,13 @@ export default {
     level: 4,
     inner: 9,
     condition: '资质≥80',
-    addition: {una: 2, fin: 2, swd: 2, bld: 2, spc: 2},
+    addition: {
+      una: 2,
+      fin: 2,
+      swd: 2,
+      bld: 2,
+      spc: 2,
+    },
     initiative: [
       'shiXuHuiNei',
       'shiXuHuiTi',
@@ -726,7 +751,11 @@ export default {
     sect: 0,
     level: 3,
     inner: 1,
-    tra: [{effect: ['连击时伤害、气攻不会减少']}],
+    tra: [
+      {
+        effect: ['连击时伤害、气攻不会减少'],
+      },
+    ],
     type: 4,
   },
   63: {
@@ -750,7 +779,9 @@ export default {
   65: {
     id: 65,
     name: '燃木刀法',
-    get: ['道德≥80，对玄慈使用介绍信，然后拒绝加入少林寺（女主会自动被拒绝），再次对话玄慈或方证'],
+    get: [
+      '道德≥80，对玄慈使用介绍信，然后拒绝加入少林寺（女主会自动被拒绝），再次对话玄慈或方证',
+    ],
     sect: 29,
     level: 3,
     inner: 2,
@@ -877,7 +908,10 @@ export default {
   78: {
     id: 78,
     name: '黄沙万里鞭',
-    get: ['白马邪破庙打败陈达海后获得', '笑傲正收蓝凤凰'],
+    get: [
+      '白马邪破庙打败陈达海后获得',
+      '笑傲正收蓝凤凰',
+    ],
     sect: 29,
     level: 2,
     inner: 9,
@@ -909,7 +943,9 @@ export default {
     sect: 23,
     level: 4,
     inner: 1,
-    addition: {psn: 2},
+    addition: {
+      psn: 2,
+    },
     type: 5,
   },
   82: {
@@ -1027,7 +1063,10 @@ export default {
   90: {
     id: 90,
     name: '混元功',
-    get: ['碧血大功坊宝箱获得', '碧血邪五仙教战胜何铁手'],
+    get: [
+      '碧血大功坊宝箱获得',
+      '碧血邪五仙教战胜何铁手',
+    ],
     sect: 9,
     level: 3,
     inner: 1,
@@ -1143,7 +1182,9 @@ export default {
   96: {
     id: 96,
     name: '罗汉伏魔功',
-    get: ['侠客行去长乐帮送玄冰碧火酒时，长乐帮桌子上获得'],
+    get: [
+      '侠客行去长乐帮送玄冰碧火酒时，长乐帮桌子上获得',
+    ],
     sect: 1,
     level: 3,
     inner: 2,
@@ -1389,7 +1430,9 @@ export default {
   108: {
     id: 108,
     name: '易筋神功',
-    get: ['获得一苇渡江后，调查扫地僧右侧书架获得'],
+    get: [
+      '获得一苇渡江后，调查扫地僧右侧书架获得',
+    ],
     sect: 1,
     level: 4,
     inner: 2,
@@ -1504,7 +1547,11 @@ export default {
     sect: 7,
     level: 2,
     inner: 9,
-    tra: [{effect: ['必连击但不会暴击']}],
+    tra: [
+      {
+        effect: ['必连击但不会暴击'],
+      },
+    ],
     type: 1,
   },
   116: {
@@ -1535,7 +1582,9 @@ export default {
     sect: 28,
     level: 3,
     inner: 1,
-    addition: {psn: 2},
+    addition: {
+      psn: 2,
+    },
     move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
@@ -1551,11 +1600,16 @@ export default {
   120: {
     id: 120,
     name: '冰蚕毒掌',
-    get: ['云岭洞战胜游坦之', '天龙邪丐帮战胜游坦之'],
+    get: [
+      '云岭洞战胜游坦之',
+      '天龙邪丐帮战胜游坦之',
+    ],
     sect: 15,
     level: 4,
     inner: 1,
-    addition: {psn: 1},
+    addition: {
+      psn: 1,
+    },
     move: [['baseBingFeng']],
     type: 1,
   },
@@ -1584,7 +1638,9 @@ export default {
     sect: 3,
     level: 1,
     inner: 9,
-    addition: {psn: 1},
+    addition: {
+      psn: 1,
+    },
     type: 2,
   },
   124: {
@@ -1672,7 +1728,9 @@ export default {
   133: {
     id: 133,
     name: '大智无定指',
-    get: ['少林寺进门左侧房间宝箱，需战斗和减道德'],
+    get: [
+      '少林寺进门左侧房间宝箱，需战斗和减道德',
+    ],
     sect: 1,
     level: 3,
     inner: 2,
@@ -1699,7 +1757,10 @@ export default {
   136: {
     id: 136,
     name: '无相劫指',
-    get: ['天龙正少林寺第四战胜后获得', '天龙邪丐帮剧情'],
+    get: [
+      '天龙正少林寺第四战胜后获得',
+      '天龙邪丐帮剧情',
+    ],
     sect: 1,
     level: 4,
     inner: 2,
@@ -1776,7 +1837,9 @@ export default {
   144: {
     id: 144,
     name: '金刚不坏体',
-    get: ['鹿鼎记京城打败鳌拜后，去鳌拜家抄家获得'],
+    get: [
+      '鹿鼎记京城打败鳌拜后，去鳌拜家抄家获得',
+    ],
     sect: 1,
     level: 3,
     inner: 2,
@@ -1808,7 +1871,9 @@ export default {
   146: {
     id: 146,
     name: '神行百变',
-    get: ['鹿鼎记京城打败鳌拜后，去鳌拜家抄家获得'],
+    get: [
+      '鹿鼎记京城打败鳌拜后，去鳌拜家抄家获得',
+    ],
     sect: 9,
     level: 4,
     inner: 1,
@@ -1924,7 +1989,9 @@ export default {
       {
         name: '颠动沧溟',
         condition: '使用沧溟刀法攻击',
-        effect: ['30%概率必定造成流血且气攻+1000'],
+        effect: [
+          '30%概率必定造成流血且气攻+1000',
+        ],
       },
     ],
     type: 4,
@@ -1949,7 +2016,9 @@ export default {
   155: {
     id: 155,
     name: '火枪',
-    get: ['鹿鼎记京城打败鳌拜后，去鳌拜家抄家获得'],
+    get: [
+      '鹿鼎记京城打败鳌拜后，去鳌拜家抄家获得',
+    ],
     sect: 24,
     level: 4,
     inner: 2,
@@ -2128,7 +2197,9 @@ export default {
     level: 3,
     inner: 1,
     condition: '用毒40',
-    addition: {psn: 1},
+    addition: {
+      psn: 1,
+    },
     move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
@@ -2194,7 +2265,9 @@ export default {
   175: {
     id: 175,
     name: '五岳剑诀',
-    get: ['笑傲进入正线后去华山秘洞内调查墙上文字可获得'],
+    get: [
+      '笑傲进入正线后去华山秘洞内调查墙上文字可获得',
+    ],
     sect: 9,
     level: 4,
     inner: 1,
@@ -2262,7 +2335,8 @@ export default {
     tra: [
       {
         name: '周流六虚',
-        condition: '使用碧海惊涛掌攻击时40%概率触发',
+        condition:
+          '使用碧海惊涛掌攻击时40%概率触发',
         effect: [
           '陷空力：伤害+50%一回合',
           '生灭道：攻击后霸体一回合',
@@ -2307,18 +2381,25 @@ export default {
   182: {
     id: 182,
     name: '小李飞刀',
-    get: ['西部农村战胜李寻欢', '畅想李寻欢自带秘籍'],
+    get: [
+      '西部农村战胜李寻欢',
+      '畅想李寻欢自带秘籍',
+    ],
     sect: 0,
     level: 4,
     inner: 1,
-    addition: {msl: 10},
+    addition: {
+      msl: 10,
+    },
     range: '« 1+1×20',
     type: 5,
   },
   183: {
     id: 183,
     name: '不老长春功',
-    get: ['不老长春谷战胜逍遥子或坚持2000时序后获得'],
+    get: [
+      '不老长春谷战胜逍遥子或坚持2000时序后获得',
+    ],
     sect: 3,
     level: 4,
     inner: 1,
@@ -2356,18 +2437,24 @@ export default {
   185: {
     id: 185,
     name: '阳春白雪曲',
-    get: ['不老长春谷战胜逍遥子或坚持2000时序获得'],
+    get: [
+      '不老长春谷战胜逍遥子或坚持2000时序获得',
+    ],
     sect: 3,
     level: 4,
     inner: 1,
-    addition: {psn: 2},
+    addition: {
+      psn: 2,
+    },
     move: [['baseBingFeng']],
     type: 5,
   },
   186: {
     id: 186,
     name: '一苇渡江',
-    get: ['扫地左边的书架空格触发与达摩的战斗，胜利后获得'],
+    get: [
+      '扫地左边的书架空格触发与达摩的战斗，胜利后获得',
+    ],
     sect: 1,
     level: 4,
     inner: 2,
@@ -2430,7 +2517,9 @@ export default {
   191: {
     id: 191,
     name: '奔雷手',
-    get: ['书剑霍青桐线收文泰来获得，李沅芷线获得天书时获得'],
+    get: [
+      '书剑霍青桐线收文泰来获得，李沅芷线获得天书时获得',
+    ],
     sect: 0,
     level: 3,
     inner: 2,
@@ -2438,7 +2527,9 @@ export default {
       {
         name: '雷动九天',
         condition: '暴怒攻击',
-        effect: ['暴怒攻击时，有50%概率击晕目标1回合'],
+        effect: [
+          '暴怒攻击时，有50%概率击晕目标1回合',
+        ],
       },
     ],
     type: 1,
@@ -2795,7 +2886,9 @@ export default {
   220: {
     id: 220,
     name: '五毒神功',
-    get: ['调查五毒教左上房间衣柜，战斗胜利后获得'],
+    get: [
+      '调查五毒教左上房间衣柜，战斗胜利后获得',
+    ],
     sect: 15,
     level: 3,
     inner: 1,
@@ -2898,7 +2991,9 @@ export default {
       {
         name: '葵花点穴',
         condition: '修炼葵花点穴手',
-        effect: ['攻击必定封穴，被攻击减免10点封穴'],
+        effect: [
+          '攻击必定封穴，被攻击减免10点封穴',
+        ],
       },
     ],
     type: 2,
@@ -2946,7 +3041,9 @@ export default {
   230: {
     id: 230,
     name: '八卦掌',
-    get: ['飞狐跟随胡一刀到商家堡战胜商剑鸣和商夫人获得'],
+    get: [
+      '飞狐跟随胡一刀到商家堡战胜商剑鸣和商夫人获得',
+    ],
     sect: 25,
     level: 2,
     inner: 9,
@@ -2955,7 +3052,9 @@ export default {
   231: {
     id: 231,
     name: '八卦刀法',
-    get: ['飞狐跟随胡一刀到商家堡战胜商剑鸣和商夫人获得'],
+    get: [
+      '飞狐跟随胡一刀到商家堡战胜商剑鸣和商夫人获得',
+    ],
     sect: 25,
     level: 3,
     inner: 1,
@@ -3150,7 +3249,9 @@ export default {
     level: 3,
     inner: 2,
     condition: '暗器60',
-    addition: {msl: 3},
+    addition: {
+      msl: 3,
+    },
     type: 5,
   },
   247: {
@@ -3169,7 +3270,9 @@ export default {
     sect: 8,
     level: 3,
     inner: 2,
-    addition: {med: 1},
+    addition: {
+      med: 1,
+    },
     type: 1,
   },
   249: {
@@ -3266,7 +3369,9 @@ export default {
     sect: 0,
     level: 2,
     inner: 9,
-    addition: {med: 1},
+    addition: {
+      med: 1,
+    },
     type: 1,
   },
   257: {
@@ -3276,7 +3381,9 @@ export default {
     sect: 8,
     level: 1,
     inner: 9,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     type: 1,
   },
   258: {
@@ -3442,7 +3549,9 @@ export default {
     sect: 10,
     level: 2,
     inner: 9,
-    addition: {ant: 1},
+    addition: {
+      ant: 1,
+    },
     type: 1,
   },
   274: {
@@ -3479,7 +3588,9 @@ export default {
     sect: 12,
     level: 2,
     inner: 9,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     type: 3,
   },
   278: {
@@ -3507,7 +3618,9 @@ export default {
     sect: 15,
     level: 1,
     inner: 9,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     type: 1,
   },
   281: {
@@ -3518,7 +3631,9 @@ export default {
     level: 3,
     inner: 1,
     condition: '暗器50',
-    addition: {msl: 2},
+    addition: {
+      msl: 2,
+    },
     move: [['baseZhongDu']],
     type: 5,
   },
@@ -3530,7 +3645,9 @@ export default {
     level: 2,
     inner: 9,
     condition: '暗器90',
-    addition: {msl: 3},
+    addition: {
+      msl: 3,
+    },
     move: [['baseZhongDu']],
     type: 5,
   },
@@ -3578,7 +3695,9 @@ export default {
     level: 4,
     inner: 2,
     condition: '指腿40',
-    addition: {prs: 1},
+    addition: {
+      prs: 1,
+    },
     type: 1,
   },
   288: {
@@ -3615,7 +3734,9 @@ export default {
     sect: 19,
     level: 3,
     inner: 2,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     type: 3,
   },
   292: {
@@ -3625,7 +3746,9 @@ export default {
     sect: 19,
     level: 2,
     inner: 9,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     type: 2,
   },
   293: {
@@ -3636,7 +3759,9 @@ export default {
     level: 4,
     inner: 2,
     condition: '暗器100',
-    addition: {msl: 4},
+    addition: {
+      msl: 4,
+    },
     type: 5,
   },
   294: {
@@ -3647,7 +3772,9 @@ export default {
     level: 1,
     inner: 9,
     condition: '用毒50',
-    addition: {ant: 1},
+    addition: {
+      ant: 1,
+    },
     move: [['baseZhongDu']],
     type: 1,
   },
@@ -3659,7 +3786,9 @@ export default {
     level: 3,
     inner: 1,
     condition: '指法70',
-    addition: {psn: 1},
+    addition: {
+      psn: 1,
+    },
     move: [['baseBingFeng', 'baseZhongDu']],
     type: 1,
   },
@@ -3679,7 +3808,9 @@ export default {
     level: 3,
     inner: 1,
     condition: '暗器110',
-    addition: {msl: 4},
+    addition: {
+      msl: 4,
+    },
     move: [['baseZhongDu']],
     type: 5,
   },
@@ -3709,7 +3840,9 @@ export default {
     level: 2,
     inner: 9,
     condition: '暗器60',
-    addition: {msl: 3},
+    addition: {
+      msl: 3,
+    },
     move: [['baseZhongDu']],
     type: 5,
   },
@@ -3721,7 +3854,9 @@ export default {
     level: 3,
     inner: 1,
     condition: '暗器90',
-    addition: {msl: 4},
+    addition: {
+      msl: 4,
+    },
     move: [['baseZhongDu']],
     type: 5,
   },
@@ -3834,7 +3969,9 @@ export default {
     level: 3,
     inner: 1,
     condition: '暗器100',
-    addition: {msl: 4},
+    addition: {
+      msl: 4,
+    },
     move: [['baseZhongDu']],
     type: 5,
   },
@@ -3846,7 +3983,9 @@ export default {
     level: 4,
     inner: 1,
     condition: '暗器120',
-    addition: {msl: 4},
+    addition: {
+      msl: 4,
+    },
     type: 5,
   },
   314: {
@@ -3954,7 +4093,9 @@ export default {
     level: 3,
     inner: 2,
     condition: '暗器40',
-    addition: {msl: 2},
+    addition: {
+      msl: 2,
+    },
     type: 5,
   },
   325: {
@@ -3964,7 +4105,9 @@ export default {
     sect: 3,
     level: 1,
     inner: 9,
-    addition: {msl: 3},
+    addition: {
+      msl: 3,
+    },
     type: 6,
   },
   326: {
@@ -3974,7 +4117,9 @@ export default {
     sect: 22,
     level: 2,
     inner: 9,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     type: 3,
   },
   327: {
@@ -3989,11 +4134,15 @@ export default {
   328: {
     id: 328,
     name: '摧心掌',
-    get: ['打开主角房间中的宝箱之前对余沧海使用介绍信获得'],
+    get: [
+      '打开主角房间中的宝箱之前对余沧海使用介绍信获得',
+    ],
     sect: 11,
     level: 3,
     inner: 9,
-    addition: {psn: 4},
+    addition: {
+      psn: 4,
+    },
     move: [['baseZhuoShao']],
     type: 1,
   },
@@ -4014,7 +4163,9 @@ export default {
     level: 2,
     inner: 9,
     condition: '暗器40',
-    addition: {msl: 2},
+    addition: {
+      msl: 2,
+    },
     move: [['baseZhongDu']],
     type: 5,
   },
@@ -4035,7 +4186,10 @@ export default {
     sect: 15,
     level: 1,
     inner: 9,
-    addition: {msl: 3, psn: 5},
+    addition: {
+      msl: 3,
+      psn: 5,
+    },
     move: [['baseBingFeng', 'baseZhongDu']],
     type: 5,
   },
@@ -4055,19 +4209,27 @@ export default {
     sect: 15,
     level: 3,
     inner: 1,
-    addition: {tox: 1},
+    addition: {
+      tox: 1,
+    },
     move: [['baseZhongDu']],
     type: 1,
   },
   335: {
     id: 335,
     name: '天刀九问',
-    get: ['获得【井月八法】后，前往晋阳上方中条山，对话宋缺，战胜寇仲后获得'],
+    get: [
+      '获得【井月八法】后，前往晋阳上方中条山，对话宋缺，战胜寇仲后获得',
+    ],
     sect: 24,
     level: 4,
     inner: 2,
     move: [['baseZhuoShao']],
-    tra: [{effect: ['根据天书数量提升威力和杀气']}],
+    tra: [
+      {
+        effect: ['根据天书数量提升威力和杀气'],
+      },
+    ],
     type: 4,
   },
   336: {
@@ -4120,11 +4282,15 @@ export default {
   341: {
     id: 341,
     name: '狂风迅雷扇',
-    get: ['程英居战胜李莫愁后获得（畅想杨过无法获得）'],
+    get: [
+      '程英居战胜李莫愁后获得（畅想杨过无法获得）',
+    ],
     sect: 29,
     level: 2,
     inner: 9,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     type: 5,
   },
   342: {
@@ -4138,8 +4304,11 @@ export default {
     tra: [
       {
         name: '天之道',
-        condition: '攻击时(20+天书数量)%概率触发，暴怒必定触发',
-        effect: ['附加生命最大值5%的伤害，必破气防'],
+        condition:
+          '攻击时(20+天书数量)%概率触发，暴怒必定触发',
+        effect: [
+          '附加生命最大值5%的伤害，必破气防',
+        ],
       },
     ],
     type: 1,
@@ -4250,7 +4419,9 @@ export default {
     sect: 0,
     level: 3,
     inner: 2,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     type: 1,
   },
   353: {
@@ -4287,7 +4458,10 @@ export default {
     sect: 27,
     level: 1,
     inner: 9,
-    addition: {msl: 1, ant: 1},
+    addition: {
+      msl: 1,
+      ant: 1,
+    },
     initiative: [],
     type: 6,
   },
@@ -4408,7 +4582,10 @@ export default {
     sect: 13,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   365: {
@@ -4428,7 +4605,10 @@ export default {
     sect: 12,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   367: {
@@ -4507,11 +4687,15 @@ export default {
   375: {
     id: 375,
     name: '穿花蝶影手',
-    get: ['调查天机宫右上房间下数第二排书架右数第三格，战胜明镜和花无媸后获得（加入天机宫不需要战斗）'],
+    get: [
+      '调查天机宫右上房间下数第二排书架右数第三格，战胜明镜和花无媸后获得（加入天机宫不需要战斗）',
+    ],
     sect: 6,
     level: 2,
     inner: 9,
-    addition: {msl: 1},
+    addition: {
+      msl: 1,
+    },
     type: 2,
   },
   376: {
@@ -4526,7 +4710,9 @@ export default {
   377: {
     id: 377,
     name: '灵枢定玄指',
-    get: ['调查天机宫右上房间下数第二排书架右数第三格，战胜明镜和花无媸后获得（加入天机宫不需要战斗）'],
+    get: [
+      '调查天机宫右上房间下数第二排书架右数第三格，战胜明镜和花无媸后获得（加入天机宫不需要战斗）',
+    ],
     sect: 6,
     level: 4,
     inner: 1,
@@ -4564,7 +4750,10 @@ export default {
     sect: 11,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   381: {
@@ -4593,7 +4782,10 @@ export default {
     sect: 2,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   384: {
@@ -4603,7 +4795,10 @@ export default {
     sect: 1,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   385: {
@@ -4613,7 +4808,10 @@ export default {
     sect: 3,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   386: {
@@ -4623,7 +4821,10 @@ export default {
     sect: 4,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   387: {
@@ -4633,7 +4834,10 @@ export default {
     sect: 5,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   388: {
@@ -4643,7 +4847,10 @@ export default {
     sect: 7,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   389: {
@@ -4653,7 +4860,10 @@ export default {
     sect: 8,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   390: {
@@ -4663,7 +4873,10 @@ export default {
     sect: 9,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   391: {
@@ -4673,7 +4886,10 @@ export default {
     sect: 10,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   392: {
@@ -4698,7 +4914,10 @@ export default {
     sect: 17,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   394: {
@@ -4723,7 +4942,10 @@ export default {
     sect: 18,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   396: {
@@ -4773,7 +4995,10 @@ export default {
     sect: 20,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   400: {
@@ -4798,7 +5023,10 @@ export default {
     sect: 21,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   402: {
@@ -4823,7 +5051,10 @@ export default {
     sect: 22,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   404: {
@@ -4848,7 +5079,10 @@ export default {
     sect: 23,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   406: {
@@ -4858,7 +5092,10 @@ export default {
     sect: 24,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   407: {
@@ -4883,7 +5120,10 @@ export default {
     sect: 25,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   409: {
@@ -4908,7 +5148,10 @@ export default {
     sect: 26,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   411: {
@@ -4933,7 +5176,10 @@ export default {
     sect: 27,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   413: {
@@ -4958,7 +5204,10 @@ export default {
     sect: 28,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   415: {
@@ -4983,7 +5232,10 @@ export default {
     sect: 29,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   417: {
@@ -5008,7 +5260,10 @@ export default {
     sect: 30,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   419: {
@@ -5043,7 +5298,10 @@ export default {
     sect: 14,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   422: {
@@ -5053,7 +5311,10 @@ export default {
     sect: 15,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   423: {
@@ -5063,7 +5324,10 @@ export default {
     sect: 16,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   424: {
@@ -5088,7 +5352,10 @@ export default {
     sect: 6,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   426: {
@@ -5117,7 +5384,10 @@ export default {
     sect: 19,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   429: {
@@ -5269,7 +5539,10 @@ export default {
     sect: 0,
     level: 1,
     inner: 9,
-    initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
+    initiative: [
+      'shanBiZengQiang',
+      'mingZhongZengQiang',
+    ],
     type: 7,
   },
   442: {
@@ -5406,7 +5679,9 @@ export default {
     level: 4,
     inner: 1,
     condition: '用毒300',
-    addition: {tox: 10},
+    addition: {
+      tox: 10,
+    },
     initiative: [
       'shiXuHuiNei',
       'duShang',
@@ -5451,7 +5726,7 @@ export default {
   //   id: 455,
   //   name: '长春功',
   //   get: [],
-  //   sect: 7,
+  //   sect: 0,
   //   level: 1,
   //   inner: 9,
   //   initiative: [],
@@ -5461,7 +5736,7 @@ export default {
   //   id: 456,
   //   name: '青元剑诀',
   //   get: [],
-  //   sect: 7,
+  //   sect: 0,
   //   level: 2,
   //   inner: 9,
   //   initiative: [],
@@ -5471,7 +5746,7 @@ export default {
   //   id: 457,
   //   name: '凡圣真魔功',
   //   get: [],
-  //   sect: 7,
+  //   sect: 0,
   //   level: 4,
   //   inner: 2,
   //   initiative: [],
@@ -5481,7 +5756,7 @@ export default {
   //   id: 458,
   //   name: '青竹蜂云剑',
   //   get: [],
-  //   sect: 7,
+  //   sect: 0,
   //   level: 3,
   //   inner: 2,
   //   type: 3,
@@ -5490,10 +5765,120 @@ export default {
   //   id: 459,
   //   name: '罗烟步',
   //   get: [],
-  //   sect: 7,
+  //   sect: 0,
   //   level: 4,
   //   inner: 2,
   //   initiative: [],
   //   type: 7,
+  // },
+  // 460: {
+  //   id: 460,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 461: {
+  //   id: 461,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 462: {
+  //   id: 462,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 463: {
+  //   id: 463,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 464: {
+  //   id: 464,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 465: {
+  //   id: 465,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 466: {
+  //   id: 466,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 467: {
+  //   id: 467,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 468: {
+  //   id: 468,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 469: {
+  //   id: 469,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
+  // },
+  // 470: {
+  //   id: 470,
+  //   name: '',
+  //   get: [],
+  //   sect: 0,
+  //   level: 1,
+  //   inner: 9,
+  //   initiative: [],
+  //   type: -1,
   // },
 };

@@ -21,8 +21,8 @@ for (let id in itmAll) {
 // 杂学对应的秘技
 const knwSecret = {};
 
-for (let id in secretAll) {
-  const {cheat, type} = secretAll[id];
+for (let key in secretAll) {
+  const {id, name, cheat, effect, type} = secretAll[key];
   if (type !== 1) {
     continue;
   }
@@ -31,11 +31,17 @@ for (let id in secretAll) {
       continue;
     }
     if (itmAll[k]?.type === 8) {
-      knwSecret[k] = secretAll[id];
+      const item = {id, name, cheat, effect, type};
+      if (k === '372') {
+        item.name = '中庸之道';
+      }
+      knwSecret[k] = item;
       break;
     }
   }
 }
+
+console.log(knwSecret);
 
 export {
   artCheatMap,
