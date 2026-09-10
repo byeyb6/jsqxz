@@ -340,6 +340,7 @@ const {
   attr3,
   attr5,
   attr3Base,
+  initAttr,
   rlmAttr,
   rlmMap,
 } = useAttr();
@@ -390,11 +391,11 @@ const {
 
 // 重置
 function clearAll() {
+  initAttr();
   initArt();
   initMeridian();
   initTal();
   initProcess();
-  knwSecretList.value = [];
 }
 
 // 导出

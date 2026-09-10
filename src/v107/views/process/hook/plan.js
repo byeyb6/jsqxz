@@ -64,11 +64,29 @@ export function useAttr() {
     return obj;
   });
 
+  function initAttr() {
+    attr.value = {
+      dfl: 1,
+      week: 1,
+      apt: 1,
+      rlm: 6,
+      atk: 40,
+      def: 40,
+      spd: 40,
+      una: 50,
+      fin: 50,
+      swd: 50,
+      bld: 50,
+      spc: 50,
+    };
+  }
+
   return {
     attr,
     attr3,
     attr5,
     attr3Base,
+    initAttr,
     rlmAttr,
     rlmMap,
   };
@@ -140,24 +158,6 @@ export function useArt() {
   const artList = ref([]);
   const artIndex = ref({row: -1, col: -1});
   const artAttr = ref({});
-
-  // 初始化
-  function initArt() {
-    artList.value = [];
-    artAttr.value = {
-      atk: 0,
-      def: 0,
-      spd: 0,
-      una: 0,
-      fin: 0,
-      swd: 0,
-      bld: 0,
-      spc: 0,
-    };
-    for (let i = 1; i < 16; i++) {
-      artList.value.push([{id: -1}]);
-    }
-  }
 
   // 打开选择武功
   function openArt(row, col) {
@@ -247,18 +247,7 @@ export function useArt() {
   }
 
   // 杂学
-  const knwAll = computed(() => {
-    const obj = {};
-    for (let id in knwSecret) {
-      const item = itmAll[id];
-      obj[id] = {
-        id,
-        name: item.name,
-        checked: false,
-      };
-    }
-    return obj;
-  });
+  const knwAll = ref({});
 
   // 杂学秘技
   const knwSecretList = ref([]);
@@ -365,6 +354,35 @@ export function useArt() {
         type,
       });
     }
+  }
+
+  // 初始化
+  function initArt() {
+    artList.value = [];
+    artAttr.value = {
+      atk: 0,
+      def: 0,
+      spd: 0,
+      una: 0,
+      fin: 0,
+      swd: 0,
+      bld: 0,
+      spc: 0,
+    };
+    for (let i = 1; i < 16; i++) {
+      artList.value.push([{id: -1}]);
+    }
+    const obj = {};
+    for (let id in knwSecret) {
+      const item = itmAll[id];
+      obj[id] = {
+        id,
+        name: item.name,
+        checked: false,
+      };
+    }
+    knwAll.value = obj;
+    knwSecretList.value = [];
   }
 
   return {

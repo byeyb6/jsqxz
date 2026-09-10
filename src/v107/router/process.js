@@ -17,7 +17,7 @@ export default {
   path: 'process',
   component: () => import('@/views/layout/layout.vue'),
   name: 'v107process',
-  redirect: {name: 'v107processStart'},
+  redirect: {name: 'v107processPlan'},
   meta: {
     title: '流程',
   },
