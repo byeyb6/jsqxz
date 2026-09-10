@@ -4,262 +4,274 @@
       <v-button type="success" @click="exportExcel">导出Excel</v-button>
       <v-button @click="clearAll">重置</v-button>
     </div>
-    <div class="plan-attr">
-      <div class="plan-item-title">
-        <span>预估属性</span>
-        <span class="title-sub">
-          五系以50为基础，成长系数按1计算；规划中无极丹洗掉的武功此处不会计算属性扣除
-        </span>
-      </div>
-      <div class="attr-list" style="--flex-basic: 150px;">
-        <div class="attr-item">
-          <span class="item-label">难度</span>
-          <el-input-number
-            v-model="attr.dfl"
-            :min="1"
-            :max="4"
-            size="small"
-          ></el-input-number>
+    <el-collapse v-model="active">
+      <el-collapse-item class="plan-attr" name="attr">
+        <template #title="{isActive }">
+          <div class="plan-item-title" :class="{'is-active': isActive}">
+            <span>预估属性</span>
+            <span class="title-sub">
+              五系以50为基础，成长系数按1计算；规划中无极丹洗掉的武功此处不会计算属性扣除
+            </span>
+          </div>
+        </template>
+        <div class="attr-list" style="--flex-basic: 150px;">
+          <div class="attr-item">
+            <span class="item-label">难度</span>
+            <el-input-number
+              v-model="attr.dfl"
+              :min="1"
+              :max="4"
+              size="small"
+            ></el-input-number>
+          </div>
+          <div class="attr-item">
+            <span class="item-label">周目</span>
+            <el-input-number
+              v-model="attr.week"
+              :min="1"
+              :max="100"
+              size="small"
+            ></el-input-number>
+          </div>
+          <div class="attr-item">
+            <span class="item-label">资质</span>
+            <el-input-number
+              v-model="attr.apt"
+              :min="1"
+              :max="100"
+              size="small"
+            ></el-input-number>
+          </div>
         </div>
-        <div class="attr-item">
-          <span class="item-label">周目</span>
-          <el-input-number
-            v-model="attr.week"
-            :min="1"
-            :max="100"
-            size="small"
-          ></el-input-number>
+        <div class="attr-list">
+          <div
+            class="attr-item"
+            v-for="key of attr3"
+            :key="key"
+          >
+            <span class="item-label">{{ attrMap[key] }}</span>
+            <span>
+              {{ attr[key] + attr3Base + artAttr[key] + meridianAttr[key] }}
+            </span>
+          </div>
+          <div class="attr-item">
+            <span class="item-label">三维上限</span>
+            <span>
+              {{ 999 + attr.week }}
+            </span>
+          </div>
         </div>
-        <div class="attr-item">
-          <span class="item-label">资质</span>
-          <el-input-number
-            v-model="attr.apt"
-            :min="1"
-            :max="100"
-            size="small"
-          ></el-input-number>
+        <div class="attr-list">
+          <div
+            class="attr-item"
+            v-for="key of attr5"
+            :key="key"
+          >
+            <span class="item-label">{{ attrMap[key] }}</span>
+            <span>
+              {{ attr[key] + attr.week + artAttr[key] }}
+            </span>
+          </div>
+          <div class="attr-item">
+            <span class="item-label">五系上限</span>
+            <span>
+              {{ 500 + attr.week }}
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="attr-list">
-        <div
-          class="attr-item"
-          v-for="key of attr3"
-          :key="key"
-        >
-          <span class="item-label">{{ attrMap[key] }}</span>
-          <span>
-            {{ attr[key] + attr3Base + artAttr[key] + meridianAttr[key] }}
-          </span>
-        </div>
-        <div class="attr-item">
-          <span class="item-label">三维上限</span>
-          <span>
-            {{ 999 + attr.week }}
-          </span>
-        </div>
-      </div>
-      <div class="attr-list">
-        <div
-          class="attr-item"
-          v-for="key of attr5"
-          :key="key"
-        >
-          <span class="item-label">{{ attrMap[key] }}</span>
-          <span>
-            {{ attr[key] + attr.week + artAttr[key] }}
-          </span>
-        </div>
-        <div class="attr-item">
-          <span class="item-label">五系上限</span>
-          <span>
-            {{ 500 + attr.week }}
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class="plan-tal">
-      <div class="plan-item-title is-sticky" style="--z-index: 2;">
-        <span>天赋规划</span>
-        <div class="title-sub">
+      </el-collapse-item>
+      <el-collapse-item class="plan-tal" name="tal">
+        <template #title="{isActive }">
+          <div class="plan-item-title" :class="{'is-active': isActive}">
+            <span>天赋规划</span>
+          </div>
+        </template>
+        <div class="tal-button">
           <v-button size="small" type="primary" @click="openTal">选择天赋</v-button>
         </div>
-      </div>
-      <div class="tal-list">
-        <el-tag
-          v-for="(id, index) of talList"
-          :key="id"
-          closable
-          type="primary"
-          :style="getTalTagStyle(talentMap[id].level)"
-          @close="delTal(index)"
-        >
-          {{ talentMap[id].name }}({{ talentMap[id].score }}点)
-        </el-tag>
-      </div>
-    </div>
-    <div class="plan-art">
-      <div class="plan-item-title is-sticky" style="--z-index: 3;">
-        <span>武功规划</span>
-        <span class="title-sub">规划无极丹洗掉的武功不要删除，需要用于秘技计算</span>
-      </div>
-      <div class="art-list">
-        <div class="art-item" v-for="(row, rowIndex) of artList" :key="rowIndex">
-          <div class="item-index">
-            <span>第{{ rowIndex + 1 }}格武功</span>
-            <a
-              class="icon-add"
-              href="javascript: void 0;"
-              title="添加一脉"
-              @click="addArt(rowIndex)"
-            ></a>
+        <div class="tal-list">
+          <el-tag
+            v-for="(id, index) of talList"
+            :key="id"
+            closable
+            type="primary"
+            :style="getTalTagStyle(talentMap[id].level)"
+            @close="delTal(index)"
+          >
+            {{ talentMap[id].name }}({{ talentMap[id].score }}点)
+          </el-tag>
+        </div>
+      </el-collapse-item>
+      <el-collapse-item class="plan-art" name="art">
+        <template #title="{isActive }">
+          <div class="plan-item-title" :class="{'is-active': isActive}">
+            <span>武功规划</span>
+            <span class="title-sub">规划无极丹洗掉的武功不要删除，需要用于秘技计算</span>
           </div>
-          <div
-            class="item-select"
-            v-for="(col, colIndex) of row"
-            :key="colIndex"
-          >
-            <span
-              :class="{[`level-${col.level}`]: col.level}"
-              @click="openArt(rowIndex, colIndex)"
-            >
-              {{ col.name || '请选择武功' }}
-            </span>
-            <el-icon
-              v-if="row.length > 1"
-              href="javascript: void 0;"
-              title="删除"
-              @click="delArt(rowIndex, colIndex)"
-            >
-              <Delete/>
-            </el-icon>
-          </div>
-        </div>
-      </div>
-      <div class="plan-item-title">
-        <span>杂学</span>
-        <span class="title-sub">由于中庸之道对应两个秘技，实际需根据资质自己选择</span>
-      </div>
-      <div class="art-list">
-        <div class="art-item" v-for="(item, id) of knwAll" :key="id">
-          <v-checkbox
-            :value="true"
-            :false-value="false"
-            v-model="item.checked"
-            @click="() => chooseKnw(id)"
-          >
-            {{ item.name }}
-          </v-checkbox>
-        </div>
-      </div>
-      <div class="plan-item-title">
-        <span>激活秘技</span>
-        <span class="title-sub">自动计算</span>
-      </div>
-      <div class="art-list" v-show="secretList.length + knwSecretList.length > 0">
-        <div class="art-item" v-for="item of secretList" :key="item.id">
-          <span class="color-error">{{ item.name }}</span>
-        </div>
-        <div class="art-item" v-for="item of knwSecretList" :key="item.id">
-          <span class="color-error">{{ item.name }}</span>
-        </div>
-      </div>
-      <div class="art-list" v-show="secretList.length + knwSecretList.length < 1">
-        暂无激活的秘技
-      </div>
-    </div>
-    <div class="plan-meridian">
-      <div class="plan-item-title is-sticky" style="--z-index: 4;">
-        <span>经脉规划</span>
-        <span class="title-sub">
-          已使用{{ meridianAttr.point }}武学点
-        </span>
-      </div>
-      <div
-        class="meridian-row"
-        v-for="(row, id, rowIndex) in meridianData"
-        :key="id"
-      >
-        <span class="row-label" :class="`level-${Math.floor(rowIndex / 3) + 1}`">
-          {{ meridianMap[id].name }}
-        </span>
-        <div class="row-list">
-          <div
-            class="row-td"
-            :class="{'is-acupoint': col.acupoint}"
-            v-for="(col, colIndex) of row"
-            :key="col.id"
-          >
-            <div class="row-td-title">
-              <v-checkbox
-                :value="true"
-                :false-value="false"
-                v-model="col.checked"
-                @click="val => chooseMeridian(val, id, colIndex)"
-              >
-                {{ col.name }}
-                <template v-if="col.acupoint">
-                  ({{ col.acupoint.name }})
-                </template>
-              </v-checkbox>
+        </template>
+        <div class="art-list">
+          <div class="art-item" v-for="(row, rowIndex) of artList" :key="rowIndex">
+            <div class="item-index">
+              <span>第{{ rowIndex + 1 }}格武功</span>
+              <a
+                class="icon-add"
+                href="javascript: void 0;"
+                title="添加一脉"
+                @click="addArt(rowIndex)"
+              ></a>
             </div>
-            <div class="row-td-attr color-success">
-              <span v-for="(num, key) in col.base" :key="key">
-                {{ attrMap[key] }}+{{ num }}
+            <div
+              class="item-select"
+              v-for="(col, colIndex) of row"
+              :key="colIndex"
+            >
+              <span
+                :class="{[`level-${col.level}`]: col.level}"
+                @click="openArt(rowIndex, colIndex)"
+              >
+                {{ col.name || '请选择武功' }}
               </span>
-            </div>
-            <div class="row-td-effect color-error" v-if="col.acupoint">
-              {{ col.acupoint.effect.join('；') }}
+              <el-icon
+                v-if="row.length > 1"
+                href="javascript: void 0;"
+                title="删除"
+                @click="delArt(rowIndex, colIndex)"
+              >
+                <Delete/>
+              </el-icon>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="plan-book">
-      <div class="plan-item-title is-sticky" style="--z-index: 5;">
-        <span>路线规划</span>
-        <span class="title-sub">
-          只统计天书流程获取，流程增加的属性因含有自选的，此处都不计入统计
-        </span>
-      </div>
-      <div class="v-table v-table-vertical">
-        <div class="tr" v-for="(item, book) in rewardTextMap" :key="book">
-          <div class="td">
-            <div class="td-block">{{ bookMap[book] }}</div>
-            <el-radio-group
-              v-if="bookBranch[book]!=='normal'"
-              v-model="bookBranch[book]"
+        <div class="plan-item-title">
+          <span>杂学</span>
+          <span class="title-sub">由于中庸之道对应两个秘技，实际需根据资质自己选择</span>
+        </div>
+        <div class="art-list">
+          <div class="art-item" v-for="(item, id) of knwAll" :key="id">
+            <v-checkbox
+              :value="true"
+              :false-value="false"
+              v-model="item.checked"
+              @click="() => chooseKnw(id)"
             >
-              <el-radio value="good">
-                {{ goodMap[book] ? goodMap[book] : '正线' }}
-              </el-radio>
-              <el-radio value="evil">
-                {{ evilMap[book] ? evilMap[book] : '邪线' }}
-              </el-radio>
-            </el-radio-group>
+              {{ item.name }}
+            </v-checkbox>
           </div>
-          <div class="td">
-            <div class="td-block">
-              <div class="td-effect-item effect-icon-rhombus">
-                {{ item[bookBranch[book]].itm.join('，') }}
+        </div>
+        <div class="plan-item-title">
+          <span>激活秘技</span>
+          <span class="title-sub">自动计算</span>
+        </div>
+        <div class="art-list" v-show="secretList.length + knwSecretList.length > 0">
+          <div class="art-item" v-for="item of secretList" :key="item.id">
+            <span class="color-error">{{ item.name }}</span>
+          </div>
+          <div class="art-item" v-for="item of knwSecretList" :key="item.id">
+            <span class="color-error">{{ item.name }}</span>
+          </div>
+        </div>
+        <div class="art-list" v-show="secretList.length + knwSecretList.length < 1">
+          暂无激活的秘技
+        </div>
+      </el-collapse-item>
+      <el-collapse-item class="plan-meridian" name="meridian">
+        <template #title="{isActive }">
+          <div class="plan-item-title" :class="{'is-active': isActive}">
+            <span>经脉规划</span>
+            <span class="title-sub">
+              已使用{{ meridianAttr.point }}武学点
+            </span>
+          </div>
+        </template>
+        <div
+          class="meridian-row"
+          v-for="(row, id, rowIndex) in meridianData"
+          :key="id"
+        >
+          <span class="row-label" :class="`level-${Math.floor(rowIndex / 3) + 1}`">
+            {{ meridianMap[id].name }}
+          </span>
+          <div class="row-list">
+            <div
+              class="row-td"
+              :class="{'is-acupoint': col.acupoint}"
+              v-for="(col, colIndex) of row"
+              :key="col.id"
+            >
+              <div class="row-td-title">
+                <v-checkbox
+                  :value="true"
+                  :false-value="false"
+                  v-model="col.checked"
+                  @click="val => chooseMeridian(val, id, colIndex)"
+                >
+                  {{ col.name }}
+                  <template v-if="col.acupoint">
+                    ({{ col.acupoint.name }})
+                  </template>
+                </v-checkbox>
               </div>
-              <div
-                v-show="item[bookBranch[book]].team?.length > 0"
-                class="td-effect-item effect-icon-star"
-              >
-                {{ item[bookBranch[book]].team.join('，') }}
+              <div class="row-td-attr color-success">
+                <span v-for="(num, key) in col.base" :key="key">
+                  {{ attrMap[key] }}+{{ num }}
+                </span>
               </div>
-              <div
-                v-for="(text, i) of item[bookBranch[book]].branch"
-                :key="i"
-                class="td-effect-item effect-icon-rhombus"
-              >
-                {{ text }}
+              <div class="row-td-effect color-error" v-if="col.acupoint">
+                {{ col.acupoint.effect.join('；') }}
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </el-collapse-item>
+      <el-collapse-item class="plan-book" name="book">
+        <template #title="{isActive }">
+          <div class="plan-item-title" :class="{'is-active': isActive}">
+            <span>路线规划</span>
+            <span class="title-sub">
+              只统计天书流程获取，流程增加的属性因含有自选的，此处都不计入统计
+            </span>
+          </div>
+        </template>
+        <div class="v-table v-table-vertical">
+          <div class="tr" v-for="(item, book) in rewardTextMap" :key="book">
+            <div class="td">
+              <div class="td-block">{{ bookMap[book] }}</div>
+              <el-radio-group
+                v-if="bookBranch[book]!=='normal'"
+                v-model="bookBranch[book]"
+              >
+                <el-radio value="good">
+                  {{ goodMap[book] ? goodMap[book] : '正线' }}
+                </el-radio>
+                <el-radio value="evil">
+                  {{ evilMap[book] ? evilMap[book] : '邪线' }}
+                </el-radio>
+              </el-radio-group>
+            </div>
+            <div class="td">
+              <div class="td-block">
+                <div class="td-effect-item effect-icon-rhombus">
+                  {{ item[bookBranch[book]].itm.join('，') }}
+                </div>
+                <div
+                  v-show="item[bookBranch[book]].team?.length > 0"
+                  class="td-effect-item effect-icon-star"
+                >
+                  {{ item[bookBranch[book]].team.join('，') }}
+                </div>
+                <div
+                  v-for="(text, i) of item[bookBranch[book]].branch"
+                  :key="i"
+                  class="td-effect-item effect-icon-rhombus"
+                >
+                  {{ text }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </el-collapse-item>
+    </el-collapse>
   </div>
   <v-dialog ref="dialogArtRef" dialog-class="dialog-art">
     <v-art ref="artRef" :id="artId"></v-art>
@@ -299,17 +311,7 @@ import {exportJsonToExcel} from '@/utils/excel';
 import talentMap from '@/v107/data/chr/talent/talent';
 import {rewardTextMap, goodMap, evilMap} from '@/v107/data/process';
 
-const bookBranch = ref({});
-
-function initBook() {
-  for (let key in rewardTextMap) {
-    if (rewardTextMap[key].normal) {
-      bookBranch.value[key] = 'normal';
-      continue;
-    }
-    bookBranch.value[key] = 'good';
-  }
-}
+const active = ref(['attr']);
 
 const attr = ref({
   dfl: 1,
@@ -380,6 +382,18 @@ const {
   initTal,
   getTalTagStyle,
 } = useTal();
+
+const bookBranch = ref({});
+
+function initBook() {
+  for (let key in rewardTextMap) {
+    if (rewardTextMap[key].normal) {
+      bookBranch.value[key] = 'normal';
+      continue;
+    }
+    bookBranch.value[key] = 'good';
+  }
+}
 
 // 重置
 function clearAll() {
@@ -531,18 +545,13 @@ onBeforeMount(() => {
 .plan-wrap {
 
   .plan-item-title {
-    --z-index: 1;
-
     display: flex;
+    padding: 10px;
     font-size: 16px;
-    padding: 15px 10px;
     background: #fff;
-    color: var(--color-warn);
 
-    &.is-sticky {
-      position: sticky;
-      top: 40px;
-      z-index: var(--z-index);
+    &.is-active {
+      color: var(--color-warn);
     }
 
     .title-sub {
@@ -566,8 +575,19 @@ onBeforeMount(() => {
     }
   }
 
+  .el-collapse {
+    --el-collapse-content-font-size: 14px;
+    --el-collapse-header-height: 20px;
+  }
+
+  .el-collapse-item__header {
+    position: sticky;
+    top: 40px;
+    z-index: 2;
+    background: #fff;
+  }
+
   .plan-attr {
-    border-bottom: 1px solid var(--color-border);
 
     .attr-list {
       --flex-basic: 100px;
@@ -596,8 +616,10 @@ onBeforeMount(() => {
   }
 
   .plan-tal {
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--color-border);
+
+    .tal-button {
+      margin-bottom: 10px;
+    }
 
     .el-tag {
       margin: 0 10px 5px 0;
@@ -605,8 +627,6 @@ onBeforeMount(() => {
   }
 
   .plan-art {
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--color-border);
 
     .art-list {
       display: flex;
@@ -655,7 +675,6 @@ onBeforeMount(() => {
   }
 
   .plan-meridian {
-    border-bottom: 1px solid var(--color-border);
 
     .meridian-row {
       display: flex;

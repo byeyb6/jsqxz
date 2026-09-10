@@ -214,6 +214,8 @@ defineExpose({
 <style lang="less">
 .v-tabs-dialog-talent {
   .tab {
+    --tab-width: 155px;
+
     &.is-active {
       background: var(--color-success-lighter);
     }
