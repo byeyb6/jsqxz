@@ -146,7 +146,7 @@ export default {
   7: {
     id: 7,
     name: '全真教',
-    join: '暂无',
+    join: '将介绍信送给重阳宫中间房间的马钰',
     effect: [],
     tal: {},
     move: [

@@ -90,7 +90,7 @@
           >
             <span class="item-label">{{ attrMap[key] }}</span>
             <span>
-              {{ attr[key] + attr.week + rlmAttr[key] }}
+              {{ attr[key] + artAttr[key] + attr.week + rlmAttr[key] }}
             </span>
           </div>
           <div class="attr-item">
@@ -423,7 +423,7 @@ function exportExcel() {
     if (attr3[key]) {
       num += artAttr.value[key] + attr3Base.value + meridianAttr.value[key] + rlmAttr.value[key];
     } else if (attr5[key]) {
-      num += attr.value.week + rlmAttr.value[key];
+      num += attr.value.week + artAttr.value[key] + rlmAttr.value[key];
     }
     if (attrIndex < 4) {
       attrObj[`col${attrIndex}`] = `${attrMap[key]}: ${num}`;
