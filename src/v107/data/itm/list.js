@@ -4474,7 +4474,7 @@ export default {
     id: 649,
     name: '大衍诀',
     level: 4,
-    get: ['暂无'],
+    get: ['天关排行榜达到3000层的奖励'],
     addition: '激活大衍诀',
     type: 8,
   },

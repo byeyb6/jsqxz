@@ -18,7 +18,7 @@
       <div class="td-block" v-for="item of row.talent" :key="item.id">
         <div>
           [
-          <span :class="`level-${item.level}`">
+          <span :class="{[`level-${item.level}`]: item.level < 5, 'level-5': item.level >= 5}">
             {{ item.name }}
           </span>
           ]:
@@ -89,6 +89,7 @@ function init() {
       });
       fortuneArr.push(...fortune);
     }
+    item.id = Number(id);
     item.talent = talentArr;
     item.fortune = fortuneArr;
     allData.value.push(item);
@@ -119,6 +120,7 @@ function search() {
     }
     return reg.test(itemStr);
   });
+  console.log(tbody.value);
 }
 
 onBeforeMount(() => {

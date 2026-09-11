@@ -1,14 +1,7 @@
 <template>
-<div class="markdown-wrap" v-html="html"></div>
+  <v-markdown :text="text"></v-markdown>
 </template>
 <script setup>
-import {onBeforeMount, ref} from 'vue';
-import {marked} from 'marked';
-import text from '@/v107/data/other/online';
-
-const html = ref('');
-
-onBeforeMount(() => {
-  html.value = marked.parse(text);
-});
+import text from '@/v107/data/wiki/online';
+import VMarkdown from '@/components/markdown';
 </script>

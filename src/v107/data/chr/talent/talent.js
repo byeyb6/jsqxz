@@ -26,6 +26,7 @@ export function formatTalent() {
     const effect = effectIds.split(',').map(id => effectMap[id]);
     const fortune = talentAll[id] ? talentAll[id].fortune : [];
     rst[id] = {
+      id: Number(id),
       name: name.replace(/["' ]/g, ''),
       effect,
       fortune,
