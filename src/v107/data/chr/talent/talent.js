@@ -23,7 +23,7 @@ export function formatTalent() {
     }
     let [id, name, type, level, score, effectIds] = info;
     effectIds = effectIds.replace(/\s/g, '');
-    const effect = effectIds.split(',').map(id => effectMap[id]);
+    const effect = effectIds.split(',').map(id => effectMap[id] ?? {});
     const fortune = talentAll[id] ? talentAll[id].fortune : [];
     rst[id] = {
       id: Number(id),
@@ -39,5 +39,5 @@ export function formatTalent() {
 }
 
 const talentMap = formatTalent();
-
+console.log(talentMap)
 export default talentMap;

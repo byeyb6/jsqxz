@@ -7,7 +7,7 @@ import text from './effect-text';
 export function formatEffect() {
   let str = text.replace(/--.*/g, '');
   // 表1为等级 表2为类型 表3为战力 表4为说明
-  str = str.replace(/\[(\d+?)] ?= ?\{([^,]+), ?([^,]+), ?([^,]+), ?([^,]+)}/gi, '$1,$2,$3,$4,$5');
+  str = str.replace(/\[(\d+?)] ?= ?\{([^,]+),([^,]+),([^,]+),([^,]+)}/gi, '$1,$2,$3,$4,$5');
 
   const list = str.split('\n');
   const rst = {};
