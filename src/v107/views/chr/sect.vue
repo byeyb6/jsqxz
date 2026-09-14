@@ -55,6 +55,17 @@
       </div>
       <div class="tr">
         <div class="td">
+          <div class="td-block">门派信物</div>
+        </div>
+        <div class="td">
+          <span v-if="itmAll[info.token]">
+            {{ itmAll[info.token].name }}
+            [{{ itmTypeMap[itmAll[info.token].type] }}]
+          </span>
+        </div>
+      </div>
+      <div class="tr">
+        <div class="td">
           <div class="td-block">武功</div>
         </div>
         <div class="td">
@@ -116,6 +127,7 @@
 import {computed, ref, useTemplateRef} from 'vue';
 import sectAll from '@/v107/data/art/sect';
 import artAll from '@/v107/data/art/list';
+import itmAll from '@/v107/data/itm/list';
 import talMap from '@/v107/data/chr/talent/talent';
 import {itmTypeMap, levelMap} from '@/v107/data/map';
 import {storageSession} from '@/utils/storage';

@@ -19,7 +19,7 @@ export default {
       'suoZu',
       'xuanYun',
     ],
-    art: [],
+    token: -1,
   },
   1: {
     id: 1,
@@ -38,7 +38,7 @@ export default {
       'suoZu',
       'xuanYun',
     ],
-    art: [],
+    token: 85,
   },
   2: {
     id: 2,
@@ -61,7 +61,7 @@ export default {
       'suoZu',
       'fanJi',
     ],
-    art: [],
+    token: 236,
   },
   3: {
     id: 3,
@@ -84,14 +84,14 @@ export default {
       'suoZu',
       'zaiDong',
     ],
-    art: [],
+    token: 200,
   },
   4: {
     id: 4,
     name: '日月神教',
     join: '帮任我行打败东方不败后接受任我行的邀请可加入',
     effect: ['集气+2', '修炼葵花宝典没有负作用'],
-    tal: {},
+    tal: {526: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -103,14 +103,14 @@ export default {
       'suoZu',
       'sanGong',
     ],
-    art: [],
+    token: 93,
   },
   5: {
     id: 5,
     name: '明教',
     join: '在朱府剧情结束前将介绍信送给光明顶的杨逍，否则该杨逍会消失',
     effect: ['攻击附带灼烧，灼烧上限提高到100'],
-    tal: {},
+    tal: {527: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -122,7 +122,7 @@ export default {
       'suoZu',
       'dianRan',
     ],
-    art: [],
+    token: 70,
   },
   6: {
     id: 6,
@@ -141,14 +141,14 @@ export default {
       'suoZu',
       'hunLuan',
     ],
-    art: [],
+    token: 308,
   },
   7: {
     id: 7,
     name: '全真教',
     join: '将介绍信送给重阳宫中间房间的马钰',
-    effect: [],
-    tal: {},
+    effect: ['脚踏七星：每七次攻击（含连击）必然触发七星聚会，随机借得三至七种星效'],
+    tal: {528: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -160,7 +160,7 @@ export default {
       'suoZu',
       'sanGong',
     ],
-    art: [],
+    token: 342,
   },
   8: {
     id: 8,
@@ -184,7 +184,7 @@ export default {
       'suoZu',
       'xuanYun',
     ],
-    art: [],
+    token: 49,
   },
   9: {
     id: 9,
@@ -206,7 +206,7 @@ export default {
       'suoZu',
       'zaiDong',
     ],
-    art: [],
+    token: 299,
   },
   10: {
     id: 10,
@@ -225,7 +225,7 @@ export default {
       'suoZu',
       'dongJie',
     ],
-    art: [],
+    token: 299,
   },
   11: {
     id: 11,
@@ -244,7 +244,7 @@ export default {
       'suoZu',
       'suoZu',
     ],
-    art: [],
+    token: -1,
   },
   12: {
     id: 12,
@@ -263,7 +263,7 @@ export default {
       'suoZu',
       'hengSao',
     ],
-    art: [],
+    token: 299,
   },
   13: {
     id: 13,
@@ -282,7 +282,7 @@ export default {
       'suoZu',
       'biZhong',
     ],
-    art: [],
+    token: 299,
   },
   14: {
     id: 14,
@@ -301,7 +301,7 @@ export default {
       'suoZu',
       'kongJu',
     ],
-    art: [],
+    token: 299,
   },
   15: {
     id: 15,
@@ -320,7 +320,7 @@ export default {
       'suoZu',
       'siLie',
     ],
-    art: [],
+    token: -1,
   },
   16: {
     id: 16,
@@ -339,7 +339,7 @@ export default {
       'suoZu',
       'dongJie',
     ],
-    art: [],
+    token: -1,
   },
   17: {
     id: 17,
@@ -362,7 +362,7 @@ export default {
       'suoZu',
       'siLie',
     ],
-    art: [],
+    token: 44,
   },
   18: {
     id: 18,
@@ -381,7 +381,7 @@ export default {
       'suoZu',
       'dongJie',
     ],
-    art: [],
+    token: -1,
   },
   19: {
     id: 19,
@@ -400,7 +400,7 @@ export default {
       'suoZu',
       'suoZu',
     ],
-    art: [],
+    token: -1,
   },
   20: {
     id: 20,
@@ -419,7 +419,7 @@ export default {
       'suoZu',
       'xuanYun',
     ],
-    art: [],
+    token: -1,
   },
   21: {
     id: 21,
@@ -438,7 +438,7 @@ export default {
       'suoZu',
       'zaiDong',
     ],
-    art: [],
+    token: -1,
   },
   22: {
     id: 22,
@@ -457,7 +457,7 @@ export default {
       'suoZu',
       'sanGong',
     ],
-    art: [],
+    token: -1,
   },
   23: {
     id: 23,
@@ -476,7 +476,7 @@ export default {
       'suoZu',
       'jiQiWenLuan',
     ],
-    art: [],
+    token: -1,
   },
   24: {
     id: 24,
@@ -495,7 +495,7 @@ export default {
       'suoZu',
       'zhiMingYiJi',
     ],
-    art: [],
+    token: -1,
   },
   25: {
     id: 25,
@@ -514,7 +514,7 @@ export default {
       'suoZu',
       'hunLuan',
     ],
-    art: [],
+    token: -1,
   },
   26: {
     id: 26,
@@ -533,7 +533,7 @@ export default {
       'suoZu',
       'zaiDong',
     ],
-    art: [],
+    token: 422,
   },
   27: {
     id: 27,
@@ -552,7 +552,7 @@ export default {
       'suoZu',
       'kongJu',
     ],
-    art: [],
+    token: 410,
   },
   28: {
     id: 28,
@@ -575,7 +575,7 @@ export default {
       'suoZu',
       'dongJie',
     ],
-    art: [],
+    token: 315,
   },
   29: {
     id: 29,
@@ -598,7 +598,7 @@ export default {
       'suoZu',
       'kongJu',
     ],
-    art: [],
+    token: 81,
   },
   30: {
     id: 30,
@@ -617,7 +617,7 @@ export default {
       'suoZu',
       'zaiDong',
     ],
-    art: [],
+    token: -1,
   },
   31: {
     id: 31,
@@ -636,6 +636,6 @@ export default {
       'suoZu',
       'zhiMingYiJi',
     ],
-    art: [],
+    token: -1,
   },
 };

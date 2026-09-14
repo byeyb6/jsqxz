@@ -16,14 +16,6 @@ export default {
       },
     },
     {
-      path: 'log',
-      component: () => import('@/v107/views/other/log.vue'),
-      name: 'v107otherLog',
-      meta: {
-        title: '更新日志',
-      },
-    },
-    {
       path: 'system',
       component: () => import('@/v107/views/other/system.vue'),
       name: 'v107otherSystem',
@@ -53,6 +45,14 @@ export default {
       name: 'v107otherKeymap',
       meta: {
         title: '快捷键',
+      },
+    },
+    {
+      path: 'log',
+      component: () => import('@/v107/views/other/log.vue'),
+      name: 'v107otherLog',
+      meta: {
+        title: '更新日志',
       },
     },
   ],
