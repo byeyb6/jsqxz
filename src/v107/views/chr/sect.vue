@@ -54,6 +54,32 @@
         </div>
       </div>
       <div class="tr">
+        <div class="td">职务</div>
+        <div class="td">
+          <div class="td-block color-warn">
+            *职务基础词条取最高值，特殊词条叠加低级职务的；职务词条会加到门派弟子的血脉天赋
+          </div>
+          <div class="td-block" v-for="(item, id, index) in info.job" :key="id">
+            <div>
+              [
+              <span class="color-error">{{ item.name }}</span>
+              ]:
+              <span class="color-success">
+                门派贡献≥{{ 200 * index }}
+                <template v-if="index === 5">（需完成挑战掌门获取绝学资格）</template>
+              </span>
+            </div>
+            <div
+              class="td-effect-item effect-icon-rhombus"
+              v-for="(text, i) of item.effect"
+              :key="i"
+            >
+              {{ text.desc }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tr">
         <div class="td">
           <div class="td-block">门派信物</div>
         </div>
@@ -134,6 +160,7 @@ import {storageSession} from '@/utils/storage';
 import ArtItem from '@/v107/views/art/item';
 import VDialog from '@/components/dialog.vue';
 import {globalState} from '@/store/global';
+import effectMap from '@/v107/data/chr/talent/effect';
 
 const list = computed(() => Object.values(sectAll));
 const active = ref(0);
@@ -177,6 +204,11 @@ const info = computed(() => {
     '本门武功威力增加50，每200门派贡献额外增加50；主运本门内功，本门武功威力增加：初阶内功50，中阶内功100，高阶内功150，绝学内功200，主运非本门内功此处威力加成减半',
     '修炼本门派武功，增加伤害5%；修炼本门派武功大于3个，增加伤害10%；修炼本门派武功大于7个，增加伤害20%，减少受到的伤害20%（取最大值）',
   ]);
+  for (let key in current.job) {
+    const {effect} = current.job[key];
+    console.log(effect);
+    current.job[key].effect = effect.map(id => effectMap[id] ?? {});
+  }
   storageSession.set(cacheKey, current, {day: 1});
   return current;
 });

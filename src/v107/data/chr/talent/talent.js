@@ -39,5 +39,5 @@ export function formatTalent() {
 }
 
 const talentMap = formatTalent();
-console.log(talentMap)
+
 export default talentMap;

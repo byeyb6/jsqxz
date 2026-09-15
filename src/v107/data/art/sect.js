@@ -1,12 +1,13 @@
 // 门派
-import {hengSao} from '@/v107/data/art/effect/out';
-
 export default {
   0: {
     id: 0,
     name: '江湖',
     join: '畅想默认江湖散人，可使用介绍信加入其他门派',
-    effect: ['可在扬州武馆学习初阶中阶高阶的江湖武功', '可在云岭洞喵姐处学习迷踪步'],
+    effect: [
+      '可在扬州武馆学习初阶中阶高阶的江湖武功',
+      '可在云岭洞喵姐处学习迷踪步',
+    ],
     tal: {},
     move: [
       'eWaiShangHai',
@@ -20,13 +21,21 @@ export default {
       'xuanYun',
     ],
     token: -1,
+    job: {},
   },
   1: {
     id: 1,
     name: '少林派',
     join: '需男主将介绍信送给大雄宝殿的玄慈，可选择入达摩院或般若堂',
-    effect: ['受到攻击概率进入防御状态', '【易筋经真谛】概率固定60%'],
-    tal: {516: '', 9983: '入般若堂完成铜人巷任务', 9986: '完成南北少林任务'},
+    effect: [
+      '受到攻击概率进入防御状态',
+      '【易筋经真谛】概率固定60%',
+    ],
+    tal: {
+      516: '',
+      9983: '入般若堂完成铜人巷任务',
+      9986: '完成南北少林任务',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -39,6 +48,32 @@ export default {
       'xuanYun',
     ],
     token: 85,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1001],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1002],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1005],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1004],
+      },
+      6: {
+        name: '方丈',
+        effect: [9906, 1003],
+      },
+    },
   },
   2: {
     id: 2,
@@ -49,7 +84,9 @@ export default {
       '主运太极神功时，时序增加蓄力值，太极蓄力值清除时只清除一半',
       '使用太极拳和太极剑后自动防御',
     ],
-    tal: {517: ''},
+    tal: {
+      517: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -62,6 +99,32 @@ export default {
       'fanJi',
     ],
     token: 236,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1011],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1012],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1013],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1014],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1015],
+      },
+    },
   },
   3: {
     id: 3,
@@ -72,7 +135,9 @@ export default {
       '被生死符击中的目标攻击时，概率命中减少一半；行动时小概率直接执行休息/防御/蓄力/集中/等待',
       '畅想虚竹灵鹫宫大战后将直升逍遥派掌门',
     ],
-    tal: {524: ''},
+    tal: {
+      524: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -85,13 +150,41 @@ export default {
       'zaiDong',
     ],
     token: 200,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1161],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1162],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1163],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1164],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1165],
+      },
+    },
   },
   4: {
     id: 4,
     name: '日月神教',
     join: '帮任我行打败东方不败后接受任我行的邀请可加入',
     effect: ['集气+2', '修炼葵花宝典没有负作用'],
-    tal: {526: ''},
+    tal: {
+      526: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -104,13 +197,41 @@ export default {
       'sanGong',
     ],
     token: 93,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1191],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1192],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1193],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1194],
+      },
+      6: {
+        name: '教主',
+        effect: [9906, 1195],
+      },
+    },
   },
   5: {
     id: 5,
     name: '明教',
     join: '在朱府剧情结束前将介绍信送给光明顶的杨逍，否则该杨逍会消失',
     effect: ['攻击附带灼烧，灼烧上限提高到100'],
-    tal: {527: ''},
+    tal: {
+      527: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -123,13 +244,41 @@ export default {
       'dianRan',
     ],
     token: 70,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1041],
+      },
+      3: {
+        name: '舵主',
+        effect: [9903, 1042],
+      },
+      4: {
+        name: '法王',
+        effect: [9904, 1043],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1044],
+      },
+      6: {
+        name: '教主',
+        effect: [9906, 1045],
+      },
+    },
   },
   6: {
     id: 6,
     name: '天机宫',
     join: '将介绍信送给天机宫里边房间的明镜',
     effect: ['被攻击15%概率免受攻击伤害'],
-    tal: {522: ''},
+    tal: {
+      522: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -142,13 +291,43 @@ export default {
       'hunLuan',
     ],
     token: 308,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1171],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1172],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1173],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1174],
+      },
+      6: {
+        name: '宫主',
+        effect: [9906, 1175],
+      },
+    },
   },
   7: {
     id: 7,
     name: '全真教',
     join: '将介绍信送给重阳宫中间房间的马钰',
-    effect: ['脚踏七星：每七次攻击（含连击）必然触发七星聚会，随机借得三至七种星效'],
-    tal: {528: ''},
+    effect: [
+      '脚踏七星：每七次攻击（含连击）必然触发七星聚会，随机借得三至七种星效',
+    ],
+    tal: {
+      528: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -161,6 +340,32 @@ export default {
       'sanGong',
     ],
     token: 342,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1051],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1052],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1053],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1054],
+      },
+      6: {
+        name: '掌教',
+        effect: [9906, 1055],
+      },
+    },
   },
   8: {
     id: 8,
@@ -172,7 +377,9 @@ export default {
       '攻击中概率偷盗目标身上的金钱和药物',
       '降龙十八掌消耗内力减少30%',
     ],
-    tal: {519: ''},
+    tal: {
+      519: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -185,6 +392,32 @@ export default {
       'xuanYun',
     ],
     token: 49,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1031],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1032],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1033],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1034],
+      },
+      6: {
+        name: '帮主',
+        effect: [9906, 1035],
+      },
+    },
   },
   9: {
     id: 9,
@@ -194,7 +427,9 @@ export default {
       '使用剑法概率三连击，且连击伤害不减，连击时命中提升20%',
       '杀岳不群后，将直升华山派掌门',
     ],
-    tal: {525: ''},
+    tal: {
+      525: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -207,6 +442,32 @@ export default {
       'zaiDong',
     ],
     token: 299,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1021],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1022],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1023],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1024],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1025],
+      },
+    },
   },
   10: {
     id: 10,
@@ -226,6 +487,32 @@ export default {
       'dongJie',
     ],
     token: 299,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1261],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1262],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1263],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1264],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1265],
+      },
+    },
   },
   11: {
     id: 11,
@@ -245,6 +532,32 @@ export default {
       'suoZu',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1271],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1272],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1273],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1274],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1275],
+      },
+    },
   },
   12: {
     id: 12,
@@ -264,6 +577,32 @@ export default {
       'hengSao',
     ],
     token: 299,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1081],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1082],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1083],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1084],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1085],
+      },
+    },
   },
   13: {
     id: 13,
@@ -283,6 +622,32 @@ export default {
       'biZhong',
     ],
     token: 299,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1071],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1072],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1073],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1074],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1075],
+      },
+    },
   },
   14: {
     id: 14,
@@ -302,6 +667,32 @@ export default {
       'kongJu',
     ],
     token: 299,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1281],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1282],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1283],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1284],
+      },
+      6: {
+        name: '祖师',
+        effect: [9906, 1285],
+      },
+    },
   },
   15: {
     id: 15,
@@ -321,6 +712,32 @@ export default {
       'siLie',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1141],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1142],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1143],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1144],
+      },
+      6: {
+        name: '教主',
+        effect: [9906, 1145],
+      },
+    },
   },
   16: {
     id: 16,
@@ -340,6 +757,32 @@ export default {
       'dongJie',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1241],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1242],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1243],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1244],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1245],
+      },
+    },
   },
   17: {
     id: 17,
@@ -350,7 +793,9 @@ export default {
       '道德低于50时增加((50-道德)÷2)%的伤害',
       '杀血刀老祖后，将直升血刀门掌门',
     ],
-    tal: {518: ''},
+    tal: {
+      518: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -363,6 +808,32 @@ export default {
       'siLie',
     ],
     token: 44,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1131],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1132],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1133],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1134],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1135],
+      },
+    },
   },
   18: {
     id: 18,
@@ -382,6 +853,32 @@ export default {
       'dongJie',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1251],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1252],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1253],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1254],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1255],
+      },
+    },
   },
   19: {
     id: 19,
@@ -401,6 +898,32 @@ export default {
       'suoZu',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1061],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1062],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1063],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1064],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1065],
+      },
+    },
   },
   20: {
     id: 20,
@@ -420,6 +943,32 @@ export default {
       'xuanYun',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1091],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1092],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1093],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1094],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1095],
+      },
+    },
   },
   21: {
     id: 21,
@@ -439,6 +988,32 @@ export default {
       'zaiDong',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1101],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1102],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1103],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1104],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1105],
+      },
+    },
   },
   22: {
     id: 22,
@@ -458,6 +1033,32 @@ export default {
       'sanGong',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1201],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1202],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1203],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1204],
+      },
+      6: {
+        name: '岛主',
+        effect: [9906, 1205],
+      },
+    },
   },
   23: {
     id: 23,
@@ -477,6 +1078,32 @@ export default {
       'jiQiWenLuan',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1211],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1212],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1213],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1214],
+      },
+      6: {
+        name: '庄主',
+        effect: [9906, 1215],
+      },
+    },
   },
   24: {
     id: 24,
@@ -496,6 +1123,32 @@ export default {
       'zhiMingYiJi',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1221],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1222],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1223],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1224],
+      },
+      6: {
+        name: '总捕头',
+        effect: [9906, 1225],
+      },
+    },
   },
   25: {
     id: 25,
@@ -515,6 +1168,32 @@ export default {
       'hunLuan',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1231],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1232],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1233],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1234],
+      },
+      6: {
+        name: '掌门',
+        effect: [9906, 1235],
+      },
+    },
   },
   26: {
     id: 26,
@@ -534,13 +1213,45 @@ export default {
       'zaiDong',
     ],
     token: 422,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1181],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1182],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1183],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1184],
+      },
+      6: {
+        name: '家主',
+        effect: [9906, 1185],
+      },
+    },
   },
   27: {
     id: 27,
     name: '天龙寺',
     join: '在剧情推进到天龙寺看门弟子消失之前，将介绍信送给看门弟子（天龙邪拿完天书带慕容复屠寺后无法学习武功）',
-    effect: ['六脉神剑可以触发六脉奥义', '皇家血脉增加体质2点', '增加耗内点数一半的真实伤害'],
-    tal: {520: ''},
+    effect: [
+      '六脉神剑可以触发六脉奥义',
+      '皇家血脉增加体质2点',
+      '增加耗内点数一半的真实伤害',
+    ],
+    tal: {
+      520: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -553,6 +1264,32 @@ export default {
       'kongJu',
     ],
     token: 410,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1151],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1152],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1153],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1154],
+      },
+      6: {
+        name: '方丈',
+        effect: [9906, 1155],
+      },
+    },
   },
   28: {
     id: 28,
@@ -563,7 +1300,9 @@ export default {
       '行动后概率对周围六格内目标上毒40-80点',
       '杀丁春秋后，将直升星宿派掌门',
     ],
-    tal: {521: ''},
+    tal: {
+      521: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -576,6 +1315,32 @@ export default {
       'dongJie',
     ],
     token: 315,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1111],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1112],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1113],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1114],
+      },
+      6: {
+        name: '老仙',
+        effect: [9906, 1115],
+      },
+    },
   },
   29: {
     id: 29,
@@ -586,7 +1351,9 @@ export default {
       '对同一个目标不间断的攻击，伤害和命中会随着攻击次数而增加',
       '大轮密宗奥义触发概率+30%',
     ],
-    tal: {523: ''},
+    tal: {
+      523: '',
+    },
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -599,6 +1366,32 @@ export default {
       'kongJu',
     ],
     token: 81,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1121],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1122],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1123],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1124],
+      },
+      6: {
+        name: '上师',
+        effect: [9906, 1125],
+      },
+    },
   },
   30: {
     id: 30,
@@ -618,6 +1411,32 @@ export default {
       'zaiDong',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1291],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1292],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1293],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1294],
+      },
+      6: {
+        name: '庄主',
+        effect: [9906, 1295],
+      },
+    },
   },
   31: {
     id: 31,
@@ -637,5 +1456,31 @@ export default {
       'zhiMingYiJi',
     ],
     token: -1,
+    job: {
+      1: {
+        name: '弟子',
+        effect: [9901],
+      },
+      2: {
+        name: '精英',
+        effect: [9902, 1301],
+      },
+      3: {
+        name: '堂主',
+        effect: [9903, 1302],
+      },
+      4: {
+        name: '护法',
+        effect: [9904, 1303],
+      },
+      5: {
+        name: '长老',
+        effect: [9905, 1304],
+      },
+      6: {
+        name: '会主',
+        effect: [9906, 1305],
+      },
+    },
   },
 };
