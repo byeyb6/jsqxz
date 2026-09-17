@@ -7,7 +7,7 @@ const artCheatMap = {};
 
 for (let id in itmAll) {
   const {art} = itmAll[id];
-  if (typeof art === 'number') {
+  if (typeof art === 'number' && art > 0) {
     artCheatMap[art] = Number(id);
   }
 }

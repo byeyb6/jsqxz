@@ -235,7 +235,7 @@ export function sanTouLiuBi(lv) {
 
 export function zhenLingRongMoTi(lv) {
   return {
-    id: 123,
+    id: 124,
     name: `真灵融魔体 Lv${lv}`,
     effect: [
       `攻击时40%概率进入【魔神】状态10时序：免疫杀气和封穴，攻击吸血10%`,
@@ -245,13 +245,223 @@ export function zhenLingRongMoTi(lv) {
 
 export function niePanShengTi(lv) {
   return {
-    id: 123,
+    id: 125,
     name: `涅槃圣体 Lv${lv}`,
     effect: [
       '被击败时涅槃重生、全恢复：',
       '首次必定重生，全属性提升20%',
       '第二次40%概率重生，全属性提升50%',
       '第三次10%概率重生，全属性提升100%',
+    ],
+  };
+}
+
+export function wanJianChaoZong(lv) {
+  return {
+    id: 126,
+    name: `万剑朝宗 Lv${lv}`,
+    effect: [
+      '每持有一把「剑」（天剑/血剑/仁剑），御剑能力+25%，三把全持有+75%',
+    ],
+  };
+}
+
+export function jianQiZongHeng(lv) {
+  return {
+    id: 127,
+    name: `剑气纵横 Lv${lv}`,
+    effect: [
+      '剑法攻击时30%概率追加一道剑气，造成御剑能力20%的真实伤害',
+    ],
+  };
+}
+
+export function jianDanQinXin(lv) {
+  return {
+    id: 128,
+    name: `剑胆琴心 Lv${lv}`,
+    effect: [
+      '每时序回复2点剑气（上限100），剑气满100时御剑能力三倍',
+    ],
+  };
+}
+
+export function wanJianGuiYuan(lv) {
+  return {
+    id: 129,
+    name: `万剑归元 Lv${lv}`,
+    effect: [
+      '天剑无我触发时，额外对随机敌人追加2道剑气（每道御剑能力15%的伤害）',
+    ],
+  };
+}
+
+export function jianYingChongChong(lv) {
+  return {
+    id: 130,
+    name: `剑影重重 Lv${lv}`,
+    effect: [
+      '受击时20%概率分出一道剑影挡刀（只承受50%伤害），每场战斗最多3次',
+    ],
+  };
+}
+
+export function jianYiTongShen(lv) {
+  return {
+    id: 131,
+    name: `剑意通神 Lv${lv}`,
+    effect: [
+      '天剑无我触发期间，剑气消耗减半，且暴击率+20%',
+    ],
+  };
+}
+
+export function jianPoWanFa(lv) {
+  return {
+    id: 132,
+    name: `剑破万法 Lv${lv}`,
+    effect: [
+      '无视目标20%防御，对带护盾的目标伤害+25%',
+    ],
+  };
+}
+
+export function wanJianJiMie(lv) {
+  return {
+    id: 133,
+    name: `万剑寂灭 Lv${lv}`,
+    effect: [
+      '敌方每有一个减益状态，自身剑法伤害+3%（最多+15%）',
+    ],
+  };
+}
+
+export function wanJianGuiZongWuMing(lv) {
+  return {
+    id: 134,
+    name: `万剑归宗 Lv${lv}`,
+    effect: [
+      '三把剑全部持有期间，天剑无我触发概率提升至50%；挡剑后不再永久消耗——消耗的剑10时序后重新凝聚',
+    ],
+  };
+}
+
+export function jianDaoDuZun(lv) {
+  return {
+    id: 135,
+    name: `剑道独尊 Lv${lv}`,
+    effect: [
+      '全部剑法威力+20%',
+    ],
+  };
+}
+
+export function wuJianShengYouJian(lv) {
+  return {
+    id: 136,
+    name: `无剑胜有剑 Lv${lv}`,
+    effect: [
+      '空手时剑法伤害+30%',
+    ],
+  };
+}
+
+export function jianXinTongMing(lv) {
+  return {
+    id: 137,
+    name: `剑心通明 Lv${lv}`,
+    effect: [
+      '免疫封穴、沉默，剑法攻击不会被打断',
+    ],
+  };
+}
+
+export function yiJianPoWanFa(lv) {
+  return {
+    id: 138,
+    name: `一剑破万法 Lv${lv}`,
+    effect: [
+      '剑法暴击时追加1000点真实伤害',
+    ],
+  };
+}
+
+export function yuJianFeiXing(lv) {
+  return {
+    id: 139,
+    name: `御剑飞行 Lv${lv}`,
+    effect: [
+      '轻功+30，移动后下一次剑法攻击必中',
+    ],
+  };
+}
+
+export function jianZhiCangTian(lv) {
+  return {
+    id: 140,
+    name: `剑指苍天 Lv${lv}`,
+    effect: [
+      '怒气满时，剑法攻击附加「剑气冲天」：范围+1格，伤害+20%',
+    ],
+  };
+}
+
+export function jianYiLinRan(lv) {
+  return {
+    id: 141,
+    name: `剑意凛然 Lv${lv}`,
+    effect: [
+      '受攻击时15%概率反弹剑气（御剑能力30%的伤害）',
+    ],
+  };
+}
+
+export function jianGangHuTi(lv) {
+  return {
+    id: 142,
+    name: `剑罡护体 Lv${lv}`,
+    effect: [
+      '气防+800，剑法减伤15%',
+    ],
+  };
+}
+
+export function wuShangJianDao(lv) {
+  return {
+    id: 143,
+    name: `无上剑道 Lv${lv}`,
+    effect: [
+      '天剑无我触发时，血剑/仁剑效果同时激活（不再三选一掷骰）；三把剑效果全部激活期间，每时序对敌方全体造成御剑能力5%的剑气伤害',
+    ],
+  };
+}
+
+export function chengShiZhuiJi(lv) {
+  return {
+    id: 144,
+    name: `乘势追击 Lv${lv}`,
+    effect: [
+      '移动后下一次攻击伤害+15%',
+    ],
+  };
+}
+
+export function shunYingBeiCi(lv) {
+  return {
+    id: 145,
+    name: `瞬影背刺 Lv${lv}`,
+    effect: [
+      '被攻击时20%概率瞬移到攻击者身后，并获得「背刺」：下次攻击暴击率+30%，暴击伤害+30%',
+    ],
+  };
+}
+
+export function lingXu(lv) {
+  return {
+    id: 146,
+    name: `凌虚 Lv${lv}`,
+    effect: [
+      '战斗开始每10时序自动获得「凌虚」状态3时序：免疫减速/锁足，受到攻击概率打断对方并进行反击',
     ],
   };
 }

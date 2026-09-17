@@ -17,14 +17,14 @@ export function formatTalent() {
     if (!item) {
       continue;
     }
-    const info = item.split(/@/);
-    if (info.length < 4) {
+    const info = item.split('@');
+    if (info.length < 6) {
       continue;
     }
     let [id, name, type, level, score, effectIds] = info;
     effectIds = effectIds.replace(/\s/g, '');
     const effect = effectIds.split(',').map(id => effectMap[id] ?? {});
-    const fortune = talentAll[id] ? talentAll[id].fortune : [];
+    const fortune = talentAll[id]?.fortune ?? [];
     rst[id] = {
       id: Number(id),
       name: name.replace(/["' ]/g, ''),

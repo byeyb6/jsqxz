@@ -57,7 +57,7 @@
         <div class="td">职务</div>
         <div class="td">
           <div class="td-block color-warn">
-            *职务基础词条取最高值，特殊词条叠加低级职务的；职务词条会加到门派弟子的血脉天赋
+            *职务基础词条取最高值，特殊词条叠加低级职务的；职务词条会加到门派职务天赋，并升级职务天赋
           </div>
           <div class="td-block" v-for="(item, id, index) in info.job" :key="id">
             <div>

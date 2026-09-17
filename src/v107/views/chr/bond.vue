@@ -6,7 +6,7 @@
     :loading="globalState.loading"
   >
     <template #effect="{row}">
-      <div class="td-block">
+      <div class="td-block" v-if="row.effect.length > 0">
         <div
           class="td-effect-item"
           v-for="(item, index) of row.effect"
@@ -14,7 +14,9 @@
         >
           {{ item }}
         </div>
+
       </div>
+      <span v-else>无</span>
     </template>
   </v-table>
 </template>

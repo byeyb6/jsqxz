@@ -4,15 +4,9 @@
     :class="{'is-less-window': globalState.lessWindow}"
   >
     <header-nav></header-nav>
-    <router-view
-      class="app-view"
-    ></router-view>
-    <v-loading
-      :loading="globalState.loading"
-    ></v-loading>
+    <router-view class="app-view"></router-view>
   </div>
 </template>
-
 <script setup>
 import {onMounted, watch} from 'vue';
 import HeaderNav from '@/views/layout/header.vue';
