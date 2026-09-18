@@ -66,6 +66,14 @@ export default {
       },
     },
     {
+      path: 'effect',
+      component: () => import('@/v107/views/chr/effect.vue'),
+      name: 'v107chrEffect',
+      meta: {
+        title: '天赋词条',
+      },
+    },
+    {
       path: 'bond',
       component: () => import('@/v107/views/chr/bond.vue'),
       name: 'v107chrBond',
