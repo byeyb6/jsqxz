@@ -618,6 +618,62 @@ export function chongXue(lv) {
   };
 }
 
+export function qingYuanJianYuan(lv) {
+  return {
+    id: 219,
+    name: `青元剑元 Lv${lv}`,
+    effect: [`每回合恢复${lv * 100}点内力值`],
+  };
+}
+
+export function qingYuanJianTi(lv) {
+  return {
+    id: 220,
+    name: `青元剑体 Lv${lv}`,
+    effect: [`每回合恢复${lv}点体力值`],
+  };
+}
+
+export function jianDaoZhiLi(lv) {
+  return {
+    id: 221,
+    name: `剑道之力 Lv${lv}`,
+    effect: [`全部剑法威力+800`],
+  };
+}
+
+export function xianJian(lv) {
+  return {
+    id: 222,
+    name: `仙剑 Lv${lv}`,
+    effect: [`增加御剑系数${lv * 10}%`],
+  };
+}
+
+export function fanShengLianJing(lv) {
+  return {
+    id: 223,
+    name: `梵圣炼精 Lv${lv}`,
+    effect: [`每回合恢复${lv * 100}点内力值`],
+  };
+}
+
+export function fanShengLianQi(lv) {
+  return {
+    id: 224,
+    name: `梵圣炼气 Lv${lv}`,
+    effect: [`每回合恢复${lv}点体力值`],
+  };
+}
+
+export function fanShengLianShen(lv) {
+  return {
+    id: 225,
+    name: `梵圣炼神 Lv${lv}`,
+    effect: [`每回合恢复生命最大值${lv * 2}%点生命`],
+  };
+}
+
 /**
  * 增加自身效果类
  */
@@ -2679,7 +2735,7 @@ export function jiuYinGuiYi(lv) {
     name: `九阴归一 Lv${lv}`,
     effect: [
       `${lv * 10}%概率免疫debuff`,
-      `攻击时给敌方增加3~5层迟缓状态，迟缓状态达到30层及以上有${lv * 15}%概率会清空迟缓并触发【玄阴入体】：集气归0，天赋，奇穴，秘技，内功效果都不触发，需要10时序内消耗最大内力值10%（无内力则消耗生命值）来解除`,
+      `攻击时给敌方增加3~5层迟缓状态，迟缓状态达到30层及以上有50%概率会清空迟缓并触发【玄阴入体】：集气归0，天赋，奇穴，秘技，内功效果都不触发，需要10时序内消耗最大内力值10%（无内力则消耗生命值）来解除`,
       `（第九词条需激活：射雕正线王重阳送九阴上部，邪线选化干戈为玉帛可激活）`,
     ],
   };

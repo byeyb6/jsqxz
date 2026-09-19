@@ -212,7 +212,7 @@ onMounted(() => {
 </script>
 <style lang="less">
 .v-table-art-talent {
-  --height-slide: 166px;
+  --height-slide: 130px;
 
   .td {
     &:nth-child(1) {

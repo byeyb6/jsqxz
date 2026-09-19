@@ -81,7 +81,7 @@ onBeforeMount(() => {
 
 <style lang="less">
 .v-table-effect {
-  --height-slide: 166px;
+  --height-slide: 130px;
 
   .td {
     &:nth-child(1) {
