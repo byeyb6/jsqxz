@@ -2857,3 +2857,91 @@ export function miZong(lv) {
     effect: [`受到攻击时${lv * 5}%概率自动移动躲避攻击`],
   };
 }
+
+/**
+ * 特殊
+ */
+export function zhanShenYiZhi(lv) {
+  return {
+    id: 1401,
+    name: `战神意志 Lv${lv}`,
+    effect: [`任何人的攻击、反击、被攻击均有20%概率增加一层战意；每层使全场敌方三围、五系降低5%，最低100`],
+  };
+}
+
+export function tianDiBuRen(lv) {
+  return {
+    id: 1402,
+    name: `天地不仁 Lv${lv}`,
+    effect: [`每层战意额外降低十格内敌方三围、五系5%，与战神意志叠加，最低100`],
+  };
+}
+
+export function zhanShenZhiTi(lv) {
+  return {
+    id: 1403,
+    name: `战神之体 Lv${lv}`,
+    effect: [`每层战意减少自身受到的额外伤害5%`],
+  };
+}
+
+export function tuLuJiaChi(lv) {
+  return {
+    id: 1404,
+    name: `图录加持 Lv${lv}`,
+    effect: [`战意达到10层时，免疫暴击增加的伤害`],
+  };
+}
+
+export function yinYangHuYi(lv) {
+  return {
+    id: 1405,
+    name: `阴阳互易 Lv${lv}`,
+    effect: [`即将受到敌人攻击时，使攻击者的内力性质阴转阳、阳转阴、天罡转无；战后恢复`],
+  };
+}
+
+export function tuLuYanHua(lv) {
+  return {
+    id: 1406,
+    name: `图录演化 Lv${lv}`,
+    effect: [`每99时序三围与五系增加50%，以基础值累计加成，持续本场战斗`],
+  };
+}
+
+export function xunHuanBuXi(lv) {
+  return {
+    id: 1407,
+    name: `循环不息 Lv${lv}`,
+    effect: [`战意每跨越5/10/15/20层，回复最大内力10%和最大生命5%`],
+  };
+}
+
+export function zhanShenZhiNu(lv) {
+  return {
+    id: 1408,
+    name: `战神之怒 Lv${lv}`,
+    effect: [`即将受到攻击时回复10点怒气，15%概率打断敌人攻击`],
+  };
+}
+
+export function poSuiXuKong(lv) {
+  return {
+    id: 1409,
+    name: `破碎虚空 Lv${lv}`,
+    effect: [
+      `战意达到20层消耗全部战意，离场20时序；全场敌人恐惧20时序，每时序扣除生命最大值1%的当前生命、内力最大值1%的当前内力及2点体力，上限不变`,
+    ],
+  };
+}
+
+export function chongFanJiuTian(lv) {
+  return {
+    id: 1410,
+    name: `重返九天 Lv${lv}`,
+    effect: [
+      `破碎虚空返回战场时，对全体敌方各结算一次正常攻击，并立即获得5层战意`,
+    ],
+  };
+}
+

@@ -1,4 +1,4 @@
-import {jianGangHuTi, jianPoWanFa, jianYiLinRan, lingXu, wanJianJiMie} from '@/v107/data/art/effect/inner';
+import {poSuiXuKong, tianDiBuRen, tuLuJiaChi, tuLuYanHua, xunHuanBuXi, yinYangHuYi} from '@/v107/data/art/effect/inner';
 
 export default {
   1: {
@@ -5990,5 +5990,46 @@ export default {
       'lingXu',
     ],
     type: 7,
+  },
+  475: {
+    id: 475,
+    name: '五毒心法',
+    get: [],
+    sect: 15,
+    level: 1,
+    inner: 9,
+    initiative: [],
+    type: 6,
+  },
+  476: {
+    id: 476,
+    name: '十二峒蛊经',
+    get: [],
+    sect: 15,
+    level: 2,
+    inner: 9,
+    initiative: [],
+    type: 6,
+  },
+  477: {
+    id: 477,
+    name: '战神图录',
+    get: [],
+    sect: 0,
+    level: 5,
+    inner: 2,
+    initiative: [
+      'zhanShenYiZhi',
+      'tianDiBuRen',
+      'zhanShenZhiTi',
+      'tuLuJiaChi',
+      'yinYangHuYi',
+      'tuLuYanHua',
+      'xunHuanBuXi',
+      'zhanShenZhiNu',
+      'poSuiXuKong',
+      'chongFanJiuTian',
+    ],
+    type: 6,
   },
 };

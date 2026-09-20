@@ -1195,6 +1195,12 @@ export default {
     talent: [610, 9942, 9944],
     type: 'special',
   },
+  611: {
+    id: 611,
+    name: '廖卿',
+    talent: [611, 9721],
+    type: '',
+  },
   612: {
     id: 612,
     name: '周威信',

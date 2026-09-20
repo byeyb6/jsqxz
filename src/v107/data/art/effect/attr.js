@@ -77,6 +77,9 @@ export function getAttr({
   if (typeof other === 'string' && /^#/.test(other)) {
     return other.replace(/^#/, '');
   }
+  if (level > 4) {
+    level = 4;
+  }
   const rst = {};
   // 获取各类型武功基础属性
   if (attrTypeMap[type]?.[level]) {
@@ -144,6 +147,9 @@ export function getCondition({
   if (/^#/.test(other)) {
     return other.replace(/^#/, '');
   }
+  if (level > 4) {
+    level = 4;
+  }
   let condition = '';
   // 阴阳限制
   if (innerTypeCondition[inner]) {
@@ -178,6 +184,9 @@ export function getPower({
 }) {
   if (other || typeof other === 'number') {
     return other;
+  }
+  if (level > 4) {
+    level = 4;
   }
   // 外功
   if (type < 6) {
@@ -242,6 +251,9 @@ const rangeMap = {
 export function getRange({type, level, other = ''}) {
   if (other) {
     return other;
+  }
+  if (level > 4) {
+    level = 4;
   }
   if (rangeMap[type]?.[level]) {
     const {shape, move, width, height} =
