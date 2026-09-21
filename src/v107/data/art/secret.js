@@ -290,7 +290,7 @@ const secret = {
     name: '罗汉金身',
     cheat: {72: true, 265: true},
     effect: [
-      `主运${getArtName(72)}/${getArtName(85)}/${getArtName(265)}，被攻击时30%概率第一击伤害降低50%（无效）`,
+      `主运${getArtName(72)}/${getArtName(85)}/${getArtName(265)}，被攻击时30%概率第一击伤害降低50%`,
     ],
     type: 1,
   },
