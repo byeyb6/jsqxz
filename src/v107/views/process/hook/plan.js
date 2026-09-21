@@ -347,6 +347,9 @@ export function useArt() {
     const obj = {};
     for (let id in knwSecret) {
       const item = itmAll[id];
+      if (!item.get || item.get.length < 1) {
+        continue;
+      }
       obj[id] = {
         id,
         name: item.name,

@@ -2894,6 +2894,12 @@ export default {
     sect: 15,
     level: 3,
     inner: 1,
+    addition: {
+      tox: 10,
+      ant: 10,
+      prs: 10,
+      psn: 5,
+    },
     initiative: [
       'quanGang',
       'zhiJin',
@@ -5998,7 +6004,10 @@ export default {
     sect: 15,
     level: 1,
     inner: 9,
-    initiative: [],
+    initiative: [
+      'shiXuHuiNei',
+      'shiXuQuDu',
+    ],
     type: 6,
   },
   476: {
@@ -6008,7 +6017,12 @@ export default {
     sect: 15,
     level: 2,
     inner: 9,
-    initiative: [],
+    initiative: [
+      'shiXuHuiNei',
+      'shiXuQuDu',
+      'zhongDu1',
+      'guJingHuShen',
+    ],
     type: 6,
   },
   477: {

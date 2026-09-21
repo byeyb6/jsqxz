@@ -53,7 +53,7 @@ import VSelect from '@/components/select';
 import {storageSession} from '@/utils/storage';
 import {formatArt} from '@/v107/data/art/effect/attr';
 import {globalState} from '@/store/global';
-import {itmTypeMap} from '@/v107/data/map';
+import {attrMap, itmTypeMap} from '@/v107/data/map';
 
 const props = defineProps({
   id: {
@@ -114,6 +114,11 @@ function handleArtInfo(info = {}) {
   }
   const item = formatArt(info);
   storageSession.set(cacheKey, item, {day: 1});
+  const additionArr = [];
+  for (let key in item.addition) {
+    additionArr.push(`${attrMap[key]}+${item.addition[key]}`);
+  }
+  item.additionText = additionArr.join(' ');
   return item;
 }
 
@@ -135,7 +140,7 @@ const typeOptions = computed(() => {
 
 function search() {
   let {keyword, type} = params.value;
-  keyword = (keyword + '').replace(/[\[\]{}"', ]/g, '');
+  keyword = (keyword + '').replace(/[\[\]{}"'+, ]/g, '');
   type = Number(type);
   if (!keyword && type < 1) {
     art.value = [...artAll.value];
@@ -151,6 +156,7 @@ function search() {
       const keyType = {
         name: 'string',
         sectName: 'string',
+        additionText: 'string',
         inherit: 'object',
         tra: 'object',
         move: 'object',

@@ -4542,6 +4542,9 @@ export default {
   761: {
     id: 761,
     name: '九天剑气',
-    type: -1,
+    level: 4,
+    get: [],
+    addition: '激活九天剑气',
+    type: 8,
   },
 };

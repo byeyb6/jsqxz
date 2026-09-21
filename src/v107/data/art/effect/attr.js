@@ -20,43 +20,50 @@ const attrTypeMap = {
     1: {atk: 2, def: 0, spd: 0},
     2: {atk: 3, def: 0, spd: 0},
     3: {atk: 3, def: 1, spd: 0},
-    4: {atk: 5, def: 1, spd: 1},
+    4: {atk: 5, def: 1, spd: 0},
+    5: {atk: 5, def: 1, spd: 2},
   },
   2: {
     1: {atk: 1, def: 0, spd: 1},
     2: {atk: 2, def: 0, spd: 1},
-    3: {atk: 3, def: 0, spd: 2},
-    4: {atk: 4, def: 1, spd: 2},
+    3: {atk: 3, def: 0, spd: 1},
+    4: {atk: 4, def: 1, spd: 1},
+    5: {atk: 5, def: 2, spd: 1},
   },
   3: {
     1: {atk: 1, def: 0, spd: 1},
     2: {atk: 1, def: 1, spd: 1},
-    3: {atk: 2, def: 1, spd: 2},
-    4: {atk: 3, def: 1, spd: 3},
+    3: {atk: 2, def: 1, spd: 1},
+    4: {atk: 3, def: 1, spd: 2},
+    5: {atk: 4, def: 1, spd: 3},
   },
   4: {
     1: {atk: 1, def: 1, spd: 0},
     2: {atk: 2, def: 1, spd: 0},
-    3: {atk: 3, def: 1, spd: 1},
+    3: {atk: 2, def: 1, spd: 1},
     4: {atk: 4, def: 2, spd: 1},
+    5: {atk: 5, def: 2, spd: 1},
   },
   5: {
     1: {atk: 1, def: 1, spd: 0},
     2: {atk: 2, def: 1, spd: 0},
     3: {atk: 3, def: 1, spd: 1},
-    4: {atk: 3, def: 2, spd: 2},
+    4: {atk: 3, def: 1, spd: 2},
+    5: {atk: 4, def: 2, spd: 2},
   },
   6: {
     1: {atk: 1, def: 1, spd: 0},
     2: {atk: 1, def: 2, spd: 0},
     3: {atk: 2, def: 2, spd: 1},
-    4: {atk: 2, def: 4, spd: 1},
+    4: {atk: 2, def: 3, spd: 1},
+    5: {atk: 3, def: 4, spd: 1},
   },
   7: {
     1: {atk: 0, def: 0, spd: 5},
     2: {atk: 0, def: 0, spd: 0},
     3: {atk: 0, def: 0, spd: 0},
-    4: {atk: 0, def: 0, spd: 10},
+    4: {atk: 0, def: 0, spd: 8},
+    5: {atk: 0, def: 0, spd: 10},
   },
 };
 
@@ -76,9 +83,6 @@ export function getAttr({
   // 直接设置属性
   if (typeof other === 'string' && /^#/.test(other)) {
     return other.replace(/^#/, '');
-  }
-  if (level > 4) {
-    level = 4;
   }
   const rst = {};
   // 获取各类型武功基础属性
@@ -123,18 +127,25 @@ export function getAttr({
 // 阴阳内力限制
 const innerTypeCondition = {1: '非阳内', 2: '非阴内'};
 // 外功学习系数
-const outConditionMap = {1: 20, 2: 50, 3: 100, 4: 150};
+const outConditionMap = {1: 20, 2: 50, 3: 100, 4: 150, 5: 200};
 // 外功学习系数百周增加
-const outConditionGap = {1: 0, 2: 30, 3: 60, 4: 170};
+const outConditionGap = {1: 0, 2: 30, 3: 60, 4: 170, 5: 300};
 // 内功学习条件
 const innerConditionMap = {
   1: 1000,
   2: 2000,
   3: 3000,
-  4: 5000,
+  4: 4000,
+  5: 5000,
 };
 // 轻功学习条件
-const flyConditionMap = {1: 100, 2: 200, 3: 300, 4: 400};
+const flyConditionMap = {
+  1: 100,
+  2: 200,
+  3: 300,
+  4: 400,
+  5: 500,
+};
 
 // 获取学习秘籍条件
 export function getCondition({
@@ -146,9 +157,6 @@ export function getCondition({
   // 直接设置学习条件
   if (/^#/.test(other)) {
     return other.replace(/^#/, '');
-  }
-  if (level > 4) {
-    level = 4;
   }
   let condition = '';
   // 阴阳限制
@@ -269,7 +277,6 @@ const sectClosedMap = {
   12: '衡山派',
   13: '恒山派',
   14: '泰山派',
-  15: '五毒教',
   16: '古墓派',
   18: '凌霄城',
   19: '峨眉派',
@@ -291,10 +298,11 @@ export function getLearn({sect, level, other = []}) {
   if (!Array.isArray(other)) {
     return [other];
   }
-  if (level > 2) {
-    other.push(`挑战每月随机传闻事件中携带此秘籍的人物，战胜后概率获得`);
-  } else {
+  if (level < 3) {
     other.push(`苏州燕子坞还施水阁处可使用秘籍残章兑换（开门需6000银两）`);
+  } else if (level < 9) {
+    other.push(`挑战每月随机传闻事件中携带此秘籍的人物，战胜后概率获得`);
+    other.push(`江陵比武战胜学有此武功的人物，可选择洗第一格为此武功`);
   }
   if (sect > 0 && sectAll[sect]) {
     other.push(
