@@ -1423,6 +1423,18 @@ export default {
     talent: [683],
     type: '',
   },
+  715: {
+    id: 715,
+    name: '杨康',
+    talent: [650],
+    type: '',
+  },
+  716: {
+    id: 716,
+    name: '穆念慈',
+    talent: [],
+    type: '',
+  },
   721: {
     id: 721,
     name: '酒神',
