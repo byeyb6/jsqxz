@@ -2216,7 +2216,7 @@ export default {
       'LV.5：用内力抵消一半伤害，抵消比例为1内力=1伤害',
       'LV.6（MAX）：用内力抵消一半伤害，抵消比例为1内力=1伤害',
     ],
-    type: -1,
+    type: 12,
   },
   303: {
     id: 303,
@@ -2227,7 +2227,7 @@ export default {
     effect: [
       '被击退时，满状态复活，复活6次之后物品损坏',
     ],
-    type: -1,
+    type: 12,
   },
   304: {
     id: 304,
@@ -2243,7 +2243,7 @@ export default {
       'LV.1：敌方无法察觉你的存在，攻击后现形20时序',
       'LV.6（MAX）：敌方无法察觉你的存在，攻击后现形20时序',
     ],
-    type: -1,
+    type: 12,
   },
   305: {
     id: 305,
@@ -2541,21 +2541,21 @@ export default {
   344: {
     id: 344,
     name: '天轻丹',
-    get: ['洛阳商店出售1个'],
-    effect: [
-      '可重新选择天赋轻功',
+    get: [
+      '洛阳商店出售1个',
       '扬州西域商人出售获得过的道具且不限量，稀有丹药仅群通模式出售',
     ],
+    effect: ['可重新选择天赋轻功'],
     type: 22,
   },
   345: {
     id: 345,
     name: '天外丹',
-    get: ['大理商店出售1个'],
-    effect: [
-      '可重新选择天赋外功',
+    get: [
+      '大理商店出售1个',
       '扬州西域商人出售获得过的道具且不限量，稀有丹药仅群通模式出售',
     ],
+    effect: ['可重新选择天赋外功'],
     type: 22,
   },
   346: {
@@ -4497,7 +4497,7 @@ export default {
   755: {
     id: 755,
     name: '真·倚天剑',
-    get: ['定制'],
+    get: [],
     condition: '',
     addition: '攻击+100',
     effect: [],
@@ -4506,7 +4506,7 @@ export default {
   756: {
     id: 756,
     name: '紫电剑',
-    get: ['定制'],
+    get: [],
     condition: '',
     addition: '攻击+100',
     effect: [],
@@ -4515,7 +4515,7 @@ export default {
   757: {
     id: 757,
     name: '青霜甲',
-    get: ['定制'],
+    get: [],
     condition: '',
     addition: '防御+100',
     effect: [],
@@ -4546,5 +4546,32 @@ export default {
     get: [],
     addition: '激活九天剑气',
     type: 8,
+  },
+  762: {
+    id: 762,
+    name: '战神图录',
+    art: 477,
+    type: 0,
+  },
+  763: {
+    id: 763,
+    name: '五毒心法',
+    art: 475,
+    type: 0,
+  },
+  764: {
+    id: 764,
+    name: '十二峒蛊经',
+    art: 476,
+    type: 0,
+  },
+  765: {
+    id: 765,
+    name: '逐日',
+    get: [],
+    condition: '',
+    addition: '轻功+100',
+    effect: [],
+    type: 13,
   },
 };
