@@ -4216,7 +4216,7 @@ export default {
     get: ['倚天正收殷离获得'],
     sect: 15,
     level: 3,
-    inner: 1,
+    inner: 9,
     addition: {
       tox: 1,
     },
