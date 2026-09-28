@@ -1501,4 +1501,16 @@ export default {
     talent: [752, 9933, 9934],
     type: 'special',
   },
+  757: {
+    id: 757,
+    name: '春哥',
+    talent: [9777, 9778],
+    type: '',
+  },
+  758: {
+    id: 758,
+    name: '传鹰',
+    talent: [758],
+    type: '',
+  },
 };
