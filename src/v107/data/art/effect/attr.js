@@ -193,9 +193,6 @@ export function getPower({
   if (other || typeof other === 'number') {
     return other;
   }
-  if (level > 4) {
-    level = 4;
-  }
   // 外功
   if (type < 6) {
     return 440 * level;

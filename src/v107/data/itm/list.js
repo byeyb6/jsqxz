@@ -4574,4 +4574,19 @@ export default {
     effect: [],
     type: 13,
   },
+  766: {
+    id: 766,
+    name: '鹰刀',
+    get: [],
+    condition: '',
+    addition: '攻击+200',
+    effect: [],
+    type: 11,
+  },
+  767: {
+    id: 767,
+    name: '真·武穆遗书',
+    art: 478,
+    type: 0,
+  },
 };

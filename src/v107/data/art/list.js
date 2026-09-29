@@ -5748,7 +5748,7 @@ export default {
   456: {
     id: 456,
     name: '青元剑诀',
-    get: [],
+    get: '定制',
     sect: 21,
     level: 4,
     inner: 1,
@@ -5768,7 +5768,7 @@ export default {
   457: {
     id: 457,
     name: '梵圣真魔功',
-    get: [],
+    get: '定制',
     sect: 21,
     level: 4,
     inner: 2,
@@ -5788,7 +5788,7 @@ export default {
   458: {
     id: 458,
     name: '青竹蜂云剑',
-    get: [],
+    get: '定制',
     sect: 21,
     level: 4,
     inner: 1,
@@ -5806,7 +5806,7 @@ export default {
   459: {
     id: 459,
     name: '罗烟步',
-    get: [],
+    get: '定制',
     sect: 0,
     level: 4,
     inner: 1,
@@ -5830,7 +5830,7 @@ export default {
   461: {
     id: 461,
     name: '莫名剑法',
-    get: [],
+    get: '定制',
     sect: 30,
     level: 4,
     inner: 9,
@@ -5944,7 +5944,7 @@ export default {
   472: {
     id: 472,
     name: '万剑归宗',
-    get: [],
+    get: '定制',
     sect: 30,
     level: 4,
     inner: 2,
@@ -5964,7 +5964,7 @@ export default {
   473: {
     id: 473,
     name: '无上剑道',
-    get: [],
+    get: '定制',
     sect: 30,
     level: 4,
     inner: 2,
@@ -5984,7 +5984,7 @@ export default {
   474: {
     id: 474,
     name: '凌虚登霄',
-    get: [],
+    get: '定制',
     sect: 30,
     level: 4,
     inner: 2,
@@ -6028,7 +6028,7 @@ export default {
   477: {
     id: 477,
     name: '战神图录',
-    get: [],
+    get: '定制',
     sect: 0,
     level: 5,
     inner: 2,
@@ -6043,6 +6043,25 @@ export default {
       'zhanShenZhiNu',
       'poSuiXuKong',
       'chongFanJiuTian',
+    ],
+    type: 6,
+  },
+  478: {
+    id: 478,
+    name: '真武穆遗书',
+    get: [],
+    sect: 30,
+    level: 4,
+    inner: 2,
+    initiative: [
+      'xieFang',
+      'guWu',
+      'siLie',
+      'dongJie',
+      'poZhan',
+      'mianYiFengXue',
+      'fangYuan',
+      'bingJie',
     ],
     type: 6,
   },

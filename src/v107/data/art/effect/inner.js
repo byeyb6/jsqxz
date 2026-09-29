@@ -2956,3 +2956,23 @@ export function chongFanJiuTian(lv) {
   };
 }
 
+export function fangYuan(lv) {
+  return {
+    id: 1411,
+    name: `方圆 Lv${lv}`,
+    effect: [
+      `攻击到的敌人越多伤害越高，每个敌人增加${lv + 1}%伤害`,
+    ],
+  };
+}
+
+export function bingJie(lv) {
+  return {
+    id: 1412,
+    name: `兵解 Lv${lv}`,
+    effect: [
+      `攻击有${(lv + 1) * 10}%概率使敌人的装备、套装效果不生效10时序`,
+    ],
+  };
+}
+
