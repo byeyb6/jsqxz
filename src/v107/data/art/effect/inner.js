@@ -2858,6 +2858,29 @@ export function miZong(lv) {
   };
 }
 
+export function fuYao(lv) {
+  return {
+    id: 1108,
+    name: `扶摇 Lv${lv}`,
+    effect: [`每回合集气值+2，最多增加20，可突破70集气上限`],
+  };
+}
+
+export function chengFeng(lv) {
+  return {
+    id: 1109,
+    name: `乘风 Lv${lv}`,
+    effect: [`集气不受异常状态影响`],
+  };
+}
+export function poFeng(lv) {
+  return {
+    id: 1109,
+    name: `破封 Lv${lv}`,
+    effect: [`受到封印类效果时，50%概率免疫封印，且有15%概率立即行动`],
+  };
+}
+
 export function guJingHuShen(lv) {
   return {
     id: 1300,
@@ -2876,7 +2899,7 @@ export function zhanShenYiZhi(lv) {
   return {
     id: 1401,
     name: `战神意志 Lv${lv}`,
-    effect: [`任何人的攻击、反击、被攻击均有20%概率增加一层战意；每层使全场敌方三围、五系降低5%，最低100`],
+    effect: [`任何人的攻击、反击、被攻击均有20%概率增加一层战意（上限20层）`],
   };
 }
 
@@ -2908,7 +2931,7 @@ export function yinYangHuYi(lv) {
   return {
     id: 1405,
     name: `阴阳互易 Lv${lv}`,
-    effect: [`即将受到敌人攻击时，使攻击者的内力性质阴转阳、阳转阴、天罡转无；战后恢复`],
+    effect: [`即将受到敌人攻击时，使攻击者的内力性质阴转阳、阳转阴、天罡转无；本次攻击结束后恢复`],
   };
 }
 

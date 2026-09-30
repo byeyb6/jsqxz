@@ -4589,4 +4589,16 @@ export default {
     art: 478,
     type: 0,
   },
+  768: {
+    id: 768,
+    name: '战神刀法',
+    art: 479,
+    type: 0,
+  },
+  769: {
+    id: 769,
+    name: '鹰飞九天',
+    art: 480,
+    type: 0,
+  },
 };

@@ -195,7 +195,10 @@ export function getPower({
   }
   // 外功
   if (type < 6) {
-    return 440 * level;
+    if (level < 5) {
+      return 440 * level;
+    }
+    return 550 * level;
   }
   // 内功
   if (type === 6) {
@@ -341,7 +344,7 @@ export function getInherit(id) {
   return rst;
 }
 
-const moveNumMap = {1: 2, 2: 3, 3: 5, 4: 7};
+const moveNumMap = {1: 2, 2: 3, 3: 5, 4: 7, 5: 7};
 
 /**
  * 获取招式说明
