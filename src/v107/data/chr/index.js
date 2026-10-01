@@ -1510,7 +1510,7 @@ export default {
   758: {
     id: 758,
     name: '传鹰',
-    talent: [758],
+    talent: [758, 9760],
     type: '',
   },
 };
